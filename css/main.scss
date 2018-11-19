@@ -11,3 +11,13 @@
 @import "vendor/bootstrap/scss/nav";
 @import "vendor/bootstrap/scss/navbar";
 @import "vendor/bootstrap/scss/utilities";
+@import "vendor/bootstrap/scss/jumbotron";
+@import "vendor/bootstrap/scss/buttons";
+
+p {
+	white-space: pre-line;
+}
+
+.jumbotron {
+	background-color:transparent;
+}
