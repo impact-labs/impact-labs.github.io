@@ -1,27 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass:700,800');
+@import url('https://fonts.googleapis.com/css?family=Overpass:800');
 
-$purple:	#5772FF; 
-$pink: 		#B385FF;
+$blue:	  #5772FF; 
+$purple: 	#B385FF;
 $teal:		#0FF8A8;
+$yellow:  #FFC700;
 $black: 	#0B1D38;
+$red:     #FF5C38;
 
-$primary: 	$purple;
-$secondary: $pink;
-$info:		$teal;
+$primary: 	$blue;
+$secondary: $purple;
+$success:   $teal;
+$info:		  $teal;
+$danger:    $red;
+$warning:   $yellow;
 
-$font-family-sans-serif: "Avenir", "Avenir Next";
-$headings-font-family: "Overpass";
+$font-family-sans-serif: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$headings-font-family: "Overpass", $font-family-sans-serif;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 992px,
+  xl: 1000px
+) !default;
+
 $headings-font-weight: 800;
-$font-size-base: 1.05rem;
-$headings-color: $purple;
 $display1-weight: 800;
+$btn-font-weight: 600;
 
-$navbar-nav-link-padding-x: 1.5rem;
+$headings-color: $primary;
 $navbar-dark-color: white;
 
-$jumbotron-bg: tranparent;
-$border-radius-lg: 2rem;
-$btn-font-weight: 600;
+$navbar-nav-link-padding-x: 1.5rem;
+
+$jumbotron-bg: transparent;
+
 
 //Needed
 @import "vendor/bootstrap/scss/functions";
@@ -38,22 +51,22 @@ $btn-font-weight: 600;
 @import "vendor/bootstrap/scss/jumbotron";
 @import "vendor/bootstrap/scss/buttons";
 @import "vendor/bootstrap/scss/button-group";
-
-.nav-link {
-	font-family: $headings-font-family;
-	font-weight: 700;
-}
+@import "vendor/bootstrap/scss/transitions";
+@import "vendor/bootstrap/scss/carousel";
 
 p {
-	white-space: pre-line;
+  white-space: pre-line;
 }
 
-.btn-secondary {
-	color: $white;
+nav {
+  .nav-link {
+    font-family: $headings-font-family;
+    font-weight: 700;
+  }
 }
 
 header {
-  padding: 154px 0 100px;
+  padding: 100px 0 100px;
   .jumbotron {
   	background-color:transparent;
   	.lead {
@@ -62,12 +75,18 @@ header {
   }
 }
 
-@media (min-width: 992px) {
-  header {
-    padding: 156px 0 100px;
-  }
+img {
+  max-width: 100%;
 }
 
 section {
   padding: 150px 0;
+}
+
+.btn {
+  border-radius: 2em;
+}
+
+.btn-secondary {
+  color: white;
 }

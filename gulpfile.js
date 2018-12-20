@@ -17,6 +17,11 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/bootstrap/js'))
 
+  gulp.src([
+      './node_modules/bootstrap/js/dist/collapse.js'
+    ])
+    .pipe(gulp.dest('./vendor/bootstrap/js'))
+
   // jQuery
   gulp.src([
       './node_modules/jquery/dist/*',
