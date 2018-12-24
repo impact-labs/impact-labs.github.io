@@ -17,14 +17,14 @@
 <style>
 .panel-title .accordion-toggle:after {
     /* symbol for "opened" panels */
-    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
-    float: left;        /* adjust as needed */
-    color: blue;         /* adjust as needed */
+    /*font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "▲";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: primary;         /* adjust as needed */
 }
 .panel-title .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "▼";    /* adjust as needed, taken from bootstrap.css */
 }
 </style>
 
@@ -72,11 +72,13 @@
         <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
+              <span>
               <h1 class="panel-title">
-              <a class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <a class="btn-link collapsed accordion-toggle pr-5" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 Impact Labs
               </a>
             </h1>
+          </span>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
@@ -105,11 +107,13 @@
           </div>
           <div class="card">
             <div class="card-header" id="headingTwo">
+              <span>
               <h1 class="panel-title">
-              <a class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <a class="btn-link collapsed accordion-toggle pr-5" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                The Impact Summit
              </a>
            </h1>
+         </span>
            </div>
            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
@@ -122,11 +126,13 @@
         </div>
         <div class="card">
           <div class="card-header" id="headingThree">
+            <span>
             <h1 class="panel-title">
-            <a class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <a class="btn-link collapsed accordion-toggle pr-5" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               The Impact Coalition
             </a>
           </h1>
+          <span>
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
