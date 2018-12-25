@@ -44,7 +44,9 @@ $jumbotron-bg: transparent;
 @import "vendor/bootstrap/scss/button-group";
 @import "vendor/bootstrap/scss/transitions";
 @import "vendor/bootstrap/scss/carousel";
-@import "vendor/bootstrap/scss/modal";
+
+@import "vendor/bootstrap/scss/bootstrap";
+
 
 p {
   white-space: pre-line;
