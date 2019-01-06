@@ -88,3 +88,40 @@ section {
 }
 
 
+.carouselSliding {
+  .carousel-inner {
+    width: 75%;
+
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+      display: flex;
+    }
+
+    .carousel-item-right.active,
+    .carousel-item-next {
+      transform: translateX(33%);
+    }
+
+    .carousel-item-left.active,
+    .carousel-item-prev {
+      transform: translateX(-33%);
+    }
+
+    .carousel-item-right,
+    .carousel-item-left {
+      transform: translateX(0);
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+    font-size: 50px;
+    margin-left: -25px;
+    margin-top: -120px;
+    color: $info;
+  }
+}
+
+
