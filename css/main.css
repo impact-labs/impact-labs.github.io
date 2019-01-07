@@ -10377,3 +10377,27 @@ section {
 .btn {
   border-radius: 2em;
   color: white; }
+
+.carouselSliding .carousel-inner {
+  width: 75%; }
+  .carouselSliding .carousel-inner .carousel-item.active,
+  .carouselSliding .carousel-inner .carousel-item-next,
+  .carouselSliding .carousel-inner .carousel-item-prev {
+    display: flex; }
+  .carouselSliding .carousel-inner .carousel-item-right.active,
+  .carouselSliding .carousel-inner .carousel-item-next {
+    transform: translateX(33%); }
+  .carouselSliding .carousel-inner .carousel-item-left.active,
+  .carouselSliding .carousel-inner .carousel-item-prev {
+    transform: translateX(-33%); }
+  .carouselSliding .carousel-inner .carousel-item-right,
+  .carouselSliding .carousel-inner .carousel-item-left {
+    transform: translateX(0); }
+
+.carouselSliding .carousel-control-prev-icon,
+.carouselSliding .carousel-control-next-icon {
+  background-image: none;
+  font-size: 50px;
+  margin-left: -25px;
+  margin-top: -120px;
+  color: #0FF8A8; }
