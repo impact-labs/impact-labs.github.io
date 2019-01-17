@@ -394,16 +394,16 @@ mark,
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 720px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; } }
+      max-width: 721px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 992px; } }
+      max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 961px; } }
 
 .container-fluid {
   width: 100%;
@@ -4492,16 +4492,16 @@ pre {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 720px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; } }
+      max-width: 721px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 992px; } }
+      max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 961px; } }
 
 .container-fluid {
   width: 100%;
@@ -10379,7 +10379,7 @@ section {
   color: white; }
 
 .carouselSliding .carousel-inner {
-  width: 75%; }
+  width: 90%; }
   .carouselSliding .carousel-inner .carousel-item.active,
   .carouselSliding .carousel-inner .carousel-item-next,
   .carouselSliding .carousel-inner .carousel-item-prev {
@@ -10398,6 +10398,11 @@ section {
 .carouselSliding .carousel-control-next-icon {
   background-image: none;
   font-size: 50px;
-  margin-left: -25px;
   margin-top: -120px;
   color: #0FF8A8; }
+
+.carouselSliding .carousel-control-prev-icon {
+  margin-right: 110px; }
+
+.carouselSliding .carousel-control-next-icon {
+  margin-left: 60px; }
