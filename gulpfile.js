@@ -31,7 +31,7 @@ gulp.task('vendor', function() {
 
   // handlebar.js
   gulp.src([
-    './node_modules/handlebars/dist/handlebars.runtime.min.js'
+    './node_modules/handlebars/dist/handlebars.min.js'
     ])
     .pipe(gulp.dest('./vendor/handlebarjs'))
 })

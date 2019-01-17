@@ -9,16 +9,9 @@
 
   <title>Impact Labs - Team</title>
 
-
-
   <link href="../css/main.css" rel="stylesheet">
 
-  <!-- Modals work with these following links included but it affects the other styling features 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  -->
-  <script src="../vendor/handlebarjs/handlebars.runtime.min.js"></script>
+  <script src="../vendor/handlebarjs/handlebars.min.js"></script>
   <script src="../js/templates/members.js"></script>
 </head>
 
@@ -86,29 +79,7 @@
           Impact Labs is a student-led organization. We're a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
         </p>
       </div>
-
-      <div class="row">
-        <script>
-          var template = Handlebars.templates['members.handleBars']
-          console.log(template)
-          var context = {
-            members: [
-              {
-                name: "Adi Melamad",
-                role: "Co-Founder",
-                about: "There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!"
-              }
-            ]
-          }
-          Handlebars.registerHelper('list', function(context, options) {
-            var out = "";
-            for(var i=0, l=items.length; i<l; i++) {
-              out = out + options.fn(items[i]);
-            }
-            return out;
-          })
-          return template(context)
-        </script>
+      <div id="person"></div>
       </div>
     </div>
   </section>
@@ -123,20 +94,14 @@
 
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
-
-
-<!-- 
+<script id="handlebars-entry" type="text/x-handlebars-template">
 <div class="col-4 p-5">
   <div class="container">
     <a data-toggle="modal" data-target="#bio1">
       <div>
-        <img class="mb-5" src="../assets/teamphotos/Adi Melamed.png" />
-        <h3>Adi Melamed</h3>
-        <p class="lead">Co-Founder</p>
+        <img class="mb-5" src="../assets/teamphotos/{{name}}.png" />
+        <h3>{{name}}</h3>
+        <p class="lead">{{position}}</p>
       </div>
     </a>
     <div class="modal fade" id="bio1" role="dialog" aria-hidden="true">
@@ -153,9 +118,9 @@
                     <img class="mb-5" src="../assets/images/sample2.png" />
                   </div>
                   <div class="col-8">
-                    <h3 class="bio-name">Adi Melamed</h3>
-                    <p class="font-italic">Co-Founder</p>
-                    <p>There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!</p>
+                    <h3 class="bio-name">{{name}}</h3>
+                    <p class="font-italic">{{position}}</p>
+                    <p>{{body}}</p>
                   </div>
                 </div>
               </div>
@@ -166,4 +131,24 @@
     </div>
   </div>
 </div> 
--->
+</script>
+<script>
+  /*
+  var template = Handlebars.templates['members.handleBars']
+  console.log(template)
+  var members = [
+        ]
+  */
+  var source = $('#handlebars-entry').html();
+  var template = Handlebars.compile(source);
+  var context = {
+        name: "Adi Melamad",
+        role: "Co-Founder",
+        body: "There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!"
+      };
+  var html = template(context);
+  $('#person').html(html);
+</script>
+</body>
+
+</html>
