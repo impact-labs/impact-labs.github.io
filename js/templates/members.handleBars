@@ -1,0 +1,40 @@
+{{#list members}}
+        <div class="col-4 p-5">
+          <div class="container">
+            <!-- Modal Trigger -->
+            <a data-toggle="modal" data-target="#bio1">
+              <div>
+                <img class="mb-5" src="../assets/teamphotos/{{name}}.png" />
+                <h3>{{name}}</h3>
+                <p class="lead">{{role}}</p>
+              </div>
+            </a>
+            <!-- Modal Content -->
+            <div class="modal fade" id="bio1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog full-modal">
+                <div class="vertical-alignment-helper">
+                  <div class="modal-dialog vertical-align-center">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <a class="close" data-dismiss="modal" aria-hidden="true">×</a>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row bio-row">
+                          <div class="col-4 text-center">
+                            <img class="mb-5" src="../assets/images/sample2.png" />
+                          </div>
+                          <div class="col-8">
+                            <h3 class="bio-name">{{name}}</h3>
+                            <p class="font-italic">{{role}}</p>
+                            <p>{{about}}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+{{/list}}

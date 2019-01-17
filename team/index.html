@@ -18,7 +18,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   -->
-
+  <script src="../vendor/handlebarjs/handlebars.runtime.min.js"></script>
+  <script src="../js/templates/members.js"></script>
 </head>
 
 <!-- Temp styling in file, will be added in SCSS files -->
@@ -87,144 +88,30 @@
       </div>
 
       <div class="row">
-        <div class="col-4 p-5">
-          <div class="container">
-            <!-- Modal Trigger -->
-            <a data-toggle="modal" data-target="#bio1">
-              <div>
-                <img class="mb-5" src="../assets/images/sample2.png" />
-                <h3>Adi Melamed</h3>
-                <p class="lead">Co-Founder</p>
-              </div>
-            </a>
-            <!-- Modal Content -->
-            <div class="modal fade" id="bio1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog full-modal">
-                <div class="vertical-alignment-helper">
-                  <div class="modal-dialog vertical-align-center">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <a class="close" data-dismiss="modal" aria-hidden="true">×</a>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row bio-row">
-                          <div class="col-4 text-center">
-                            <img class="mb-5" src="../assets/images/sample2.png" />
-                          </div>
-                          <div class="col-8">
-                            <h3 class="bio-name">Adi Melamed</h3>
-                            <p class="font-italic">Co-Founder</p>
-                            <p>There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Person 2 -->
-        <!--
-        <div class="col-4 p-5">
-          <a data-toggle="modal" data-target="#bio2">
-            <div>
-              <img class="mb-5" src="../assets/images/sample2.png" />
-              <h3>Adi Melamed</h3>
-              <p class="lead">Co-Founder</p>
-            </div>
-          </a>
-          <div id="bio2" class="modal fade" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="mb-5" src="../assets/images/sample2.png" />
-                    </div>
-                    <div class="col-8">
-                      <h3>Adi Melamed</h3>
-                      <p class="lead">Co-Founder</p>
-                      <p>There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 p-5">
-          <a data-toggle="modal" data-target="#bio3">
-            <div>
-              <img class="mb-5" src="../assets/images/sample2.png" />
-              <h3>Adi Melamed</h3>
-              <p class="lead">Co-Founder</p>
-            </div>
-          </a>
-          <div id="bio3" class="modal fade" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="mb-5" src="../assets/images/sample2.png" />
-                    </div>
-                    <div class="col-8">
-                      <h3>Adi Melamed</h3>
-                      <p class="lead">Co-Founder</p>
-                      <p>There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <script>
+          var template = Handlebars.templates['members.handleBars']
+          console.log(template)
+          var context = {
+            members: [
+              {
+                name: "Adi Melamad",
+                role: "Co-Founder",
+                about: "There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!"
+              }
+            ]
+          }
+          Handlebars.registerHelper('list', function(context, options) {
+            var out = "";
+            for(var i=0, l=items.length; i<l; i++) {
+              out = out + options.fn(items[i]);
+            }
+            return out;
+          })
+          return template(context)
+        </script>
       </div>
-      <div class="row">
-        <div class="col-4 p-5">
-          <img class="mb-5" src="../assets/images/sample2.png" />
-          <h3>Adi Melamed</h3>
-          <p class="lead">Co-Founder</p>
-          <p>There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!
-          </p>
-        </div>
-        <div class="col-4 p-5">
-          <img class="mb-5" src="../assets/images/sample2.png" />
-          <h3>Adi Melamed</h3>
-          <p class="lead">Co-Founder</p>
-          <p>There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!
-          </p>
-        </div>
-        <div class="col-4 p-5">
-          <img class="mb-5" src="../assets/images/sample2.png" />
-          <h3>Adi Melamed</h3>
-          <p class="lead">Co-Founder</p>
-          <p>There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!
-          </p>
-        </div>
-      </div>
-    -->
-    <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4"></div>
-      <div class="col-4"></div>
     </div>
-    <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4"></div>
-      <div class="col-4"></div>
-    </div>
-  </div>
-</section>
+  </section>
 
 <footer class="py-5 bg-primary">
   <div class="container">
@@ -240,3 +127,43 @@
 </body>
 
 </html>
+
+
+<!-- 
+<div class="col-4 p-5">
+  <div class="container">
+    <a data-toggle="modal" data-target="#bio1">
+      <div>
+        <img class="mb-5" src="../assets/teamphotos/Adi Melamed.png" />
+        <h3>Adi Melamed</h3>
+        <p class="lead">Co-Founder</p>
+      </div>
+    </a>
+    <div class="modal fade" id="bio1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog full-modal">
+        <div class="vertical-alignment-helper">
+          <div class="modal-dialog vertical-align-center">
+            <div class="modal-content">
+              <div class="modal-header">
+                <a class="close" data-dismiss="modal" aria-hidden="true">×</a>
+              </div>
+              <div class="modal-body">
+                <div class="row bio-row">
+                  <div class="col-4 text-center">
+                    <img class="mb-5" src="../assets/images/sample2.png" />
+                  </div>
+                  <div class="col-8">
+                    <h3 class="bio-name">Adi Melamed</h3>
+                    <p class="font-italic">Co-Founder</p>
+                    <p>There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+-->
