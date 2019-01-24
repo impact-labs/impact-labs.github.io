@@ -28,12 +28,6 @@ gulp.task('vendor', function() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'))
-
-  // handlebar.js
-  gulp.src([
-    './node_modules/handlebars/dist/handlebars.min.js'
-    ])
-    .pipe(gulp.dest('./vendor/handlebarjs'))
 })
 
 // Default task
