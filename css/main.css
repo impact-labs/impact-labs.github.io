@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Overpass:800");
+/*
+$container-max-widths: (
+  sm: 720px,
+  md: 721px,
+  lg: 960px,
+  xl: 961px
+) !default;
+*/
 :root {
   --blue: #5772FF;
   --indigo: #6610f2;
@@ -400,7 +408,7 @@ mark,
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 992px; } }
+      max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
@@ -4498,7 +4506,7 @@ pre {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 992px; } }
+      max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
@@ -10379,7 +10387,7 @@ section {
   color: white; }
 
 .carouselSliding .carousel-inner {
-  width: 75%; }
+  width: 90%; }
   .carouselSliding .carousel-inner .carousel-item.active,
   .carouselSliding .carousel-inner .carousel-item-next,
   .carouselSliding .carousel-inner .carousel-item-prev {
@@ -10398,6 +10406,11 @@ section {
 .carouselSliding .carousel-control-next-icon {
   background-image: none;
   font-size: 50px;
-  margin-left: -25px;
   margin-top: -120px;
   color: #0FF8A8; }
+
+.carouselSliding .carousel-control-prev-icon {
+  margin-right: 110px; }
+
+.carouselSliding .carousel-control-next-icon {
+  margin-left: 65px; }
