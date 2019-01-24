@@ -27,12 +27,14 @@ $navbar-nav-link-padding-x: 1.5rem;
 
 $jumbotron-bg: transparent;
 
+/*
 $container-max-widths: (
   sm: 720px,
   md: 721px,
   lg: 960px,
   xl: 961px
 ) !default;
+*/
 
 //Needed
 @import "vendor/bootstrap/scss/functions";
@@ -79,7 +81,6 @@ header {
   	}
   }
 }
-
 
 img {
   max-width: 100%;

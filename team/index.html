@@ -71,47 +71,37 @@
   </nav>
 
   <section>
-    <div class="container">
-      <div class="row pb-3 mb-3 mx-auto">
+    <div class="container pb-5">
+      <div class="row pb-5 mx-auto">
         <h1 class="display-3 text-primary">Meet the Team!</h1>
-        <p class="lead pl-5 ml-5">
+        <p class="lead">
           Impact Labs is a student-led organization. We're a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
         </p>
       </div>
-      <div id="person"></div>
-      </div>
+      <div class="row pt-5" id="team-members"></div>
     </div>
   </section>
 
-  <div class="col-4 p-5">
-    <div class="container">
-      <!-- Modal Trigger -->
-      <a data-toggle="modal" data-target="#bio1">
-        <div>
-          <img class="mb-5" src="../assets/teamphotos/Adi_Melamed.png" />
-          <h3>{{name}}</h3>
-          <p class="lead">{{role}}</p>
-        </div>
-      </a>
-      <!-- Modal Content -->
-      <div class="modal fade" id="bio1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog full-modal">
-          <div class="vertical-alignment-helper">
-            <div class="modal-dialog vertical-align-center">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <a class="close" data-dismiss="modal" aria-hidden="true">×</a>
-                </div>
-                <div class="modal-body">
-                  <div class="row bio-row">
-                    <div class="col-4 text-center">
-                      <img class="mb-5" src="../assets/images/sample2.png" />
-                    </div>
-                    <div class="col-8">
-                      <h3 class="bio-name">{{name}}</h3>
-                      <p class="font-italic">{{role}}</p>
-                      <p>{{about}}</p>
-                    </div>
+
+  <div class="p-5">
+    <!-- Modal Content -->
+    <div class="modal fade" id="modal-popup" role="dialog" aria-hidden="true">
+      <div class="modal-dialog full-modal">
+        <div class="vertical-alignment-helper">
+          <div class="modal-dialog vertical-align-center">
+            <div class="modal-content">
+              <div class="modal-header">
+                <a class="close" data-dismiss="modal" aria-hidden="true">×</a>
+              </div>
+              <div class="modal-body">
+                <div class="row bio-row">
+                  <div class="col-4 text-center">
+                    <img class="bio-img mb-5 pr-3" />
+                  </div>
+                  <div class="col-8">
+                    <h3 class="bio-name"></h3>
+                    <p class="font-italic"></p>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -122,12 +112,45 @@
     </div>
   </div>
 
-  <footer style="background-image: url(../assets/footer.svg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 400px;">
-    <p class="text-center text-white" style="position: relative; bottom:-250px">Copyright &copy; Impact Labs 2019</p>
+  <footer>
+      <img style="position: relative; margin-bottom:-150px" src="../assets/footer.svg" />
+      <p style="position: relative;" class="text-center text-white">Copyright &copy; Impact Labs 2019</p>
   </footer>
 
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var data = [
+      {
+        "name": "Nikhil Gupta",
+        "role": "Lead",
+        "body": "HII my name is Nikhil"
+      },
+      {
+        "name": "Aaron Mayer",
+        "role": "Lead",
+        "body": "HII my name is Derrek"
+      }
+    ];
+    var html = "";
+    $.each(data, function(key, person) {
+      html += '<a data-toggle="modal" class="team-modal col-4 text-center px-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '" role="' + person.role + '"> <div> <img class="mb-5" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.png" /> <h3>' + person.name + '</h3> <p class="lead">' + person.role + '</p> </div> </a>';
+    });
+    $('#team-members').html(html);
+
+    function getAttr(event, attr) {
+      return $(event.currentTarget).attr(attr);
+    }
+
+    $('.team-modal').click(function(event) {
+      var name = getAttr(event, 'name');
+      $($('#modal-popup .modal-body p')[0]).html(getAttr(event, 'role'));
+      $($('#modal-popup .modal-body p')[1]).html(getAttr(event, 'body'));
+      $('#modal-popup .modal-body .bio-name').html(name);
+      var src = '../assets/teamphotos/' + name.split(" ")[0] + '_' + name.split(" ")[1] + '.png'
+      $('#modal-popup .modal-body .bio-img').attr('src', src);
+    })
+  </script>
 </body>
 
 </html>
