@@ -27,6 +27,15 @@ $navbar-nav-link-padding-x: 1.5rem;
 
 $jumbotron-bg: transparent;
 
+/*
+$container-max-widths: (
+  sm: 720px,
+  md: 721px,
+  lg: 960px,
+  xl: 961px
+) !default;
+*/
+
 //Needed
 @import "vendor/bootstrap/scss/functions";
 @import "vendor/bootstrap/scss/variables";
@@ -45,8 +54,15 @@ $jumbotron-bg: transparent;
 @import "vendor/bootstrap/scss/transitions";
 @import "vendor/bootstrap/scss/carousel";
 
+@import "vendor/bootstrap/scss/bootstrap";
+
+
 p {
   white-space: pre-line;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -78,3 +94,49 @@ section {
   border-radius: 2em;
   color: white;
 }
+
+
+.carouselSliding {
+  .carousel-inner {
+    width: 90%;
+
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+      display: flex;
+    }
+
+    .carousel-item-right.active,
+    .carousel-item-next {
+      transform: translateX(33%);
+    }
+
+    .carousel-item-left.active,
+    .carousel-item-prev {
+      transform: translateX(-33%);
+    }
+
+    .carousel-item-right,
+    .carousel-item-left {
+      transform: translateX(0);
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+    font-size: 50px;
+    margin-top: -120px;
+    color: $info;
+  }
+
+  .carousel-control-prev-icon {
+    margin-right: 110px;
+  }
+
+  .carousel-control-next-icon {
+    margin-left: 65px;
+  }
+}
+
+
