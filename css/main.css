@@ -10370,7 +10370,7 @@ nav .nav-link {
   font-weight: 700; }
 
 header {
-  padding: 100px; }
+  padding-top: 100px; }
   header .jumbotron {
     background-color: transparent; }
     header .jumbotron .lead {
