@@ -64,8 +64,8 @@
 
     <section>
       <div class="container">
-        <img class="d-none d-md-inline" style="width:120px; position: relative; float:right; bottom: 0; transform: rotate(-30deg)" src="./assets/bolt.svg" />
-        <img class="d-none d-md-inline" style="width:130px; position: relative; top:540px; transform: rotate(30deg)" src="./assets/plus.svg" />
+        <img class="accent d-none d-md-inline" style="width:120px; position: relative; float:right; bottom: 0;" src="./assets/bolt.svg" />
+        <img class="accent d-none d-md-inline" style="width:130px; position: relative; top:540px;" src="./assets/plus.svg" />
         <div class="row">
           <div class="col-md-8">
             <h1>What is Impact Labs?</h1>
@@ -140,7 +140,7 @@
     </section>
 
     <section class="my-5">
-      <img class="d-none d-md-inline" style="width:130px; position:relative; top:-100px; right:100px; float:right; transform: rotate(30deg)" src="./assets/plus.svg" />
+      <img class="accent d-none d-md-inline" style="width:130px; position:relative; top:-100px; right:100px; float:right;" src="./assets/plus.svg" />
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-5 px-5">
@@ -162,7 +162,13 @@
 
     <script src="./vendor/jquery/jquery.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script>
+      $(window).scroll(() => {
+        var theta = ($(window).scrollTop() / 1000) % Math.PI;
+        var delta = $(window).scrollTop() / 100
+        $('.accent').css({ transform: 'rotate(' + theta + 'rad) translate(0, -' + delta + 'px)' });
+      });
+    </script>
   </body>
 
 </html>
