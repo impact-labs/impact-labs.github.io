@@ -17,15 +17,9 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/bootstrap/js'))
 
-  gulp.src([
-      './node_modules/bootstrap/js/dist/collapse.js'
-    ])
-    .pipe(gulp.dest('./vendor/bootstrap/js'))
-
   // jQuery
   gulp.src([
-      './node_modules/jquery/dist/*',
-      '!./node_modules/jquery/dist/core.js'
+      './node_modules/jquery/dist/jquery.min.*'
     ])
     .pipe(gulp.dest('./vendor/jquery'))
 })
@@ -46,7 +40,7 @@ gulp.task('browserSync', function() {
 gulp.task('dev', ['browserSync'], function() {
   gulp.watch('./js/*.js', browserSync.reload);
   gulp.watch('./*.html', browserSync.reload);
-  gulp.watch('./../*.html', browserSync.reload);
+  gulp.watch('./*/*.html', browserSync.reload);
   gulp.watch('./css/*.scss',['styles']);
 });
 
