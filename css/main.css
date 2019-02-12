@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Overpass:800");
-/*
-$container-max-widths: (
-  sm: 720px,
-  md: 721px,
-  lg: 960px,
-  xl: 961px
-) !default;
-*/
 :root {
   --blue: #5772FF;
   --indigo: #6610f2;
@@ -402,16 +394,16 @@ mark,
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 440px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; } }
+      max-width: 620px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 860px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1040px; } }
 
 .container-fluid {
   width: 100%;
@@ -4500,16 +4492,16 @@ pre {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 440px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; } }
+      max-width: 620px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 860px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1040px; } }
 
 .container-fluid {
   width: 100%;
