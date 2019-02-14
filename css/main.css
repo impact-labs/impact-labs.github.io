@@ -10402,7 +10402,9 @@ section {
   color: #0FF8A8; }
 
 .carouselSliding .carousel-control-prev-icon {
-  margin-right: 110px; }
+  margin-right: 110px;
+  margin-top: -200px; }
 
 .carouselSliding .carousel-control-next-icon {
-  margin-left: 65px; }
+  margin-left: 65px;
+  margin-top: -200px; }
