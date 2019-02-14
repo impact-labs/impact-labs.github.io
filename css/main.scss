@@ -54,6 +54,9 @@ $container-max-widths: (
 
 @import "vendor/bootstrap/scss/bootstrap";
 
+body {
+  overflow-x: hidden;
+}
 
 p {
   white-space: pre-line;

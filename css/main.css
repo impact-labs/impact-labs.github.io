@@ -10351,6 +10351,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+body {
+  overflow-x: hidden; }
+
 p {
   white-space: pre-line; }
 
