@@ -10354,6 +10354,9 @@ a.text-dark:hover, a.text-dark:focus {
 p {
   white-space: pre-line; }
 
+h5 {
+  color: #B385FF; }
+
 a:hover {
   cursor: pointer; }
 
