@@ -10384,6 +10384,9 @@ section {
   border-radius: 2em;
   color: white; }
 
+footer a {
+  color: #0FF8A8; }
+
 .carouselSliding .carousel-inner {
   width: 90%; }
   .carouselSliding .carousel-inner .carousel-item.active,
