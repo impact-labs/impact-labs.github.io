@@ -10384,9 +10384,17 @@ footer {
     bottom: -5px;
     margin-left: -10px; }
 
+@media (min-width: 768px) {
+  footer img {
+    bottom: -100px; } }
+
 @media (min-width: 992px) {
   footer img {
     bottom: -130px; } }
+
+@media (min-width: 1200px) {
+  footer img {
+    bottom: -170px; } }
 
 img {
   max-width: 100%; }

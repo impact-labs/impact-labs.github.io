@@ -100,6 +100,14 @@ footer {
   }
 }
 
+@include media-breakpoint-up(md) {
+	footer {
+	  img {
+		bottom: -100px;
+	  }
+	}
+  }
+
 @include media-breakpoint-up(lg) {
   footer {
     img {
@@ -107,6 +115,14 @@ footer {
     }
   }
 }
+
+@include media-breakpoint-up(xl) {
+	footer {
+	  img {
+		bottom: -170px;
+	  }
+	}
+  }
 
 img {
   max-width: 100%;
