@@ -2,247 +2,247 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <title>Impact Labs - Team</title>
+	<title>Impact Labs - Team</title>
 
-  <link href="../css/main.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
 </head>
 
 <!-- Temp styling in file, will be added in SCSS files -->
 <style>
 .vertical-alignment-helper {
-    display:table;
-    height: 100%;
-    width: 100%;
+		display:table;
+		height: 100%;
+		width: 100%;
 }
 .vertical-align-center {
-    display: table-cell;
-    vertical-align: middle;
+		display: table-cell;
+		vertical-align: middle;
 }
 .full-modal {
-  min-width: 100%;
-  margin: 0;
+	min-width: 100%;
+	margin: 0;
 }
 .bio-row {
-  padding-right: 10%;
-  padding-left: 10%;
-  padding-top: 2%;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 2%;
 }
 .bio-name {
-  padding-top: 5%;
-  color: black;
+	padding-top: 5%;
+	color: black;
 }
 </style>
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        <img style="height:2.5rem" class="svg" src="../assets/icons/impact_labs_white.svg"/>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../fellowship">Fellowship</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../summit">Summit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../coalition">Coalition</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../faq">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">
+				<img style="height:2.5rem" class="svg" src="../assets/icons/impact_labs_white.svg"/>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../fellowship">Fellowship</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../summit">Summit</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../coalition">Coalition</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="./">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../faq">FAQ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-  <section>
-    <div class="container pb-5">
-      <div class="row pb-5 mx-auto">
-        <h1 class="display-3 text-primary">Meet the Team!</h1>
-        <p class="lead">
-          Impact Labs is a student-led organization. We're a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
-        </p>
-      </div>
-      <div class="row pt-5" id="team-members"></div>
-    </div>
-  </section>
+	<section>
+		<div class="container pb-5">
+			<div class="row pb-5 mx-auto">
+				<h1 class="display-3 text-primary">Meet the Team!</h1>
+				<p class="lead">
+					Impact Labs is a student-led organization. We're a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
+				</p>
+			</div>
+			<div class="row pt-5" id="team-members"></div>
+		</div>
+	</section>
 
 
-  <div class="p-5">
-    <!-- Modal Content -->
-    <div class="modal fade" id="modal-popup" role="dialog" aria-hidden="true">
-      <div class="modal-dialog full-modal">
-        <div class="vertical-alignment-helper">
-          <div class="modal-dialog vertical-align-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <a class="close" data-dismiss="modal" aria-hidden="true">×</a>
-              </div>
-              <div class="modal-body">
-                <div class="row bio-row">
-                  <div class="col-4 text-center">
-                    <img class="bio-img mb-5 pr-3" />
-                  </div>
-                  <div class="col-8">
-                    <h3 class="bio-name"></h3>
-                    <p class="font-italic"></p>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="p-5">
+		<!-- Modal Content -->
+		<div class="modal fade" id="modal-popup" role="dialog" aria-hidden="true">
+			<div class="modal-dialog full-modal">
+				<div class="vertical-alignment-helper">
+					<div class="modal-dialog vertical-align-center">
+						<div class="modal-content">
+							<div class="modal-header">
+								<a class="close" data-dismiss="modal" aria-hidden="true">×</a>
+							</div>
+							<div class="modal-body">
+								<div class="row bio-row">
+									<div class="col-4 text-center">
+										<img class="bio-img mb-5 pr-3" />
+									</div>
+									<div class="col-8">
+										<h3 class="bio-name"></h3>
+										<p class="font-italic"></p>
+										<p></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <footer>
-      <img style="position: relative; margin-bottom: -200px" src="../assets/footer.svg" />
-      <p style="position: relative; bottom: 0px" class="text-center text-white">
-        Questions, Comments, Concerns?
+	<footer>
+		<img src="./assets/footer.svg" />
+		<p class="text-center text-white bg-primary my-0">
+			Questions, Comments, Concerns?
 
-        Email <a href="mailto:team@theimpactsummit.org">team@theimpactsummit.org</a> or
-          head over to our <a href="">FAQs</a>
+			Email <a href="mailto:team@theimpactsummit.org">team@theimpactsummit.org</a> or
+				head over to our <a href="./faq">FAQs</a>
 
-        Copyright &copy; Impact Labs 2019
-      </p>
-  </footer>
+			Copyright &copy; Impact Labs 2019
+		</p>
+	</footer>
 
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script>
-    var data = [
-      {
-        "name": "Adi Melamed",
-        "role": "Co-Founder",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Aaron Mayer",
-        "role": "Co-Founder",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Ellie Czepiel",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Nathaniel Goodman",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Georgia Gallant",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Yash Gurditta",
-        "role": "Developer",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Nikhil Gupta",
-        "role": "Developer",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Grace Young",
-        "role": "Designer",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Minji Koo",
-        "role": "Designer",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Issac Nathoo",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Sanjana Kadiveti",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Tomer Eldor",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Tanzina Chowdhury",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Amelie Vavrovsky",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Adeel Afshar",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Edmon Berry",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Alexa Bantino",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Emma Amaral",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      },
-      {
-        "name": "Elvia Perez",
-        "role": "tbd",
-        "body": "lorem ipsum"
-      }
-    ];
-    var html = "";
-    $.each(data, function(key, person) {
-      html += '<a data-toggle="modal" class="team-modal col-lg-4 col-12 text-center px-5 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '" role="' + person.role + '"> <div> <img class="mb-5" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.png" /> <h3>' + person.name + '</h3> <p class="lead">' + person.role + '</p> </div> </a>';
-    });
-    $('#team-members').html(html);
+	<script src="../vendor/jquery/jquery.min.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script>
+		var data = [
+			{
+				"name": "Adi Melamed",
+				"role": "Co-Founder",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Aaron Mayer",
+				"role": "Co-Founder",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Ellie Czepiel",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Nathaniel Goodman",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Georgia Gallant",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Yash Gurditta",
+				"role": "Developer",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Nikhil Gupta",
+				"role": "Developer",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Grace Young",
+				"role": "Designer",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Minji Koo",
+				"role": "Designer",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Issac Nathoo",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Sanjana Kadiveti",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Tomer Eldor",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Tanzina Chowdhury",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Amelie Vavrovsky",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Adeel Afshar",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Edmon Berry",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Alexa Bantino",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Emma Amaral",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			},
+			{
+				"name": "Elvia Perez",
+				"role": "tbd",
+				"body": "lorem ipsum"
+			}
+		];
+		var html = "";
+		$.each(data, function(key, person) {
+			html += '<a data-toggle="modal" class="team-modal col-lg-4 col-12 text-center px-5 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '" role="' + person.role + '"> <div> <img class="mb-5" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.png" /> <h3>' + person.name + '</h3> <p class="lead">' + person.role + '</p> </div> </a>';
+		});
+		$('#team-members').html(html);
 
-    function getAttr(event, attr) {
-      return $(event.currentTarget).attr(attr);
-    }
+		function getAttr(event, attr) {
+			return $(event.currentTarget).attr(attr);
+		}
 
-    $('.team-modal').click(function(event) {
-      var name = getAttr(event, 'name');
-      $($('#modal-popup .modal-body p')[0]).html(getAttr(event, 'role'));
-      $($('#modal-popup .modal-body p')[1]).html(getAttr(event, 'body'));
-      $('#modal-popup .modal-body .bio-name').html(name);
-      var src = '../assets/teamphotos/' + name.split(" ")[0] + '_' + name.split(" ")[1] + '.png'
-      $('#modal-popup .modal-body .bio-img').attr('src', src);
-    })
-  </script>
+		$('.team-modal').click(function(event) {
+			var name = getAttr(event, 'name');
+			$($('#modal-popup .modal-body p')[0]).html(getAttr(event, 'role'));
+			$($('#modal-popup .modal-body p')[1]).html(getAttr(event, 'body'));
+			$('#modal-popup .modal-body .bio-name').html(name);
+			var src = '../assets/teamphotos/' + name.split(" ")[0] + '_' + name.split(" ")[1] + '.png'
+			$('#modal-popup .modal-body .bio-img').attr('src', src);
+		})
+	</script>
 </body>
 
 </html>

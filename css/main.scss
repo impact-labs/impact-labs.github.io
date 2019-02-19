@@ -87,6 +87,27 @@ header {
   }
 }
 
+footer {
+  width: calc(100% + 20px);
+  p {
+    padding-bottom: 100px;
+  }
+  img {
+    position: relative;
+    z-index: -1;
+    bottom: -5px;
+    margin-left:-10px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  footer {
+    img {
+      bottom: -130px;
+    }
+  }
+}
+
 img {
   max-width: 100%;
 }

@@ -10374,6 +10374,20 @@ header {
     header .jumbotron .lead {
       font-weight: 500; }
 
+footer {
+  width: calc(100% + 20px); }
+  footer p {
+    padding-bottom: 100px; }
+  footer img {
+    position: relative;
+    z-index: -1;
+    bottom: -5px;
+    margin-left: -10px; }
+
+@media (min-width: 992px) {
+  footer img {
+    bottom: -130px; } }
+
 img {
   max-width: 100%; }
 
