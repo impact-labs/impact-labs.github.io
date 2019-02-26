@@ -52,8 +52,6 @@ $container-max-widths: (
 @import "vendor/bootstrap/scss/transitions";
 @import "vendor/bootstrap/scss/carousel";
 
-@import "vendor/bootstrap/scss/bootstrap";
-
 body {
   overflow-x: hidden;
 }
@@ -80,7 +78,7 @@ nav {
 header {
   padding-top:150px;
   .jumbotron {
-    background-color:transparent;
+	background-color:transparent;
   	.lead {
   		font-weight: 500;
   	}
@@ -88,7 +86,6 @@ header {
 }
 
 footer {
-  width: calc(100% + 20px);
   p {
     padding-bottom: 100px;
   }
