@@ -4065,7 +4065,8 @@ footer p {
 
 footer img {
   position: relative;
-  z-index: -1; }
+  z-index: -1;
+  bottom: -5px; }
 
 @media (min-width: 768px) {
   footer img {
