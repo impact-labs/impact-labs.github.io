@@ -10,7 +10,7 @@
     <title>Impact Labs - Summit</title>
 
     <link href="../css/main.css" rel="stylesheet">
-
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
@@ -45,7 +45,7 @@
       </div>
     </nav>
 
-    <header style="background: linear-gradient(rgba(15, 248, 166, 0.5), #FFFFFF)">
+    <header data-aos="fade-up" style="background: linear-gradient(rgba(15, 248, 166, 0.5), #FFFFFF)">
       <div class="jumbotron container">
         <div class="row mx-auto">
           <img style="width:45vw;top:0;left:-50px;position: absolute;" class="d-none d-lg-inline" src="../assets/images/summit_header.png" />
@@ -65,7 +65,7 @@
       </div>
     </header>
 
-    <section class="pt-0">
+    <section class="pt-0" data-aos="fade-left">
       <img class="accent d-none d-lg-inline" style="width: 150px; position:relative; float: right; right: 100px" src="../assets/plus.svg" />
       <div class="container">
         <div class="row">
@@ -84,7 +84,7 @@
       </div>
     </section>
 
-    <section>
+    <section data-aos="fade-right">
       <div class="container">
         <div>
           <h1>Speakers</h1>
@@ -98,9 +98,9 @@
     </section>
     <!-- Speaker carousel from fellowship page when ready -->
 
-    <img class="img-fluid w-100" src="../assets/images/pitch_competition.png">
+    <img data-aos="fade-up" class="img-fluid w-100" src="../assets/images/pitch_competition.png">
 
-    <section class="pt-5">
+    <section class="pt-5" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-12">
@@ -119,9 +119,9 @@
       </div>
     </section>
 
-    <img class="img-fluid" style="width: 100vw" src="../assets/images/blockchain_hackathon.png">
+    <img data-aos="fade-up" class="img-fluid" style="width: 100vw" src="../assets/images/blockchain_hackathon.png">
 
-    <section class="pt-5">
+    <section class="pt-5" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-12">
@@ -169,6 +169,7 @@
       </p>
     </footer>
 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/rotateaccents.js"></script>
