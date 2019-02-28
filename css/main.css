@@ -4214,6 +4214,10 @@ section {
 footer a {
   color: #0FF8A8; }
 
+.modal .close {
+  font-size: 3em;
+  padding: 0 20px; }
+
 .carouselSliding .carousel-inner {
   width: 90%; }
   .carouselSliding .carousel-inner .carousel-item.active,
