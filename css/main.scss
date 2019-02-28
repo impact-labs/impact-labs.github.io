@@ -51,6 +51,8 @@ $container-max-widths: (
 @import "vendor/bootstrap/scss/button-group";
 @import "vendor/bootstrap/scss/transitions";
 @import "vendor/bootstrap/scss/carousel";
+@import "vendor/bootstrap/scss/modal";
+
 
 body {
   overflow-x: hidden;
@@ -86,20 +88,21 @@ header {
 }
 
 footer {
-  p {
-    padding-bottom: 100px;
-  }
-  img {
-    position: relative;
-    z-index: -1;
-    bottom: -5px;
-  }
+	z-index: 200;
+	position: absolute;
+	width:100%;
+	p {
+		padding-bottom: 100px;
+	}
+	img {
+		margin-bottom: -10px;
+	}
 }
 
 @include media-breakpoint-up(md) {
 	footer {
 	  img {
-		bottom: -100px;
+		margin-bottom: -100px;
 	  }
 	}
   }
@@ -107,7 +110,7 @@ footer {
 @include media-breakpoint-up(lg) {
   footer {
     img {
-      bottom: -130px;
+      margin-bottom: -130px;
     }
   }
 }
@@ -115,7 +118,7 @@ footer {
 @include media-breakpoint-up(xl) {
 	footer {
 	  img {
-		bottom: -170px;
+		margin-bottom: -170px;
 	  }
 	}
   }
@@ -129,8 +132,9 @@ section {
 }
 
 .btn {
-  border-radius: 2em;
+  border-radius: 5em;
   color: white;
+  padding: 10px 15px;
 }
 
 footer {
