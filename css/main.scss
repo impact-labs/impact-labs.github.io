@@ -27,14 +27,12 @@ $navbar-nav-link-padding-x: 1.5rem;
 
 $jumbotron-bg: transparent;
 
-/*
 $container-max-widths: (
-  sm: 720px,
-  md: 721px,
-  lg: 960px,
-  xl: 961px
+  sm: 440px,
+  md: 620px,
+  lg: 860px,
+  xl: 1040px
 ) !default;
-*/
 
 //Needed
 @import "vendor/bootstrap/scss/functions";
@@ -53,12 +51,19 @@ $container-max-widths: (
 @import "vendor/bootstrap/scss/button-group";
 @import "vendor/bootstrap/scss/transitions";
 @import "vendor/bootstrap/scss/carousel";
+@import "vendor/bootstrap/scss/modal";
 
-@import "vendor/bootstrap/scss/bootstrap";
 
+body {
+  overflow-x: hidden;
+}
 
 p {
   white-space: pre-line;
+}
+
+h5 {
+  color: $secondary
 }
 
 a:hover {
@@ -73,14 +78,50 @@ nav {
 }
 
 header {
-  padding: 100px;
+  padding-top:150px;
   .jumbotron {
-  	background-color:transparent;
+	background-color:transparent;
   	.lead {
   		font-weight: 500;
   	}
   }
 }
+
+footer {
+	z-index: 200;
+	position: absolute;
+	width:100%;
+	p {
+		padding-bottom: 100px;
+	}
+	img {
+		margin-bottom: -10px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	footer {
+	  img {
+		margin-bottom: -100px;
+	  }
+	}
+  }
+
+@include media-breakpoint-up(lg) {
+  footer {
+    img {
+      margin-bottom: -130px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+	footer {
+	  img {
+		margin-bottom: -170px;
+	  }
+	}
+  }
 
 img {
   max-width: 100%;
@@ -91,10 +132,23 @@ section {
 }
 
 .btn {
-  border-radius: 2em;
+  border-radius: 5em;
   color: white;
+  padding: 10px 15px;
 }
 
+footer {
+  a {
+    color: #0FF8A8
+  }
+}
+
+.modal {
+	.close {
+		font-size: 3em;
+		padding: 0 20px;
+	}
+}
 
 .carouselSliding {
   .carousel-inner {
@@ -132,10 +186,12 @@ section {
 
   .carousel-control-prev-icon {
     margin-right: 110px;
+    margin-top: -200px;
   }
 
   .carousel-control-next-icon {
     margin-left: 65px;
+    margin-top: -200px;
   }
 }
 

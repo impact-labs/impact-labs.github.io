@@ -10,16 +10,16 @@
     <title>Impact Labs - Fellowship</title>
 
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/carousel.scss" rel="stylesheet">
-
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="mainNav">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
-          <img style="height:2.5rem" class="svg" src="../assets/icons/impact_labs_white.svg"/>
+		  <img style="height:2.5rem" class="svg pr-3" src="../assets/icons/impact_labs_white.svg"/>
+		  <b>Impact Labs</b>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,72 +44,80 @@
           </ul>
         </div>
       </div>
-    </nav>
+	  </nav>
+	
+	<img class="d-none d-lg-inline" src="../assets/line.svg" style="position: absolute; z-index: -3; top:1200px; opacity: 0.5;" />
+	<div class="d-none d-lg-inline" style="position: fixed; height:30%; bottom:0; z-index: -2; width:100%; background-color:white;"></div>
 
-    <header>
-      <div class="jumbotron container">
+    <header data-aos="fade-up" style="background: linear-gradient(rgba(15, 248, 166, 0.5), #FFFFFF)">
+			
+      <div class="jumbotron container mr-md-5">
         <div class="row mx-auto">
-          <img style="width:40vw;bottom:-100px;left:-50px;position: absolute;" src="../assets/images/fellowship.png" class="img-fluid"/>
-          <div class="col-4 my-auto">
-            
+          <img style="width:40vw; bottom: 0px; left:0; position: absolute;" src="../assets/images/fellowship.png" class="d-none d-md-inline"/>
+          <div class="col-12 col-md-4 col-xl-3 my-auto">
           </div>
-          <div class="col-8 pl-5">
-            <h1 class="display-3 text-primary">The Impact Fellowship</h1>
-            <p class="lead">A 2-week technical fellowship for the next generation of social entrepreneurs.
+          <div class="col-12 col-md-8 col-xl-9">
+            <h1 class="display-3 text-primary d-none d-lg-inline">The Impact Fellowship</h1>
+            <h1 class="display-4 text-primary d-inline d-lg-none">The Impact Fellowship</h1>
+
+            <p class="lead">A 2-week technical fellowship for the next 
+            generation of social entrepreneurs.
 
             January 2nd - January 16th, 2019
             New York City
             </p>
             <p class="lead">
-              <button type="button" class="btn btn-secondary btn-lg">Apply Now</button>
+              <button type="button" class="btn btn-secondary btn-md">Apply Now</button>
             </p>
           </div>
         </div>
       </div>
     </header>
 
-    <section style="position:relative">
-      <img style="height:200px; width:200px; position:absolute; right: 100px; top: -100px; transform: rotate(-30deg)" src="../assets/bolt.svg" />
-      <img style="height:150px; width:150px; position:absolute; left: 450px; bottom: 50px; transform: rotate(30deg)" src="../assets/plus.svg" />
+    <section style="position:relative" data-aos="fade-left">
+      <img class="accent d-none d-md-inline" style="width:100px; position:absolute; right: 100px; top: -100px;" src="../assets/bolt.svg" />
+      <img class="accent d-none d-md-inline" style="width:120px; position:absolute; left: 450px; bottom: 50px;" src="../assets/plus.svg" />
       <div class="container">
         <div class="row justify-content-end">
-          <div class="col-5 align-self-start">
+          <div class="col-md-5 col-12 align-self-start">
             <h1>About the Fellowship</h1>
             <p class="lead">
               The Impact Fellowship is a gathering of talented and passionate computer science students who want to use their skills for social good!
             </p>
           </div>
-          <div class="col-4 align-self-end mt-5">
+          <div class="col-md-4 col-12 align-self-end mt-5 px-5">
             <img src="../assets/illustrations/about_the_fellowship.svg" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-0">
-      <div class="container">
-      <div class="row">
-        <div class="col-4">
-          
-        </div>
-        <div class="col-8">
-          <img style="max-width:100%" src="../assets/images/impact_fellowship.png">
-        </div>
-      </div>
-    </div>
+    <section class="my-0" data-aos="fade-left">
+		<div class="container">
+			<div class="row">
+			<div class="col-12 col-md-4">
+				
+			</div>
+			<div class="col-12 col-md-8 px-5">
+				<img style="max-width:100%" src="../assets/images/impact_fellowship.png">
+			</div>
+			</div>
+		</div>
     </section>
 
-    <section style="position:relative">
-      <img style="height:900px; width:900px; position:absolute; right: 50%; z-index: -1;" src="../assets/blob.svg" />
-      <img style="height:200px; width:200px; position:absolute; right: 340px; top: 50px; transform: rotate(15deg)" src="../assets/bolt.svg" />
-      <img style="height:130px; width:130px; position:absolute; bottom: 180px; left: 0px; transform: rotate(30deg)" src="../assets/plus.svg" />
+    <section style="position:relative" data-aos="fade-right">
+      <img style="height:900px; width:900px; position:absolute; right: 50%;" src="../assets/blob.svg" />
+      <img class="accent d-none d-md-inline" style="width:100px; position:absolute; right: 340px; top: 50px;" src="../assets/bolt.svg" />
+      <img class="accent d-none d-md-inline" style="width:130px; position:absolute; bottom: 180px; left: 0px;" src="../assets/plus.svg" />
 
-      <div class="container">
+      <div class="container pb-5">
         <div class="row justify-content-start">
-          <div class="col-4 align-self-start">
-            <img src="../assets/illustrations/mentorship.svg" />
+          <div class="col-md-2">
           </div>
-          <div class="col-5 align-self-end mt-5 pt-5">
+          <div class="col-12 col-md-5 mt-5 pt-5 px-5">
+            <img class="d-none d-md-inline" style="width: 300px; position: relative; left: -350px; top: 100px" src="../assets/illustrations/mentorship.svg" />
+            <img class="d-inline d-md-none img-fluid mx-auto px-5" style="position: relative; top: -25px" src="../assets/illustrations/mentorship.svg" />
+
             <h1>Mentorship</h1>
             <p class="lead d-in">
             Fellows will learn advanced software engineering from top bootcamp instructors and industry leaders, with courses in JavaScript (React, Node.js), DevOps and DBs (AWS, MongoDB, Firebase), Smart Contracts (Solidity), and Machine Learning(PyTorch).
@@ -118,21 +126,20 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container pt-5" data-aos="fade-left">
         <div class="row justify-content-end">
-          <div class="col-5 align-self-end mt-5 pt-5">
+          <div class="col-md-5 col-12 align-self-end" data-aos="fade-left">
+            <img class="d-none d-md-inline" style="width: 300px; position: relative; right: -200px; bottom: -50px" src="../assets/illustrations/speakers.svg" />
+            <img class="d-inline d-md-none img-fluid mx-auto px-5" style="position: relative; top: -25px" src="../assets/illustrations/speakers.svg" />
+
             <h1>Speakers</h1>
             <p class="lead">
             The fellowship will feature amazing startup founders and nonprofit leaders who are leveraging technology to tackle the most urgent challenges of our generation, such as climate change, healthcare inadequacies, global poverty, gender inequalities, and lack of access to education.</p>
-          </div>
-          <div class="col-4 align-self-start">
-              <img src="../assets/illustrations/speakers.svg" />
-            </div>
         </div>
       </div>
     </section>
 
-    <section class="pt-0">
+    <section class="pt-0" data-aos="fade-up">
       <div class="container">
         <div class="row mx-auto my-auto">
           <div id="carouselSliding" class="carouselSliding d-flex justify-content-center carousel slide" data-ride="carousel">
@@ -143,10 +150,10 @@
                         <div class="card border-white">
                             <img class="d-block img-fluid" src="../assets/images/sample2.png">
                             <div class="card-body ">
-                              <p class="font-weight-bold text-center"> Cameron Wehr </p>
+                              <p class="font-weight-bold text-center mt-4"> Cameron Wehr </p>
                               <p class="text-center"> Founder, ROAR for Good Gender Equality </p>
                             </div>
-                         </div>
+                        </div>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -154,7 +161,7 @@
                         <div class="card border-white">
                             <img class="d-block img-fluid" src="../assets/images/sample2.png">
                             <div class="card-body ">
-                              <p class="font-weight-bold text-center"> Cameron Wehr </p>
+                              <p class="font-weight-bold text-center mt-4"> Cameron Wehr </p>
                               <p class="text-center"> Founder, ROAR for Good Gender Equality </p>
                             </div>
                         </div>
@@ -165,7 +172,7 @@
                         <div class="card border-white">
                             <img class="d-block img-fluid" src="../assets/images/sample2.png">
                             <div class="card-body ">
-                              <p class="font-weight-bold text-center"> Cameron Wehr </p>
+                              <p class="font-weight-bold text-center mt-4"> Cameron Wehr </p>
                               <p class="text-center"> Founder, ROAR for Good Gender Equality </p>
                             </div>
                         </div>
@@ -176,7 +183,7 @@
                         <div class="card border-white">
                             <img class="d-block img-fluid" src="../assets/images/sample2.png">
                             <div class="card-body ">
-                              <p class="font-weight-bold text-center"> Cameron Wehr </p>
+                              <p class="font-weight-bold text-center mt-4"> Cameron Wehr </p>
                               <p class="text-center"> Founder, ROAR for Good Gender Equality </p>
                             </div>
                         </div>
@@ -187,7 +194,7 @@
                         <div class="card border-white">
                             <img class="d-block img-fluid" src="../assets/images/sample2.png">
                             <div class="card-body ">
-                              <p class="font-weight-bold text-center"> Cameron Wehr </p>
+                              <p class="font-weight-bold text-center mt-4"> Cameron Wehr </p>
                               <p class="text-center"> Founder, ROAR for Good Gender Equality </p>
                             </div>
                         </div>
@@ -198,18 +205,18 @@
                         <div class="card border-white">
                             <img class="d-block img-fluid" src="../assets/images/sample2.png">
                             <div class="card-body ">
-                              <p class="font-weight-bold text-center"> Cameron Wehr </p>
+                              <p class="font-weight-bold text-center mt-4"> Cameron Wehr </p>
                               <p class="text-center"> Founder, ROAR for Good Gender Equality </p>
                             </div>
                         </div>
                       </div>
                   </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselSliding" role="button" data-slide="prev">
+              <a class="carousel-control-prev class d-none d-lg-inline" href="#carouselSliding" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon font-weight-bold">◀</span>
                   <span class="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselSliding " role="button" data-slide="next">
+              <a class="carousel-control-next d-none d-lg-inline" href="#carouselSliding " role="button" data-slide="next">
                   <!-- <span class="" aria-hidden="true"></span> -->
                   <span class="carousel-control-next-icon font-weight-bold">▶</span> 
                   <span class="sr-only">Next</span>
@@ -219,15 +226,16 @@
       </div>
     </section>
 
-    <section style="position:relative">
-      <img style="height:220px; width:220px; position:absolute; top: -100px; right: 100px; transform: rotate(-40deg)" src="../assets/bolt.svg" />
-      <img style="height:130px; width:130px; position:absolute; top: 200px; right: 400px; transform: rotate(30deg)" src="../assets/plus.svg" />    
+    <section style="position:relative" data-aos="fade-right">
+      <img class="accent d-none d-md-inline" style="width:120px; position:absolute; top: -100px; right: 100px;" src="../assets/bolt.svg" />
+      <img class="accent d-none d-md-inline" style="width:130px; position:absolute; top: 200px; right: 400px;" src="../assets/plus.svg" />    
       <div class="container">
         <div class="row">
-          <div class="col-4 align-self-start">
-            <img src="../assets/illustrations/experience.svg" />
+          <div class="col-md-2 px-5">
           </div>
-          <div class="col-5 align-self-end mt-5 pt-5">
+          <div class="col-md-5 col-12 mt-md-5 pt-md-5">
+            <img class="d-none d-md-inline" style="width: 300px; position: relative; left: -300px; top: 100px" src="../assets/illustrations/experience.svg" />
+            <img class="d-inline d-md-none img-fluid mx-auto px-5" style="position: relative; top: -25px" src="../assets/illustrations/experience.svg" />
             <h1>Experience</h1>
             <p class="lead">
             Students spend a week launching a tech-driven social venture that they pitch to a panel of entrepreneurial judges. Through hands-on mentorship and social entrepreneurship workshops, students can leave with significant progress on a semester project, team hustle, or serious social venture.</p>
@@ -236,45 +244,53 @@
       </div>
     </section>
 
-    <section class="py-0">
+    <section class="py-0" data-aos="fade-up">
       <div class="container">
       <div class="row">
-        <div class="col-8">
+        <div class="col-md-8 col-12">
           <img src="../assets/images/community.png">
         </div>
-        <div class="col-4"></div>
+        <div class="col-md-4 col-12"></div>
       </div>
     </div>
     </section>
 
-    <section style="position:relative">     
-      <img style="height:900px; width:900px; position:absolute; z-index: -1;" src="../assets/blob.svg" />
-      <img style="height:130px; width:130px; position:absolute; top: 400px; left: 200px; transform: rotate(30deg)" src="../assets/plus.svg" />
+    <section style="position:relative" data-aos="fade-left">     
+      <img style="width:900px; position:absolute;" src="../assets/blob.svg" />
+      <img class="accent d-none d-md-inline" style="width:130px; position:absolute; top: 400px; left: 200px;" src="../assets/plus.svg" />
       <div class="container">
         <div class="row justify-content-end">
-          <div class="col-5 mt-5 pt-5 align-self-end">
+          <div class="col-md-5 col-12 align-self-end">
+            <img class="d-none d-md-inline" style="width: 300px; position: relative; right: -250px; bottom: -25px" src="../assets/illustrations/community.svg" />
+            <img class="d-inline d-md-none img-fluid mx-auto px-5" style="position: relative; top: -25px" src="../assets/illustrations/community.svg" />
+
             <h1>Community</h1>
             <p class="lead">
             More important than the skills learned during the fellowship are the incredible people we get meet along the way. The Impact Fellowship creates a community of like-minded, dedicated engineers who hope to build a more sustainable, equitable world.
-
-          </p>
+            </p>
             <button type="button" class="btn btn-secondary">Meet the 2018 Alumni</button>
-          </div>
-          <div class="col-4 align-self-start">
-            <img src="../assets/illustrations/community.svg" />
           </div>
         </div>
       </div>
     </section>
 
     <footer>
-        <img style="position: relative; margin-bottom:-150px" src="../assets/footer.svg" />
-        <p style="position: relative;" class="text-center text-white">Copyright &copy; Impact Labs 2019</p>
+        <img src="../assets/footer.svg" />
+        <p class="text-center text-white bg-primary my-0" >
+          Questions, Comments, Concerns?
+  
+          Email <a href="mailto:team@theimpactsummit.org">team@theimpactsummit.org</a> or
+            head over to our <a href="../faq">FAQs</a>
+  
+          Copyright &copy; Impact Labs 2019
+        </p>
     </footer>
 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/carousel.js"></script>
+    <script src="../js/rotateaccents.js"></script>
 
   </body>
 
