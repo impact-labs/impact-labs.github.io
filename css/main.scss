@@ -101,6 +101,13 @@ p {
   }
 }
 
+@include media-breakpoint-down(md) {
+	nav .nav-link {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
 .btn {
 	color: white;
 	border: none;
@@ -111,9 +118,19 @@ p {
 }
 
 nav {
-  .nav-link {
-	  font-weight: 500;
-  }
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	.nav-link {
+		font-weight: 500;
+	}
+	.navbar-brand img {
+		height: 50px;
+		padding:0;
+		margin:0;
+	}
+	.navbar-toggler {
+		border-radius: 5px !important;
+	}
 }
 
 section {
@@ -173,48 +190,62 @@ footer {
 }
 
 .carouselSliding {
-  .carousel-inner {
-    width: 90%;
+	padding: 0 200px;
+	.carousel-inner {
+		
+		.carousel-item.active,
+		.carousel-item-next,
+		.carousel-item-prev {
+			display: flex;
+		}
 
-    .carousel-item.active,
-    .carousel-item-next,
-    .carousel-item-prev {
-      display: flex;
-    }
+		.carousel-item-right.active,
+		.carousel-item-next {
+			transform: translateX(33.333333333%);
+		}
 
-    .carousel-item-right.active,
-    .carousel-item-next {
-      transform: translateX(33%);
-    }
+		.carousel-item-left.active,
+		.carousel-item-prev {
+			transform: translateX(-33.333333333%);
+		}
 
-    .carousel-item-left.active,
-    .carousel-item-prev {
-      transform: translateX(-33%);
-    }
+		.carousel-item-right,
+		.carousel-item-left {
+			transform: translateX(0);
+		}
 
-    .carousel-item-right,
-    .carousel-item-left {
-      transform: translateX(0);
-    }
-  }
+		.card {
+			img {
+				width: 80% !important;
+			}
+			.card-body {
+				p b {
+					font-size: 28px;
+				}
+				
+			}
+		}
+	}
+	.carousel-control-prev, .carousel-control-next {
+		opacity: 1;
+	}
 
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-image: none;
-    font-size: 50px;
-    margin-top: -120px;
-    color: $info;
-  }
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+		background-image: none;
+		font-size: 50px;
+		color: $danger;
+		font-weight: bold;
+		margin-bottom: 180px;
+	}
 
-  .carousel-control-prev-icon {
-    margin-right: 110px;
-    margin-top: -200px;
-  }
+	.carousel-control-prev-icon {
+		margin-right: -100px;
+	}
 
-  .carousel-control-next-icon {
-    margin-left: 65px;
-    margin-top: -200px;
-  }
+	.carousel-control-next-icon {
+		margin-left: -150px;
+	}
 }
 
 
