@@ -4181,6 +4181,11 @@ p {
     margin-left: 0 !important;
     margin-right: 0 !important; } }
 
+@media (max-width: 959.98px) {
+  nav .nav-link {
+    padding-top: 30px;
+    padding-bottom: 30px; } }
+
 .btn {
   color: white;
   border: none; }
@@ -4188,8 +4193,17 @@ p {
 .btn:hover {
   background-color: #0FF8A8; }
 
-nav .nav-link {
-  font-weight: 500; }
+nav {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important; }
+  nav .nav-link {
+    font-weight: 500; }
+  nav .navbar-brand img {
+    height: 50px;
+    padding: 0;
+    margin: 0; }
+  nav .navbar-toggler {
+    border-radius: 5px !important; }
 
 section {
   padding: 150px 0; }
@@ -4230,33 +4244,35 @@ footer {
 .team-modal h3 {
   margin: 0; }
 
-.carouselSliding .carousel-inner {
-  width: 90%; }
+.carouselSliding {
+  padding: 0 200px; }
   .carouselSliding .carousel-inner .carousel-item.active,
   .carouselSliding .carousel-inner .carousel-item-next,
   .carouselSliding .carousel-inner .carousel-item-prev {
     display: flex; }
   .carouselSliding .carousel-inner .carousel-item-right.active,
   .carouselSliding .carousel-inner .carousel-item-next {
-    transform: translateX(33%); }
+    transform: translateX(33.33333%); }
   .carouselSliding .carousel-inner .carousel-item-left.active,
   .carouselSliding .carousel-inner .carousel-item-prev {
-    transform: translateX(-33%); }
+    transform: translateX(-33.33333%); }
   .carouselSliding .carousel-inner .carousel-item-right,
   .carouselSliding .carousel-inner .carousel-item-left {
     transform: translateX(0); }
-
-.carouselSliding .carousel-control-prev-icon,
-.carouselSliding .carousel-control-next-icon {
-  background-image: none;
-  font-size: 50px;
-  margin-top: -120px;
-  color: #0FF8A8; }
-
-.carouselSliding .carousel-control-prev-icon {
-  margin-right: 110px;
-  margin-top: -200px; }
-
-.carouselSliding .carousel-control-next-icon {
-  margin-left: 65px;
-  margin-top: -200px; }
+  .carouselSliding .carousel-inner .card img {
+    width: 80% !important; }
+  .carouselSliding .carousel-inner .card .card-body p b {
+    font-size: 28px; }
+  .carouselSliding .carousel-control-prev, .carouselSliding .carousel-control-next {
+    opacity: 1; }
+  .carouselSliding .carousel-control-prev-icon,
+  .carouselSliding .carousel-control-next-icon {
+    background-image: none;
+    font-size: 50px;
+    color: #FF5C38;
+    font-weight: bold;
+    margin-bottom: 180px; }
+  .carouselSliding .carousel-control-prev-icon {
+    margin-right: -100px; }
+  .carouselSliding .carousel-control-next-icon {
+    margin-left: -150px; }
