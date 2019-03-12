@@ -14,20 +14,12 @@ $info:		$teal;
 $danger:    $red;
 $warning:   $yellow;
 
-$container-max-widths: (
-  sm: 540px,
-  md: 960px,
-  lg: 960px,
-  xl: 960px,
-) !default;
-
-
 $grid-breakpoints: (
   xs: 0,
   sm: 540px,
   md: 960px,
-  lg: 960px,
-  xl: 960px
+  lg: 961px,
+  xl: 962px
 ) !default;
 
 $spacer: 30px;
@@ -46,7 +38,8 @@ $headings-color: $primary;
 $modal-content-border-radius: 0;
 $modal-backdrop-bg: $success;
 $modal-content-border-width: 0;
-
+$navbar-toggler-border-radius: 5px;
+$navbar-dark-toggler-border-color: white;
 
 //Needed
 @import "vendor/bootstrap/scss/functions";
@@ -74,7 +67,9 @@ body {
 }
 
 a:hover {
-  cursor: pointer;
+	color:white;
+	text-decoration: none;
+  	cursor: pointer;
 }
 
 h1 {
@@ -113,6 +108,10 @@ p {
 	border: none;
 }
 
+.btn:focus {
+	border: none;
+}
+
 .btn:hover {
 	background-color: $success;
 }
@@ -127,9 +126,6 @@ nav {
 		height: 50px;
 		padding:0;
 		margin:0;
-	}
-	.navbar-toggler {
-		border-radius: 5px !important;
 	}
 }
 
@@ -165,6 +161,10 @@ footer {
 
 }
 
+.blob {
+	opacity: 0.5;
+}
+
 .modal {
 	.close span {
 		font-size: 3em;
@@ -175,7 +175,7 @@ footer {
 		width: 100%;
 	}
 	.modal-header {
-		border:none;
+		border: none;
 	}
 	
 }
@@ -190,44 +190,20 @@ footer {
 }
 
 .carouselSliding {
-	padding: 0 200px;
+	width: 100%;
 	.carousel-inner {
-		
 		.carousel-item.active,
 		.carousel-item-next,
 		.carousel-item-prev {
 			display: flex;
 		}
-
-		.carousel-item-right.active,
-		.carousel-item-next {
-			transform: translateX(33.333333333%);
-		}
-
-		.carousel-item-left.active,
-		.carousel-item-prev {
-			transform: translateX(-33.333333333%);
-		}
-
-		.carousel-item-right,
-		.carousel-item-left {
-			transform: translateX(0);
-		}
-
-		.card {
-			img {
-				width: 80% !important;
-			}
-			.card-body {
-				p b {
-					font-size: 28px;
-				}
-				
-			}
-		}
 	}
 	.carousel-control-prev, .carousel-control-next {
 		opacity: 1;
+	}
+
+	.carousel-control-prev-icon {
+		margin-left: -50px;
 	}
 
 	.carousel-control-prev-icon,
@@ -238,14 +214,67 @@ footer {
 		font-weight: bold;
 		margin-bottom: 180px;
 	}
+}
 
-	.carousel-control-prev-icon {
-		margin-right: -100px;
-	}
+.panel-toggle {
+	font-size: 45px;
+}
 
-	.carousel-control-next-icon {
-		margin-left: -150px;
+.panel-toggle[aria-expanded="false"]:before {
+	content: "▶\00a0\00a0";
+}
+.panel-toggle[aria-expanded="true"]:before {
+	content: "▼\00a0\00a0";
+}
+
+@include media-breakpoint-up(md) {
+	.carouselSliding {
+		padding: 0 200px;
+		.carousel-inner {
+			.carousel-item-right.active,
+			.carousel-item-next {
+				transform: translateX(33.333333333%);
+			}
+
+			.carousel-item-left.active,
+			.carousel-item-prev {
+				transform: translateX(-33.333333333%);
+			}
+
+			.carousel-item-right,
+			.carousel-item-left {
+				transform: translateX(0);
+			}
+
+			.card {
+				img {
+					width: 80% !important;
+				}
+				.card-body {
+					p b {
+						font-size: 28px;
+					}
+					
+				}
+			}
+		}
+
+		.carousel-control-prev-icon {
+			margin-right: -100px;
+		}
+
+		.carousel-control-next-icon {
+			margin-left: -150px;
+		}
 	}
 }
+
+@include media-breakpoint-up(md) {
+	#special-case {
+		margin-top: 125%; // this is terrible
+	}
+}
+
+
 
 
