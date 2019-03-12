@@ -64,6 +64,9 @@ $navbar-dark-toggler-border-color: white;
 body {
 	overflow-x: hidden;
 	color: $black;
+	#scroll:hover {
+		cursor: pointer;
+	}
 }
 
 a:hover {
@@ -104,8 +107,10 @@ p {
 }
 
 .btn {
-	color: white;
 	border: none;
+	a {
+		color: white;
+	}
 }
 
 .btn:focus {

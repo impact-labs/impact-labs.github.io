@@ -37,7 +37,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="./team">Team</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" target="_blank" href="https://medium.com/impact-labs">Blog</a>
             </li>
           </ul>
@@ -46,22 +46,24 @@
     </nav>
 
     <header data-aos="fade-up">
-      <div class="container mx-auto">
-        <img class="blob" style="width:800px; top:0; position: absolute; z-index: -1" class="header_image" src="./assets/blob.svg" />
-        <div class="row" style="padding-top:30vh">
-			<div class="col-12 col-md-4 d-none d-md-inline">
-				<img class="ill" src="./assets/icons/impact_labs.svg" />
+		<div class="container-fluid">
+			<img class="blob" style="width:800px; top:0; position: absolute; z-index: -1" class="header_image" src="./assets/blob.svg" />
+			<div class="row" style="padding-top:25vh">
+				<div class="col-2"></div>
+				<div class="col-3 d-none d-md-inline">
+					<img class="ill" width="100%" src="./assets/icons/impact_labs.svg" />
+				</div>
+				<div class="col-4" style="margin-top:5%">
+					<h1 class="text-primary">Impact Labs</h1>
+					<p class="lead" style="max-width:90%">Inspiring and empowering ambitious computer scientists to build a better world.</p>
+					<img id="scroll" class="px-5 py-4" src="./assets/icons/arrow.svg" />
+				</div>
+				<div class="col-3"></div>
 			</div>
-			<div class="col-12 col-md-8 pl-md-4" style="margin-top:70px">
-				<h1 class="text-primary">Impact Labs</h1>
-				<p class="lead" style="max-width:80%">Inspiring and empowering ambitious computer scientists to build a better world.</p>
-				<h1 class="text-center text-md-left ml-md-5">↓</h1>
-			</div>
-        </div>
-      </div>
+		</div>
     </header>
 
-    <section data-aos="fade-up">
+    <section data-aos="fade-up" id="scrollTo">
       <div class="container">
         <img class="accent d-none d-md-inline" style="width:120px; position: relative; float:right; bottom: 0;" src="./assets/bolt.svg" />
         <img class="accent d-none d-md-inline" style="width:130px; position: relative; top:540px;" src="./assets/plus.svg" />
@@ -161,6 +163,13 @@
     <script src="./vendor/jquery/jquery.min.js"></script>
 	<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/rotateaccents.js"></script>
+	<script>
+		$("#scroll").click(function() {
+			$([document.documentElement, document.body]).animate({
+				scrollTop: $("#scrollTo").offset().top
+			}, 800);
+		});
+	</script>
 	
   </body>
 
