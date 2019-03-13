@@ -108,6 +108,7 @@ p {
 
 .btn {
 	border: none;
+	color: white;
 	a {
 		color: white;
 	}
@@ -230,6 +231,35 @@ footer {
 }
 .panel-toggle[aria-expanded="true"]:before {
 	content: "▼\00a0\00a0";
+}
+
+.btn:focus {outline:0 !important;}
+
+
+#mc_embed_signup {
+	#mc_embed_signup_scroll {
+		.mc-field-group, .clear {
+			display: inline;
+		}
+		.clear input {
+			height: $spacer*2+4;
+			width: 210px;
+			margin-bottom: 1px;
+		}
+		.mc-field-group input {
+			border-radius: $btn-border-radius;
+			width: 90%;
+			max-width: 620px;
+			padding: $spacer;
+			margin-right: -210px;
+			height: $spacer*2;	
+			border-style: solid;
+			border-color: $primary;
+		}
+		.mc-field-group input:focus {
+			outline-width: 0;
+		}
+	}
 }
 
 @include media-breakpoint-up(md) {
