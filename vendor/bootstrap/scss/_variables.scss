@@ -102,7 +102,7 @@ $theme-color-interval:      8% !default;
 $yiq-contrasted-threshold:  150 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark:             $gray-900 !default;
+$yiq-text-dark:             $black !default;
 $yiq-text-light:            $white !default;
 
 // Options
@@ -202,7 +202,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1200px,
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");

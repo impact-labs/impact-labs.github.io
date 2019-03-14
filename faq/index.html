@@ -14,59 +14,46 @@
 
 </head>
 
-<!-- Temporary css for testing purposes, will be added to external file -->
-<style>
-.panel-title .accordion-toggle:after {
-  /* symbol for "opened" panels */
-  content: "\00a0▼";    /* adjust as needed, taken from bootstrap.css */
-}
-.panel-title .accordion-toggle.collapsed:after {
-  /* symbol for "collapsed" panels */
-  content: "\00a0◄";    /* adjust as needed, taken from bootstrap.css */
-}
-</style>
-
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="mainNav">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-		<img style="height:2.5rem" class="svg pr-3" src="../assets/icons/impact_labs_white.svg"/>
-		<b>Impact Labs</b>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../fellowship">Fellowship</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../summit">Summit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../coalition">Coalition</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../team">Team</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="mainNav">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../">
+				<img src="../assets/icons/impact_labs_white.svg"/>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../fellowship">Fellowship</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../summit">Summit</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../coalition">Coalition</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../team">Team</a>
+				</li>
+				<li class="nav-item">
+              		<a class="nav-link" target="_blank" href="https://medium.com/impact-labs">Blog</a>
+            	</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
 
   <section data-aos="fade-up">
     <div class="container">
       <div class="row pb-5 mb-5">
-        <div class="col-4 my-auto">
-          <img class="mb-5" src="../assets/illustrations/faq.svg" />
+        <div class="d-none d-md-inline col-md-4 my-auto">
+          <img src="../assets/illustrations/faq.svg" />
         </div>
-        <div class="col-8 pl-5">
-          <h1 class="display-4 text-primary">Frequently Asked Questions</h1>
+        <div class="col-8 pl-md-5">
+          <h1 class="text-primary">Frequently Asked Questions</h1>
         </div>
       </div>
       <div class="row">
@@ -74,11 +61,11 @@
           <div class="card mb-5 border-0">
             <div class="card-header border-0 bg-transparent" id="headingOne">
               <span>
-                <h1 class="panel-title">
+                <h2 class="panel-title">
                   <a class="btn-link collapsed accordion-toggle pr-5" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Impact Labs
                   </a>
-                </h1>
+                </h2>
               </span>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -109,11 +96,11 @@
           <div class="card mb-5 border-0">
             <div class="card-header border-0 bg-transparent" id="headingTwo">
               <span>
-                <h1 class="panel-title">
+                <h2 class="panel-title">
                   <a class="btn-link collapsed accordion-toggle pr-5" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                    The Impact Summit
                  </a>
-               </h1>
+               </h2>
              </span>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -128,11 +115,11 @@
           <div class="card mb-5 border-0">
             <div class="card-header border-0 bg-transparent" id="headingThree">
               <span>
-                <h1 class="panel-title">
+                <h2 class="panel-title">
                   <a class="btn-link collapsed accordion-toggle pr-5" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     The Impact Coalition
                   </a>
-                </h1>
+                </h2>
               </span>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
@@ -151,15 +138,15 @@
 </section>
 
 <footer>
-  <img src="../assets/footer.svg" />
-  <p class="text-center text-white bg-primary my-0">
-    Questions, Comments, Concerns?
+	<img src="../assets/footer.svg" />
+	<p class="text-center text-white bg-primary my-0">
+		Questions, Comments, Concerns?
 
-    Email <a href="mailto:team@theimpactsummit.org">team@theimpactsummit.org</a> or
-      head over to our <a href="../faq">FAQs</a>
+		Email <a href="mailto:team@theimpactsummit.org">team@theimpactsummit.org</a> or
+		head over to our <a href="../faq">FAQs</a>
 
-    Copyright &copy; Impact Labs 2019
-  </p>
+		Copyright &copy; Impact Labs 2019
+	</p>
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

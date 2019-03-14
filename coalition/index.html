@@ -7,6 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+	<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="../favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-config" content="../favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
     <title>Impact Labs - Coalition</title>
 
     <link href="../css/main.css" rel="stylesheet">
@@ -17,12 +27,11 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img style="height:2.5rem" class="pr-3 svg" src="../assets/icons/impact_labs_white.svg"/>
-			<b>Impact Labs</b>
-		</a>
+        <a class="navbar-brand" href="../">
+		  <img src="../assets/icons/impact_labs_white.svg"/>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+		  <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
@@ -33,13 +42,13 @@
               <a class="nav-link" href="../summit">Summit</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="./">Coalition</a>
+              <a class="nav-link" href="../coalition">Coalition</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../faq">FAQ</a>
+              <a class="nav-link" target="_blank" href="https://medium.com/impact-labs">Blog</a>
             </li>
           </ul>
         </div>
@@ -47,76 +56,82 @@
     </nav>
 
     <header data-aos="fade-up" style="background-image: url('../assets/images/coalition.png'); background-size: cover; background-repeat: no-repeat; height:100vh; background-position:top;">
-      <div class="jumbotron container">
-        <div class="row mx-auto justify-content-end">
-          <div class="col-md-8 col-12 pl-md-5">
-            <h1 class="display-3 text-primary">The Impact Coalition</h1>
-            <p class="lead">
-              We match you with a company 
-              that truly makes a difference.
-            </p>
-          </div>
+      <div class="container-fluid">
+        <div class="row" style="padding-top:30vh">
+			<div class="col-1 col-md-6"></div>
+			<div class="col-10 col-md-4">
+				<h1>The Impact Coalition</h1>
+				<p class="lead">We match you with a company 
+					that truly makes a difference.
+				</p>
+			</div>
+			<div class="col-1 col-md-2"></div>
         </div>
       </div>
     </header>
 
-    <section class="pb-0" data-aos="fade-left">
+    <section class="pb-0" data-aos="fade-up">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-12 pl-md-5 justify-content-start">
-            <h5> students </h5>
-            <h1>Find an internship or a full-time role as an engineer</h1>
-            <p class="lead pr-5">
-              Creating a strong community at the intersection of technology and social good by connecting computer science students with seasoned social entrepreneurs, meaningful career opportunities, and financial capital to ignite their ideas.</p>
+          <div class="col-md-9 col-12 pr-3">
+            <h3 class="text-secondary"> students </h3>
+            <h2>Find an internship or a full-time role as an engineer</h2>
+            <p class="lead">Creating a strong community at the intersection of technology and social good by connecting computer science students with seasoned social entrepreneurs,
+				
+				 meaningful career opportunities, and financial capital to ignite their ideas
+
+			</p>
           </div>
-          <div class="col-md-4 col-12 px-5 justify-content-end">
-            <img src="../assets/illustrations/find_an_internship.svg"/>
+          <div class="ill col-md-3 col-12 mt-5 mb-5 mb-md-0 text-center">
+            <img width="300px" src="../assets/illustrations/find_an_internship.svg"/>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-0" data-aos="fade-right">
+    <section class="py-0" data-aos="fade-up">
       <img class="accent d-none d-md-inline" style="width: 100px; position:relative; bottom:50px; left: 100px;" src="../assets/bolt.svg" />
-      <img style="width: 80vw; margin-top:200px; left:0; position:absolute; z-index: -1;" src="../assets/blob.svg" />
+      <img class="blob" style="width: 80vw; margin-top:200px; left:0; position:absolute; z-index: -1;" src="../assets/blob.svg" />
 
       <div class="container">
         <div class="row py-5">
           <div class="col-md-4 col-12"></div>
-          <h1 class="pb-5">The 3 Step Process</h1>
+		  <div class="col-md-8 col-12">
+			  <h2>The 3 Step Process</h2>
+		  </div>
         </div>
-        <div class="row py-md-5">
-          <div class="col-md-3 col-12 px-5">
-            <img src="../assets/icons/submit_an_app.svg" />
+        <div class="row mb-5">
+          <div class="col-md-3 col-12 mb-4 mb-md-0">
+            <img width="220px" class="ill" src="../assets/icons/submit_an_app.svg" />
           </div>
-          <div class="col-md-1 col-2 h-10 pt-5 justify-content-start">
-              <img src="../assets/coalition-1.svg" />
+          <div class="col-md-1 col-3 text-center">
+              <img width="50px" src="../assets/coalition-1.svg" />
           </div>
-          <div class="col-md-8 col-10 pt-5">
+          <div class="col-md-8 col-9">
             <h3 style="color: black">Submit an application</h3>
             <p>There are no official eligibility requirements, but the program is designed for those with dev experience. Round 1 applications close November 10th.</p>
           </div>
         </div>
-        <div class="row py-md-5 pt-5">
-          <div class="col-md-3 col-11 px-5">
-            <img src="../assets/icons/impact_labs_interview.svg" />
+        <div class="row mb-5">
+          <div class="col-md-3 col-12 mb-4 mb-md-0">
+            <img width="220px" class="ill" src="../assets/icons/impact_labs_interview.svg" />
           </div>
-          <div class="col-md-1 col-2 h-10 pt-5 justify-content-start">
-              <img src="../assets/coalition-2.svg" />
+          <div class="col-md-1 col-3 text-center">
+              <img width="50px" src="../assets/coalition-2.svg" />
           </div>
-          <div class="col-md-8 col-10 pt-5">
+          <div class="col-md-8 col-9">
             <h3 style="color: black">Impact Labs interview</h3>
             <p>If selected, you'll have the opportunity to interview with the Impact Labs team to determine your fit within the participating companies in the coalition.</p>
           </div>
         </div>
-        <div class="row py-md-5">
-          <div class="col-md-3 col-12 pt-5 px-5">
-            <img src="../assets/icons/company_interview_1.svg" />
+        <div class="row mb-5">
+          <div class="col-md-3 col-12 mb-4 mb-md-0">
+            <img width="220px" class="ill" src="../assets/icons/company_interview_1.svg" />
           </div>
-          <div class="col-md-1 col-2 h-10 pt-5 justify-content-start">
-              <img src="../assets/coalition-3.svg" />
+          <div class="col-md-1 col-3 text-center">
+              <img width="50px" src="../assets/coalition-3.svg" />
           </div>
-          <div class="col-md-8 col-10 pt-5">
+          <div class="col-md-8 col-9">
             <h3 style="color: black">Individual company interview</h3>
             <p>The last step: you'll select your top 5 preferences of the companies within the coalition and interview with them. Salary, start date, and role are all finalized at this time.</p>
           </div>
@@ -124,30 +139,60 @@
       </div>
     </section>
 
-    <section data-aos="fade-left">
+    <section data-aos="fade-up">
       <img class="accent d-none d-md-inline" style="height: 130px; width: 130px; position:relative; bottom:100px; left: 100px;" src="../assets/plus.svg" />
       <img class="accent d-none d-md-inline" style="width:100px; position: relative; top:600px; right:100px; float:right;" src="../assets/bolt.svg" />
 
       <div class="container">
         <div class="row">
-          <div class="col-md-8 pr-md-5 col-12 pb-5">
-            <h5> companies </h5>
-            <h1>Is your company addressing the UN Sustainable Development Goals? We want to help! </h1>
-            <p class="lead">
-            Please send an email to hello@impactlabs.io with the subject line "Coaltion Company" and we'll get back to you ASAP
+          <div class="col-md-9 col-12">
+            <h3 class="text-secondary">companies</h3>
+            <h2>Is your company addressing the UN Sustainable Development Goals? We want to help!</h2>
+            <p class="lead">Please send an email to hello@impactlabs.io with the subject line "Coaltion Company" and we'll get back to you ASAP
             ​</p>
-            <button type="button" class="btn btn-secondary">Contact us</button>
+            <button type="button" class="btn btn-secondary"><a href="mailto:hello@impactlabs.io">Contact Us</a></button>
           </div>
-          <div class="col-md-4 col-12 px-5 pt-5">
-            <img src="../assets/illustrations/coalition_company.svg" />
+          <div class="col-md-3 col-12 text-center">
+            <img width="300px" style="margin-top:150px" src="../assets/illustrations/coalition_company.svg" />
           </div>
         </div>
       </div>
     </section>
 
+	<section data-aos="fade-up">
+		<div class="container">
+			<h2 class="panel-toggle btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Impact Coaltion FAQs</h2>
+			<br/><br/>
+			<div class="collapse" id="collapseExample">
+				<div class="row card card-body">
+                  <div class="col-12 col-md-6">
+                    <h4>Why should I come?</h4>
+                    <p>So many reasons! We're building a community of ambitious, like-minded students who have the chance to connect with social entrepreneurs, mentors, career opportunities, and capital. We want you to leave the conference feeling like you took one giant step closer to your future at the intersection of tech and social good. Maybe that's because you won some prize money for a venture you've already been working on. Or maybe it's because you found your next internship. Or maybe it's because you made a best friend for the summer. Whatever it is, we want to be a part of making that possible!
+                    </p>
+                    <br/>
+                    <h4>What can I reasonably expect?</h4>
+                    <p>Lots of learning, lots of laughter, really kind people! Definitely a few late night conversations on life, the universe, and everything. And stickers. We'll have quite a few of those.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <h4>Why should I come?</h4>
+                    <p>So many reasons! We're building a community of ambitious, like-minded students who have the chance to connect with social entrepreneurs, mentors, career opportunities, and capital. We want you to leave the conference feeling like you took one giant step closer to your future at the intersection of tech and social good. Maybe that's because you won some prize money for a venture you've already been working on. Or maybe it's because you found your next internship. Or maybe it's because you made a best friend for the summer. Whatever it is, we want to be a part of making that possible!
+                    </p>
+                    <br/>
+                    <h4>What can I reasonably expect?</h4>
+                    <p>Lots of learning, lots of laughter, really kind people! Definitely a few late night conversations on life, the universe, and everything. And stickers. We'll have quite a few of those.
+                    </p>
+                  </div>
+                </div>
+              </div>
+			</div>
+		</div>
+	</section>
+
+	<!--
     <section>
       <div class="container">
-        <h1>Participating Organizations</h1>
+        <h2>Participating Organizations</h2>
         <div class="row">
           <div class="col-md-4 col-12"></div>
           <div class="col-md-4 col-12"></div>
@@ -155,24 +200,23 @@
         </div>
       </div>
     </section>
+	-->
 
-    <footer>
-        <img src="../assets/footer.svg" />
-        <p class="text-center text-white bg-primary my-0">
+    <footer data-aos="fade-up">
+		<img src="../assets/footer.svg" />
+        <p>
           Questions, Comments, Concerns?
-
-          Email <a href="mailto:team@theimpactsummit.org">team@theimpactsummit.org</a> or
-            head over to our <a href="../faq">FAQs</a>
-
+  
+          Email <a href="mailto:hello@impactlabs.io">hello@impactlabs.io</a>
+  
           Copyright &copy; Impact Labs 2019
         </p>
     </footer>
-
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/rotateaccents.js"></script>
-
   </body>
 
 </html>

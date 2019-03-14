@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var minifyCSS = require('gulp-minify-css');
 var browserSync = require('browser-sync').create();
-var pkg = require('./package.json');
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {
@@ -48,5 +49,7 @@ gulp.task('dev', ['browserSync'], function() {
 gulp.task('styles', function() {
     gulp.src('./css/*.scss')
         .pipe(sass().on('error', sass.logError))
+		.pipe(autoprefixer())
+		.pipe(minifyCSS())
         .pipe(gulp.dest('./css/'))
 });

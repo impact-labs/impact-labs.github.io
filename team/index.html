@@ -7,6 +7,16 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+	<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="../favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-config" content="../favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
 	<title>Impact Labs - Team</title>
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -44,46 +54,53 @@
 
 	<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="mainNav">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/">
-				<img style="height:2.5rem" class="svg pr-3" src="../assets/icons/impact_labs_white.svg"/>
-				<b>Impact Labs</b>
+			<a class="navbar-brand" href="../">
+				<img src="../assets/icons/impact_labs_white.svg"/>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="../fellowship">Fellowship</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../summit">Summit</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../coalition">Coalition</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="./">Team</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../faq">FAQ</a>
-					</li>
-				</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../fellowship">Fellowship</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../summit">Summit</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../coalition">Coalition</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="../team">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" target="_blank" href="https://medium.com/impact-labs">Blog</a>
+				</li>
+			</ul>
 			</div>
 		</div>
-	</nav>
+    </nav>
+
 
 	<section data-aos="fade-up">
-		<div class="container pb-5">
-			<div class="row pb-5 mx-auto">
-				<h1 class="display-3 text-primary">Meet the Team!</h1>
-				<p class="lead">
-					Impact Labs is a student-led organization. We're a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
-				</p>
+		<div class="container-fluid row mx-0">
+			<div class="col-0 col-md-2"></div>
+			<div class="col-12 col-md-8">
+				<h1>Meet the Team!</h1>
+				<div class="row mb-5">
+					<div class="col-0 col-sm-4"></div>
+					<div class="col-12 col-sm-8">
+						<p class="lead">Impact Labs is a student-led organization. We're a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
+						</p>
+					</div>
+				</div>
+				<div class="row m-0" id="team-members"></div>
 			</div>
-			<div class="row pt-5" id="team-members"></div>
+			<div class="col-0 col-md-2"></div>
 		</div>
 	</section>
+	
 
 
 	<div class="p-5">
@@ -101,9 +118,9 @@
 							<div class="modal-body">
 								<div class="row bio-row">
 									<div class="col-4 text-center">
-										<img class="bio-img mb-5 pr-3" />
+										<img class="bio-img mb-5" />
 									</div>
-									<div class="col-8">
+									<div class="col-8 pl-5">
 										<h3 class="bio-name"></h3>
 										<p class="font-italic"></p>
 										<p></p>
@@ -117,19 +134,17 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer data-aos="fade-up">
 		<img src="../assets/footer.svg" />
-		<p class="text-center text-white bg-primary my-0">
-			Questions, Comments, Concerns?
+        <p>
+          Questions, Comments, Concerns?
+  
+          Email <a href="mailto:hello@impactlabs.io">hello@impactlabs.io</a>
+  
+          Copyright &copy; Impact Labs 2019
+        </p>
+    </footer>
 
-			Email <a href="mailto:team@theimpactsummit.org">team@theimpactsummit.org</a> or
-			head over to our <a href="../faq">FAQs</a>
-
-			Copyright &copy; Impact Labs 2019
-		</p>
-	</footer>
-
-	
 	<script src="../vendor/jquery/jquery.min.js"></script>
 	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -234,7 +249,7 @@
 		];
 		var html = "";
 		$.each(data, function(key, person) {
-			html += '<a data-toggle="modal" class="team-modal col-md-4 col-12 text-center px-5 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '" role="' + person.role + '"> <div> <img class="mb-5" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.png" /> <h3>' + person.name + '</h3> <p class="lead">' + person.role + '</p> </div> </a>';
+			html += '<a data-toggle="modal" class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '" role="' + person.role + '"> <div> <img class="mb-2" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.png" /> <h3 class="text-dark">' + person.name + '</h3> <i class="lead">' + person.role + '</i> </div> </a>';
 		});
 		$('#team-members').html(html);
 
