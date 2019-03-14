@@ -78,7 +78,7 @@ a:hover {
 h1 {
 	font-size: 80px;
 	@include media-breakpoint-down(xs) {
-		font-size: 50px;
+		font-size: 15vw;
 	}
 }
 
