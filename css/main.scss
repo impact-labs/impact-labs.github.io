@@ -22,11 +22,10 @@ $grid-breakpoints: (
   xl: 962px
 ) !default;
 
-$spacer: 30px;
-
 $font-family-sans-serif: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $headings-font-family: "Overpass", $font-family-sans-serif;
 
+$spacer: 30px;
 $btn-font-weight: bold;
 $navbar-padding-x: $spacer*1.5;
 $navbar-nav-link-padding-x: $spacer;
@@ -308,11 +307,7 @@ footer {
 				}
 			}
 		}
-
-		.carousel-control-prev-icon svg {
-			fill: blue;
-		}
-
+		
 		.carousel-control-prev-icon {
 			margin-right: -100px;
 		}
