@@ -92,14 +92,13 @@ h3 {
 
 p {
 	font-size: 20px;
-  	white-space: pre-line;
 }
 
 @include media-breakpoint-down(lg) {
-  .ill {
-    margin-left: 0 !important;
-	margin-right: 0 !important;
-  }
+	.ill {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
 }
 
 @include media-breakpoint-down(md) {
@@ -135,8 +134,8 @@ nav {
 			color: rgba($white, .7) !important;
 		}
 		.nav-link:hover {
-		color: white !important;
-	}
+			color: white !important;
+		}
 	}
 	
 	.navbar-brand img {
@@ -195,7 +194,6 @@ footer {
 	.modal-header {
 		border: none;
 	}
-	
 }
 
 .team-modal {
@@ -323,7 +321,3 @@ footer {
 		margin-top: 125%; // this is terrible
 	}
 }
-
-
-
-
