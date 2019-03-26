@@ -61,12 +61,26 @@ $navbar-dark-color: white;
 @import "vendor/bootstrap/scss/modal";
 
 
+#scroll {
+	-webkit-animation: action 0.5s infinite alternate;
+	animation: action 0.5s infinite alternate;
+}
+@-webkit-keyframes action {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(-20px); }
+}
+@keyframes action {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(-20px); }
+}
+
+#scroll:hover {
+	cursor: pointer;
+}
+
 body {
 	overflow-x: hidden;
 	color: $black;
-	#scroll:hover {
-		cursor: pointer;
-	}
 }
 
 a:hover {
@@ -167,7 +181,7 @@ footer {
 		color: $success;
 	}
 	img {
-		margin-bottom: -100px;
+		margin-bottom: -2px;
 		height: 300px;
 		width: 100vw;
 	}
@@ -178,11 +192,15 @@ footer {
 }
 
 .blob {
-	opacity: 0.5;
-	max-width: 100%;
+	opacity: 0.7;
+}
+
+.modal-backdrop {
+	z-index: -1;
 }
 
 .modal {
+	width: 100%;
 	.close span {
 		font-size: 3em;
 		padding: 0 20px;
@@ -201,7 +219,11 @@ footer {
 		width: 100%;
 	}
 	h3 {
+		transition: color 0.2s;
 		margin:0;
+	}
+	h3:hover {
+		color: $success !important;
 	}
 }
 
@@ -238,11 +260,12 @@ footer {
 	white-space: normal;
 }
 
-.panel-toggle[aria-expanded="false"]:before {
-	content: "▶\00a0\00a0";
+.panel-toggle svg {
+	margin-top: -5px;
+	transition: 0.2s;
 }
-.panel-toggle[aria-expanded="true"]:before {
-	content: "▼\00a0\00a0";
+.panel-toggle[aria-expanded="true"] svg {
+	transform: rotate(90deg);
 }
 
 .btn:focus {outline:0 !important;}
