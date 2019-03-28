@@ -51,7 +51,6 @@
 </style>
 
 <body id="page-top">
-
 	<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="mainNav">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="../">
@@ -83,7 +82,7 @@
     </nav>
 
 
-	<section data-aos="fade-up">
+	<section data-aos="fade-up" class="pb-0 mt-5">
 		<div class="container-fluid row mx-0">
 			<div class="col-0 col-md-2"></div>
 			<div class="col-12 col-md-8">
@@ -95,7 +94,9 @@
 						</p>
 					</div>
 				</div>
-				<div class="row m-0" id="team-members"></div>
+				<div class="row pb-5" id="team-members"></div>
+				<h2 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h2><br/>
+				<button class="btn btn-secondary"><a href="mailto:hello@impactlabs.io">Tell us about yourself</a></button>
 			</div>
 			<div class="col-0 col-md-2"></div>
 		</div>
@@ -137,11 +138,11 @@
 	<footer data-aos="fade-up">
 		<img src="../assets/footer.svg" />
         <p>
-          Questions, Comments, Concerns?
-  
-          Email <a href="mailto:hello@impactlabs.io">hello@impactlabs.io</a>
-  
-          Copyright &copy; Impact Labs 2019
+			Questions, Comments, Concerns?
+			<br/>
+			Email <a href="mailto:hello@impactlabs.io">hello@impactlabs.io</a>
+			<br/><br/>
+			Copyright &copy; Impact Labs 2019
         </p>
     </footer>
 
@@ -249,7 +250,7 @@
 		];
 		var html = "";
 		$.each(data, function(key, person) {
-			html += '<a data-toggle="modal" class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '" role="' + person.role + '"> <div> <img class="mb-2" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.png" /> <h3 class="text-dark">' + person.name + '</h3> <i class="lead">' + person.role + '</i> </div> </a>';
+			html += '<a data-toggle="modal" class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '"> <div> <img class="mb-2" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.png" /> <h3 class="text-dark">' + person.name + '</h3> </div> </a>';
 		});
 		$('#team-members').html(html);
 
