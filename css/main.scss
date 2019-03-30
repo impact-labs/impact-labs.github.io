@@ -81,10 +81,26 @@ $navbar-dark-color: white;
 body {
 	overflow-x: hidden;
 	color: $black;
+	position: relative;
+}
+
+#line svg {
+	left:0;
+	top: 18%;
+	width: 120%;
+	left: -10%;
+	height: 82% !important;
+	position: absolute;
+	z-index: -3;
+	opacity: 0.5;
+}
+
+a {
+	transition: color 0.2s;
 }
 
 a:hover {
-	color:white;
+	color: $success;
 	text-decoration: none;
   	cursor: pointer;
 }
