@@ -170,11 +170,11 @@ header {
 footer {
 	text-align: center;
 	color: white;
+	
 	p {
 		padding-bottom: 100px;
-		padding-left: 50px;
-		padding-right: 50px;
 		margin: 0;
+		padding-top: 0;
 		background-color: $primary;
 	}
 	a {
