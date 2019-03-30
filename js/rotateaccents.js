@@ -1,5 +1,5 @@
 $(document).ready(function() {
-		AOS.init({
+	AOS.init({
 		offset: 200, // offset (in px) from the original trigger point
 		duration: 500, // values from 0 to 3000, with step 50ms
 		easing: 'ease-out', // default easing for AOS animations
@@ -11,5 +11,3 @@ $(document).ready(function() {
 		$('.accent').css({ transform: ' rotate(' + theta + 'rad)' });
 	});
 })
-
-
