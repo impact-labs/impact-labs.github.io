@@ -78,6 +78,11 @@ $navbar-dark-color: white;
 	cursor: pointer;
 }
 
+html { 
+	zoom: 80%;
+	zoom: 0.8;
+} // this is terrible
+
 body {
 	overflow-x: hidden;
 	color: $black;
@@ -85,8 +90,9 @@ body {
 }
 
 #line svg {
+	opacity: 0.5;
 	left:0;
-	top: 18%;
+	top: 10%;
 	width: 120%;
 	left: -10%;
 	height: 82% !important;
@@ -150,6 +156,7 @@ p, .lead {
 }
 
 .btn:hover {
+	color: white;
 	background-color: $success;
 }
 
@@ -198,7 +205,7 @@ footer {
 	img {
 		margin-bottom: -2px;
 		height: 300px;
-		width: 100vw;
+		width: 100%;
 	}
 }
 
