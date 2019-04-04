@@ -78,7 +78,7 @@
 		</div>
     </header>
 
-    <section  id="scrollTo">
+    <section id="scrollTo">
       <div class="container">
         <img class="accent d-none d-md-inline" style="width:120px; position: relative; float:right; bottom: 0;" src="./assets/bolt.svg" />
         <img class="accent d-none d-md-inline" style="width:130px; position: relative; top:540px;" src="./assets/plus.svg" />
@@ -237,7 +237,7 @@
 	<script>
 		$("#scroll").click(function() {
 			$([document.documentElement, document.body]).animate({
-				scrollTop: $("#scrollTo").offset().top
+				scrollTop: $("#scrollTo").offset().top + 'px'
 			}, 800);
 		});
 	</script>
