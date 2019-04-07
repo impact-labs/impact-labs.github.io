@@ -261,6 +261,10 @@ footer {
 		.carousel-item-prev {
 			display: flex;
 		}
+		.img-circle {
+			width: 100%;
+			border-radius: 360px;
+		}
 	}
 	.carousel-control-prev, .carousel-control-next {
 		opacity: 1;
