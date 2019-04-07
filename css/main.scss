@@ -84,8 +84,8 @@ html, body {
 }
 
 html { 
-	zoom: 80%;
-	zoom: 0.8;
+	zoom: 90%;
+	zoom: 0.9;
 } // this is terrible
 
 body {
@@ -187,6 +187,10 @@ nav {
 
 section {
 	padding: 150px 0;
+}
+
+.sponsors img {
+	padding: 25px 0;
 }
 
 header {
