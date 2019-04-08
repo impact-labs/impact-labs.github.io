@@ -234,9 +234,11 @@
     <script src="./js/rotateaccents.js"></script>
 	<script>
 		$("#scroll").click(function() {
-			$('body').animate({
+			$('html, body').css('overflow-x', 'visible').animate({
 				scrollTop: $("#scrollTo").offset().top
-			}, 800);
+			}, 800, function() {
+				$('html, body').css('overflow-x', 'hidden');
+			});
 		});
 	</script>
 	
