@@ -78,12 +78,9 @@ $navbar-dark-color: white;
 	cursor: pointer;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 html { 
+	max-width: 100%;
+    overflow-x: hidden;
 	zoom: 90%;
 	zoom: 0.9;
 } // this is terrible

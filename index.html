@@ -234,8 +234,8 @@
     <script src="./js/rotateaccents.js"></script>
 	<script>
 		$("#scroll").click(function() {
-			$([document.documentElement, document.body]).animate({
-				scrollTop: $("#scrollTo").offset().top + 'px'
+			$('body').animate({
+				scrollTop: $("#scrollTo").offset().top
 			}, 800);
 		});
 	</script>
