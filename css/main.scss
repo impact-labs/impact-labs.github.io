@@ -111,7 +111,7 @@ a {
 a:hover {
 	color: $success;
 	text-decoration: none;
-  	cursor: pointer;
+	cursor: pointer;
 }
 
 h1 {
@@ -191,6 +191,7 @@ section {
 
 .sponsors img {
 	padding: 25px 0;
+	width: 150px;
 }
 
 header {
@@ -200,7 +201,6 @@ header {
 footer {
 	text-align: center;
 	color: white;
-	
 	p {
 		padding-bottom: 100px;
 		margin: 0;

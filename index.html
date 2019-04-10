@@ -1,247 +1,271 @@
-<html>
+<!DOCTYPE html>
+  	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+		<link rel="manifest" href="./favicon/site.webmanifest">
+		<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="./favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="msapplication-config" content="./favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 
-  <head>
+		<meta name="title" content="Impact Labs">
+		<meta name="description" content="Impact Labs is an organization inspiring and empowering ambitious computer scientists to build a better world.">
+		<meta name="keywords" content="impact, fellowship, summit, coalition, labs, inspire, tech, social good, computer science, community, CS, organization, entrepreneur, skills, students, university">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="image" content="./assets/icons/impact_labs.svg">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-	<link rel="manifest" href="./favicon/site.webmanifest">
-	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="./favicon/favicon.ico">
-	<meta name="msapplication-TileColor" content="#2d89ef">
-	<meta name="msapplication-config" content="./favicon/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Impact Labs">
+		<meta name="twitter:description" content="Impact Labs is an organization inspiring and empowering ambitious computer scientists to build a better world.">
 
-    <title>Impact Labs</title>
+		<meta name="og:title" content="Impact Labs">
+		<meta name="og:description" content="Impact Labs is an organization inspiring and empowering ambitious computer scientists to build a better world.">
+		<meta name="og:url" content="https://www.impactlabs.io">
+		<meta name="og:site_name" content="Impact Labs">
+		<meta name="og:type" content="website">
+		<meta name="og:image" content="./assets/icons/impact_labs.svg">
 
-	<link href="./css/main.css" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<title>Impact Labs</title>
 
-  </head>
+		<link href="./css/main.css" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <body id="page-top">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137998785-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="mainNav">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./">
-		  <img src="./assets/icons/impact_labs_white.svg"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-			  <li class="nav-item active">
-              <a class="nav-link" href="./">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./fellowship">Fellowship</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./summit">Summit</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./coalition">Coalition</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./team">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="https://medium.com/impact-labs">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+			gtag('config', 'UA-137998785-1');
+		</script>
+	</head>
 
-    <header data-aos="fade-up">
+	<body id="page-top">
+
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="mainNav">
 		<div class="container-fluid">
-			<img class="blob" style="width:130%; min-width: 1000px; left:-30%; top:-60vh; height:200vh; position: absolute; z-index: -1" class="header_image" src="./assets/blob.svg" />
-			<div class="row" style="padding-top:25vh">
-				<div class="col-2"></div>
-				<div class="col-3 d-none d-md-inline">
-					<img class="ill" width="100%" src="./assets/icons/impact_labs.svg" />
-				</div>
-				<div class="col-8 col-md-4" style="margin-top:5%">
-					<h1 class="text-primary">Impact Labs</h1>
-					<p class="lead" style="max-width:90%">
-						Inspiring and empowering ambitious computer&nbsp;scientists to build a better world.
-					</p>
-					<div class="text-md-left text-center">
-						<img id="scroll" class="px-5 py-4" src="./assets/icons/arrow.svg" />
-					</div>
-				</div>
-				<div class="col-3"></div>
+			<a class="navbar-brand" href="./">
+			<img alt="Impact Logo" src="./assets/icons/impact_labs_white.svg"/>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				<a class="nav-link" href="./">Home</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./fellowship">Fellowship</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./summit">Summit</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./coalition">Coalition</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="./team">Team</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" target="_blank" href="https://medium.com/impact-labs">Blog</a>
+				</li>
+			</ul>
 			</div>
 		</div>
-    </header>
+		</nav>
 
-    <section id="scrollTo">
-      <div class="container">
-        <img class="accent d-none d-md-inline" style="width:120px; position: relative; float:right; bottom: 0;" src="./assets/bolt.svg" />
-        <img class="accent d-none d-md-inline" style="width:130px; position: relative; top:540px;" src="./assets/plus.svg" />
-        <div class="row">
-			<div class="col-12 col-md-9">
-				<h2 style="max-width: 90%">What is Impact Labs?</h2>
-				<p class="lead">
-					Impact Labs is an organization that provides greater access to opportunities at the intersection of technology and social good. We connect students to seasoned social entrepreneurs, meaningful career opportunities, and capital to help ignite their ideas.
-					<br/>
-					<br/>
-					This is accomplished through a suite of initiatives, detailed below.
+		<header data-aos="fade-up">
+			<div class="container-fluid">
+				<img alt="Blob" class="blob" style="width:130%; min-width: 1000px; left:-30%; top:-60vh; height:200vh; position: absolute; z-index: -1" class="header_image" src="./assets/blob.svg" />
+				<div class="row" style="padding-top:25vh">
+					<div class="col-2"></div>
+					<div class="col-3 d-none d-md-inline">
+						<img alt="Impact Labs" class="ill" width="100%" src="./assets/icons/impact_labs.svg" />
+					</div>
+					<div class="col-8 col-md-4" style="margin-top:5%">
+						<h1 class="text-primary">Impact Labs</h1>
+						<p class="lead" style="max-width:90%">
+							Inspiring and empowering ambitious computer&nbsp;scientists to build a better world.
+						</p>
+						<div class="text-md-left text-center">
+							<img alt="Scroll Down" id="scroll" class="px-5 py-4" src="./assets/icons/arrow.svg" />
+						</div>
+					</div>
+					<div class="col-3"></div>
+				</div>
+			</div>
+		</header>
+
+		<section id="scrollTo">
+		<div class="container">
+			<img alt="Bolt"  class="accent d-none d-md-inline" style="width:120px; position: relative; float:right; bottom: 0;" src="./assets/bolt.svg" />
+			<img alt="Plus" class="accent d-none d-md-inline" style="width:130px; position: relative; top:540px;" src="./assets/plus.svg" />
+			<div class="row">
+				<div class="col-12 col-md-9">
+					<h2 style="max-width: 90%">What is Impact Labs?</h2>
+					<p class="lead">
+						Impact Labs is an organization that provides greater access to opportunities at the intersection of technology and social good. We connect students to seasoned social entrepreneurs, meaningful career opportunities, and capital to help ignite their ideas.
+						<br/>
+						<br/>
+						This is accomplished through a suite of initiatives, detailed below.
+					</p>
+				</div>
+				<div class="col-12 col-md-3 pl-md-3 mt-5 text-center">
+					<img alt="What is Impact Labs?" width="280px" class="ill" src="./assets/illustrations/what_is_impact_labs.svg" />
+				</div>
+			</div>
+		</div>
+		</section>
+
+		<section class="bg-light px-sm-5" style="background: linear-gradient(rgba(15, 248, 166, 0.5), #FFFFFF)">
+		<div class="container-fluid" >
+			<div class="row mb-4 d-none d-md-flex">
+				<div class="col-4 text-center">
+					<img alt="Impact Fellowship" src="./assets/icons/impact_fellowship.svg" class="img-fluid"/>
+				</div>
+				<div class="col-4 text-center pt-2">
+					<img alt="Impact Summit" src="./assets/icons/impact_summit.svg" class="img-fluid"/>
+				</div>
+				<div class="col-4 text-center pt-4">
+					<img alt="Impact Coalition" src="./assets/icons/coalition.svg" class="img-fluid"/>
+				</div>
+			</div>
+			<div class="row">
+				<img alt="Impact Fellowship" class="my-4 ml-3 text-left d-md-none" src="./assets/icons/impact_fellowship.svg" class="img-fluid"/>
+				<div class="col-12 col-md-4 text-center px-md-4 mb-5 mb-md-0">
+					<div class="text-left">
+						<h2>The Impact Fellowship</h2>
+						<p class="lead">
+							The Impact Fellowship is a 2 week program for talented computer science students who are passionate about using their tech skills to make an impact.
+							<br/>
+							<br/>
+							Fellows take advanced software engineering workshops, study with amazing mentors, meet top leaders in the social impact space, and work in teams to create their own projects that address the UN Sustainable Development Goals.
+						</p>
+						<br/>
+						<div class="text-md-center">
+							<button type="button" class="btn btn-secondary"><a href="./fellowship/">Learn More</a></button>
+						</div>
+					</div>
+				</div>
+				<img alt="Imapct Summit" class="my-4 ml-3 d-md-none" src="./assets/icons/impact_summit.svg" class="img-fluid"/>
+				<div class="col-12 col-md-4 text-center px-md-4 mb-5 mb-md-0">
+					<div class="text-left">
+						<h2>The Impact Summit</h2>
+						<p class="lead">
+							Over the course of the summer, The Impact Summit unites students who are passionate about technology and social impact, while connecting them with social entrepreneurs, civic activists, and thought leaders who are leveraging technology for the common good.
+							<br/>
+							<br/>
+							Applications to attend any or all of the events are open now!
+						</p>
+						<br/>
+						<div class="text-md-center">
+							<button type="button" class="btn btn-secondary"><a href="./summit/">Learn More</a></button>
+						</div>
+					</div>
+				</div>
+				<img alt="Impact Coalition" class="my-4 ml-3 d-md-none" src="./assets/icons/coalition.svg" class="img-fluid"/>
+				<div class="col-12 col-md-4 text-center px-md-4 mb-5 mb-md-0">
+					<div class="text-left">
+						<h2>The Impact Coalition</h2>
+						<p class="lead text-left">
+							The Impact Coalition matches talented and enthusiastic computer scientists with high-impact startups, mid-sized social enterprises, and NGOs that are actively seeking interns and full time engineers. Think of it as the Common App for social startups: One application - over 30 participating organizations.	
+						</p>
+						<br/>
+						<div class="text-md-center">
+							<button type="button" class="btn btn-secondary"><a href="./coalition/">Learn More</a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-0 pt-md-5">
+		<img alt="Plus" class="accent d-none d-md-inline" style="width:130px; position:relative; top:-100px; right:100px; float:right;" src="./assets/plus.svg" />
+		<div class="container" >
+			<div class="row">
+			<div class="col-12 col-md-4 mb-4 mb-md-0 text-center">
+				<img alt="Team" class="ill" style="margin-left: -120px; max-width: 400px" src="./assets/illustrations/team.svg" />
+			</div>
+			<div class="col-12 col-md-8">
+				<h2 style="max-width: 80%">Get to know the team!</h2>
+				<p class="lead">							
+					The idea for Impact Labs started in a dorm room and the vision quickly spread to colleges across the world. Meet the crew that’s turning that vision into a reality!
 				</p>
-     		</div>
-			<div class="col-12 col-md-3 pl-md-3 mt-5 text-center">
-				<img width="280px" class="ill" src="./assets/illustrations/what_is_impact_labs.svg" />
+				<br/>
+				<button type="button" class="btn btn-secondary"><a href="./team/">Meet the Team</a></button>
 			</div>
-      	</div>
-      </div>
-    </section>
-
-    <section class="bg-light px-sm-5" style="background: linear-gradient(rgba(15, 248, 166, 0.5), #FFFFFF)">
-      <div class="container-fluid" >
-		<div class="row mb-4 d-none d-md-flex">
-			<div class="col-4 text-center">
-				<img src="./assets/icons/impact_fellowship.svg" class="img-fluid"/>
-			</div>
-			<div class="col-4 text-center pt-2">
-				<img src="./assets/icons/impact_summit.svg" class="img-fluid"/>
-			</div>
-			<div class="col-4 text-center pt-4">
-				<img src="./assets/icons/coalition.svg" class="img-fluid"/>
 			</div>
 		</div>
-        <div class="row">
-			<img class="my-4 ml-3 text-left d-md-none" src="./assets/icons/impact_fellowship.svg" class="img-fluid"/>
-			<div class="col-12 col-md-4 text-center px-md-4 mb-5 mb-md-0">
-				<div class="text-left">
-					<h2>The Impact Fellowship</h2>
-					<p class="lead">
-						The Impact Fellowship is a 2 week program for talented computer science students who are passionate about using their tech skills to make an impact.
-						<br/>
-						<br/>
-						Fellows take advanced software engineering workshops, study with amazing mentors, meet top leaders in the social impact space, and work in teams to create their own projects that address the UN Sustainable Development Goals.
-					</p>
-					<br/>
-					<div class="text-center">
-						<button type="button" class="btn btn-secondary"><a href="./fellowship/">Learn More</a></button>
+		</section>
+
+		<section class="pt-0 mt-0" >
+			<!-- Begin Mailchimp Signup Form -->
+			<div id="mc_embed_signup" class="text-center">
+				<h2>Subscribe!</h2><br/>
+				<form action="https://impactlabs.us19.list-manage.com/subscribe/post?u=e271c51cea784ba1c111d990e&amp;id=90db606254" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+						<div class="mc-field-group" >
+							<input placeholder="Enter your email address" class="w-md-5" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"/>
+						</div>
+						
+						<div class="clear">
+							<input class="btn btn-secondary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
+						</div>
+
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>
+
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e271c51cea784ba1c111d990e_90db606254" tabindex="-1" value=""></div>
+
+						
 					</div>
-				</div>
+				</form>
 			</div>
-			<img class="my-4 ml-3 d-md-none" src="./assets/icons/impact_summit.svg" class="img-fluid"/>
-			<div class="col-12 col-md-4 text-center px-md-4 mb-5 mb-md-0">
-				<div class="text-left">
-					<h2>The Impact Summit</h2>
-					<p class="lead">
-						Over the course of the summer, The Impact Summit unites students who are passionate about technology and social impact, while connecting them with social entrepreneurs, civic activists, and thought leaders who are leveraging technology for the common good.
-						<br/>
-						<br/>
-						Applications to attend any or all of the events are open now!
-					</p>
+
+			<!--End mc_embed_signup-->
+		</section>
+
+		<footer>
+			<img alt="Footer" src="./assets/footer.svg" />
+		<p>
+					Questions, Comments, Concerns?
 					<br/>
-					<div class="text-center">
-						<button type="button" class="btn btn-secondary"><a href="./summit/">Learn More</a></button>
-					</div>
-				</div>
-			</div>
-			<img class="my-4 ml-3 d-md-none" src="./assets/icons/coalition.svg" class="img-fluid"/>
-			<div class="col-12 col-md-4 text-center px-md-4 mb-5 mb-md-0">
-				<div class="text-left">
-					<h2>The Impact Coalition</h2>
-					<p class="lead text-left">
-						The Impact Coalition matches talented and enthusiastic computer scientists with high-impact startups, mid-sized social enterprises, and NGOs that are actively seeking interns and full time engineers. Think of it as the Common App for social startups: One application - over 30 participating organizations.	
-					</p>
+					Reach out to <a target="_blank" href="mailto:hello@impactlabs.io">hello@impactlabs.io</a>
 					<br/>
-					<div class="text-center">
-						<button type="button" class="btn btn-secondary"><a href="./coalition/">Learn More</a></button>
-					</div>
-				</div>
-			</div>
-      	</div>
-    </section>
-
-    <section class="pt-0 pt-md-5">
-      <img class="accent d-none d-md-inline" style="width:130px; position:relative; top:-100px; right:100px; float:right;" src="./assets/plus.svg" />
-      <div class="container" >
-        <div class="row">
-          <div class="col-12 col-md-4 mb-4 mb-md-0 text-center">
-            <img class="ill" style="margin-left: -120px; max-width: 400px" src="./assets/illustrations/team.svg" />
-          </div>
-          <div class="col-12 col-md-8">
-            <h2 style="max-width: 80%">Get to know the team!</h2>
-            <p class="lead">							
-				The idea for Impact Labs started in a dorm room and the vision quickly spread to colleges across the world. Meet the crew that’s turning that vision into a reality!
-			</p>
-			<br/>
-			<button type="button" class="btn btn-secondary"><a href="./team/">Meet the Team</a></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-	<section class="pt-0 mt-0" >
-		<!-- Begin Mailchimp Signup Form -->
-		<div id="mc_embed_signup" class="text-center">
-			<h2>Subscribe!</h2><br/>
-			<form action="https://impactlabs.us19.list-manage.com/subscribe/post?u=e271c51cea784ba1c111d990e&amp;id=90db606254" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div id="mc_embed_signup_scroll">
-					<div class="mc-field-group" >
-						<input placeholder="Enter your email address" class="w-md-5" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"/>
-					</div>
-					
-					<div class="clear">
-						<input class="btn btn-secondary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
-					</div>
-
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>
-
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e271c51cea784ba1c111d990e_90db606254" tabindex="-1" value=""></div>
-
-					
-				</div>
-			</form>
-		</div>
-
-		<!--End mc_embed_signup-->
-	</section>
-
-	<footer >
-		<img src="./assets/footer.svg" />
-      <p>
-				Questions, Comments, Concerns?
-				<br/>
-				Reach out to <a target="_blank" href="mailto:hello@impactlabs.io">hello@impactlabs.io</a>
-				<br/>
-				<br/>
-				Move purposefully and fix things. 
-				<br/>
-				<br/>
-				Copyright &copy; Impact Labs 2019
-      </p>
-    </footer>
-	
-	<script src="./vendor/jquery/jquery.min.js"></script>
-	<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/rotateaccents.js"></script>
-	<script>
-		$("#scroll").click(function() {
-			$('html, body').css('overflow-x', 'visible').animate({
-				scrollTop: $("#scrollTo").offset().top
-			}, 800, function() {
-				$('html, body').css('overflow-x', 'hidden');
+					<br/>
+					Move purposefully and fix things. 
+					<br/>
+					<br/>
+					Copyright &copy; Impact Labs 2019
+		</p>
+		</footer>
+		
+		<script src="./vendor/jquery/jquery.min.js"></script>
+		<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="./js/rotateaccents.js"></script>
+		<script>
+			$("#scroll").click(function() {
+				$('html, body').css('overflow-x', 'visible').animate({
+					scrollTop: $("#scrollTo").offset().top
+				}, 800, function() {
+					$('html, body').css('overflow-x', 'hidden');
+				});
 			});
-		});
-	</script>
-	
-  </body>
+		</script>
+		
+	</body>
 
 </html>
