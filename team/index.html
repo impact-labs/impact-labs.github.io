@@ -129,7 +129,7 @@
 					</div>
 					<div class="row pb-5" id="team-members"></div>
 					<h2 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h2><br/>
-					<button class="btn btn-secondary"><a target="_blank" href="https://airtable.com/shrkcs1sY3lP30ZvD ">Tell us about yourself</a></button>
+					<a class="btn btn-secondary" role="button" aria-pressed="true" target="_blank" href="https://airtable.com/shrkcs1sY3lP30ZvD ">Tell us about yourself</a>
 				</div>
 				<div class="col-0 col-md-2"></div>
 			</div>
@@ -259,7 +259,7 @@
 			];
 			var html = "";
 			$.each(data, function(key, person) {
-				html += '<a data-toggle="modal" class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '"> <div> <img alt="' + person.name + '" class="mb-2" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.png" /> <h3 class="text-dark">' + person.name + '</h3> </div> </a>';
+				html += '<a data-toggle="modal" class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '"> <div> <img alt="' + person.name + '" class="mb-2" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.jpg" /> <h3 class="text-dark">' + person.name + '</h3> </div> </a>';
 			});
 			$('#team-members').html(html);
 
@@ -272,7 +272,7 @@
 				$($('#modal-popup .modal-body p')[0]).html(getAttr(event, 'role'));
 				$($('#modal-popup .modal-body p')[1]).html(getAttr(event, 'body'));
 				$('#modal-popup .modal-body .bio-name').html(name);
-				var src = '../assets/teamphotos/' + name.split(" ")[0] + '_' + name.split(" ")[1] + '.png'
+				var src = '../assets/teamphotos/' + name.split(" ")[0] + '_' + name.split(" ")[1] + '.jpg'
 				$('#modal-popup .modal-body .bio-img').attr('src', src);
 			})
 		</script>
