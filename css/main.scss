@@ -103,6 +103,17 @@ body {
   position: relative;
 }
 
+#fellowship-schedule-table {
+  font-size: 20px;
+  td {
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+  td:first-of-type {
+    font-weight: bolder;
+  }
+}
+
 #line img {
   opacity: 0.5;
   left: 0;
