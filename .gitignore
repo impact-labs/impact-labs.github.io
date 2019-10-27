@@ -1,2 +1,4 @@
 node_modules/
 nvm
+.vscode/
+.DS_Store
