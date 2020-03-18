@@ -119,6 +119,10 @@ a {
 	transition: color 0.2s;
 }
 
+a.call-to-action {
+	margin-top: 10px;
+}
+
 a:hover {
 	color: $success;
 	text-decoration: none;
@@ -138,6 +142,10 @@ h2 {
 
 h3 {
 	font-size: 35px;
+}
+
+p {
+	margin-bottom: 1em;
 }
 
 p, .lead {
