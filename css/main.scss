@@ -213,11 +213,9 @@ header {
 footer {
 	text-align: center;
 	color: white;
-	p {
-		padding-bottom: 100px;
-		margin: 0;
-		padding-top: 0;
+	.content {
 		background-color: $primary;
+		padding-bottom: 100px;
 	}
 	a {
 		color: $success;
