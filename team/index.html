@@ -264,11 +264,27 @@
 					"body": "I watched HBO's Silicon Valley then read the Autobiography of Malcolm X and pretty much immediately after I started asking myself if tech was a force for good in the world and haven't really stopped asking. Really into empowering tech communities with Major League Hacking Impact Labs, and the Rutgers University Undergraduate Student Alliance of Computer Scientists, really into Web Development and DevOps when I'm not empowering communities. I miss PBS Idea Channel a lot."
 				}
 			];
-			var html = "";
-			$.each(data, function(key, person) {
-				html += '<a data-toggle="modal" class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-target="#modal-popup" body="' + person.body + '" name="' + person.name + '"> <div> <img alt="' + person.name + '" class="mb-2" src="../assets/teamphotos/' + person.name.split(" ")[0] + '_' + person.name.split(" ")[1] + '.jpg" /> <h3 class="text-dark">' + person.name + '</h3> </div> </a>';
-			});
-			$('#team-members').html(html);
+
+			$('#team-members').append($.map(data, function(person) {
+				var link = $('<a>', {
+					class: 'team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5',
+					'data-toggle': 'modal',
+					'data-target': '#modal-popup',
+					body: person.body,
+					name: person.name
+				});
+				var innerContainer = $('<div>');
+				var image = $('<img>', {
+					alt: person.name,
+					src: '../assets/teamphotos/' + person.name.replace(' ', '_') + '.jpg'
+				});
+				var header = $('<h3>', { class: 'text-dark mt-3' })
+					.text(person.name);
+
+				link.append(innerContainer);
+				innerContainer.append(image, header);
+				return link;
+			}));
 
 			function getAttr(event, attr) {
 				return $(event.currentTarget).attr(attr);
