@@ -340,7 +340,7 @@ footer {
 
 @include media-breakpoint-up(md) {
 	.carouselSliding {
-		padding: 0 200px;
+		padding: 0 50px;
 		.carousel-inner {
 			.carousel-item-right.active,
 			.carousel-item-next {
@@ -371,12 +371,25 @@ footer {
 		}
 		
 		.carousel-control-prev-icon {
-			margin-right: -100px;
+			margin-right: 100px;
 		}
 
 		.carousel-control-next-icon {
-			margin-left: -100px;
+			margin-left: 100px;
 		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.carouselSliding {
+		padding: 0 200px;
+
+	.carousel-control-prev-icon {
+		margin-right: -100px;
+	}
+	.carousel-control-next-icon {
+		margin-left: -100px;
+	}
 	}
 }
 
