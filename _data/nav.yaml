@@ -1,0 +1,18 @@
+- title: Home
+  url: /
+
+- title: Fellowship
+  url: /fellowship
+
+- title: Summit
+  url: /summit
+
+- title: Coalition
+  url: /coalition
+
+- title: Team
+  url: /team
+
+- title: Blog
+  url: https://medium.com/impact-labs
+  target: true

@@ -1,4 +1,6 @@
-node_modules/
-nvm
-.vscode/
+_site/
+.sass-cache/
+.bundle/
 .DS_Store
+.vscode/
+.jekyll-metadata

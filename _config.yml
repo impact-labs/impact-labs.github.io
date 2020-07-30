@@ -1,0 +1,15 @@
+url: "https://www.impactlabs.io/"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "main"
+
+sass:
+  style: compressed
+  sass_dir: _sass

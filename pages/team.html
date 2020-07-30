@@ -1,0 +1,64 @@
+---
+title: Impact Labs - Team
+permalink: /team
+---
+
+<section data-aos="fade-up" class="pb-0 mt-md-5 mt-0">
+	<div class="container-fluid row mx-0">
+		<div class="col-0 col-md-2"></div>
+		<div class="col-12 col-md-8">
+			<h1>Meet the Team!</h1>
+			<div class="row mb-5">
+				<div class="col-0 col-sm-4"></div>
+				<div class="col-12 col-sm-8">
+					<p class="lead">Impact Labs is a student-led organization. We're a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
+					</p>
+				</div>
+			</div>
+			<div class="row pb-5" id="team-members">
+				{% for member in site.data.members %}
+					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
+						<div>
+							<img src="/assets/images/teamphotos/{{member.image}}" alt="{{member.name}}" />
+							<h3 class="text-dark mt-3">{{member.name}}</h3>
+						</div>
+					</a>
+				{% endfor %}
+			</div>
+			<h2 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h2><br/>
+			<a class="btn btn-secondary" role="button" aria-pressed="true" target="_blank" href="https://airtable.com/shrkcs1sY3lP30ZvD ">Tell us about yourself</a>
+		</div>
+		<div class="col-0 col-md-2"></div>
+	</div>
+</section>
+
+<div class="p-5">
+	<!-- Modal Content -->
+	<div class="modal fade" id="modal-popup" role="dialog" aria-hidden="true">
+		<div class="modal-dialog full-modal">
+			<div class="vertical-alignment-helper">
+				<div class="modal-dialog vertical-align-center">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a class="close" data-dismiss="modal" aria-hidden="true">
+								<span aria-hidden="true">&times;</span>
+							</a>
+						</div>
+						<div class="modal-body">
+							<div class="row bio-row">
+								<div class="col-12 col-md-4 text-center">
+									<img alt="Team Member Photo" class="bio-img mb-5" />
+								</div>
+								<div class="col-12 col-md-8 pl-md-5 pb-5">
+									<h3 class="bio-name"></h3>
+									<p class="font-italic"></p>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
