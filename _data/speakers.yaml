@@ -1,0 +1,14 @@
+- name: Kathy Pham
+  title: Cofounder
+  org: Mozilla’s Fix The Internet Incubator
+  image_url: Kathy_Pham.jpg
+
+- name: Peter Singer
+  title: Ethicist and Activist
+  org: Princeton University
+  image_url: Peter_Singer.jpg
+
+- name: Afua Bruce
+  title: Director of Engineering
+  org: New America
+  image_url: Afua_Bruce.jpg

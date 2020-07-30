@@ -1,4 +1,2 @@
-node_modules/
-nvm
-.vscode/
-.DS_Store
+_site/
+.sass-cache

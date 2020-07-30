@@ -2,21 +2,29 @@
 
 ## Setup
 
-0.  Install node 10x 
-    ```bash
-    # One way to achieve this
-    npm install -g n
-    sudo n 10.19.0
-    ```
-0.  Setup node environment. Run these commands at `/path/to/impact-labs.github.io`
-    ```bash
-    npm install
-    sudo npm install --global gulp-cli
-    ```
-0. Starting up using `gulp`, our build system
-    ```bash
-    gulp dev
-    ```
+1.  Install jekyll
+2.  Run `bundle install`
+3.  Run `jekyll serve`
+
+# Layout
+The stuff that matters:
+```
+.
+├── _config.yml
+├── _data
+│   ├── members.yaml
+│   ├── nav.yaml
+│   └── speakers.yaml
+├── _includes
+├── _layouts
+├── _sass
+├── _site
+├── assets
+│   ├── css
+│   ├── images
+│   └── js
+└── pages
+```
 
 ## Acknowledgements
 
