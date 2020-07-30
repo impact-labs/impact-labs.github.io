@@ -42,23 +42,23 @@ $navbar-dark-toggler-border-color: white;
 $navbar-dark-color: white;
 
 //Needed
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
 
-@import "bootstrap/scss/type";
-@import "bootstrap/scss/grid";
-@import "bootstrap/scss/nav";
-@import "bootstrap/scss/navbar";
-@import "bootstrap/scss/utilities";
-@import "bootstrap/scss/jumbotron";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/button-group";
-@import "bootstrap/scss/transitions";
-@import "bootstrap/scss/carousel";
-@import "bootstrap/scss/modal";
+@import "bootstrap/type";
+@import "bootstrap/grid";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/utilities";
+@import "bootstrap/jumbotron";
+@import "bootstrap/buttons";
+@import "bootstrap/button-group";
+@import "bootstrap/transitions";
+@import "bootstrap/carousel";
+@import "bootstrap/modal";
 
 
 #scroll {

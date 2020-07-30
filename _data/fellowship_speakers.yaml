@@ -1,0 +1,33 @@
+# image_url is located at `/assets/images/speakers`
+# note: the first speaker must have active: true
+
+- name: Amy Nelson
+  title: CEO
+  org: Venture for America
+  image_url: Amy_Nelson.jpg
+  active: true
+
+- name: Penny Abeywardena
+  title: Commissioner
+  org: Intl. Affairs, NYC
+  image_url: Penny_Abeywardena.jpg
+
+- name: Daniel Gillmor
+  title: Senior Staff Technologist
+  org: ACLU
+  image_url: Daniel_Gillmor.jpg
+
+- name: Nancy Mond
+  title: CTO
+  org: DonorsChoose
+  image_url: Nancy_Mond.jpg
+
+- name: Yasmine Mustafa
+  title: Founder
+  org: ROAR for Good
+  image_url: Yasmine_Mustafa.jpg
+
+- name: Spencer Greenberg
+  title: Founder & CEO
+  org: Spark Wave
+  image_url: Spencer_Greenberg.jpg

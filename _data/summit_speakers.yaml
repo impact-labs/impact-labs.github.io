@@ -1,7 +1,11 @@
+# image_url is located at `/assets/images/speakers`
+# note: the first speaker must have active: true
+
 - name: Kathy Pham
   title: Cofounder
   org: Mozilla’s Fix The Internet Incubator
   image_url: Kathy_Pham.jpg
+  active: true
 
 - name: Peter Singer
   title: Ethicist and Activist

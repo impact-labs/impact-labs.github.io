@@ -10,7 +10,11 @@
          <ul class="navbar-nav ml-auto">
             {% for item in site.data.nav %}
                <li class="nav-item {% if item.url == page.url %}active{% endif %}">
-                  <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+                  <a class="nav-link" href="{{ item.url }}"
+                     {% if item.target %} target="_blank" {% endif %}
+                  >
+                     {{ item.title }}
+                  </a>
                </li>
             {% endfor %}
          </ul>

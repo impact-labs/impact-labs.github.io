@@ -13,5 +13,9 @@
 - title: Team
   url: /team
 
+- title: Summit Live
+  url: /summit-live
+
 - title: Blog
   url: https://medium.com/impact-labs
+  target: true

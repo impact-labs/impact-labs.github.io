@@ -20,6 +20,11 @@ sass:
   style: compressed
   sass_dir: _sass
 
+collections_dir: _data
+collections:
+  - summit
+  
+
 compress_images:
   images_path: "/assets/images/**/*.{gif,png,jpg,jpeg}"
   imageoptim:

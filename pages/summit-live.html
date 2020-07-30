@@ -1,0 +1,31 @@
+---
+title: Summit
+permalink: /summit-live
+---
+
+<header data-aos="fade-up" style="background: linear-gradient(rgba(15, 248, 166, 0.5), #FFFFFF)">
+	<div class="container-fluid">
+		<div class="row" style="padding-top:30vh">
+            <h1 class="text-primary">The 2020 Impact Summit</h1>
+            <p>
+                An exploration of technology and the future of global development.
+            </p>
+            <p>
+                August 14-16, 2020
+            </p>
+            <p>
+                Registration for the 2020 Virtual Impact Summit is now open!
+            </p>
+            <a class="btn btn-warning mt-3" role="button" aria-pressed="true" target="_blank" href="https://airtable.com/shrYtyHTCeHsdZszH">Register here</a>
+		</div>
+		<div class="col-1 col-md-2"></div>
+	</div>
+</header>
+
+<section>
+    {% for post in site.summit %}
+        <li>
+            {{post.title}}
+        </li>
+    {% endfor %}
+</section>

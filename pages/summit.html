@@ -86,8 +86,9 @@ permalink: /summit
 		</div>
 	<div id="carouselSliding" class="container-fluid carouselSliding carousel slide" data-ride="carousel">
 		<div class="carousel-inner" role="listbox">
-			{% for speaker in site.speakers %}
-				<div class="active carousel-item text-center">
+			
+			{% for speaker in site.data.summit_speakers %}
+				<div class="{% if speaker.active %}active{% endif %} carousel-item text-center">
 					<div class="col-12 col-md-4">
 						<div class="card border-white text-center">
 							<img alt="{{ speaker.name }}" class="img-circle" src="/assets/images/speakers/{{ speaker.image_url }}">
@@ -104,7 +105,6 @@ permalink: /summit
 					</div>
 				</div>
 			{% endfor %}
-
 
 			<div class="carousel-item text-center">
 				<div class="col-12 col-md-4">
@@ -403,10 +403,3 @@ permalink: /summit
 		</div>
 	</div>
 </section>
-
-<script src="/assets/js/carousel.js"></script>
-<script>
-	$('#carouselSliding').carousel({
-	interval: 4000
-	})
-</script>
