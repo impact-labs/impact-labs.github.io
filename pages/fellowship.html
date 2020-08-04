@@ -1,5 +1,5 @@
 ---
-title: Fellowship
+title: Impact Labs - Fellowship
 permalink: /fellowship
 ---
 
@@ -106,13 +106,13 @@ permalink: /fellowship
 </section>
 
 <section class="container-fluid pt-0" >
-	<div id="carouselSliding" class="carouselSliding carousel slide" data-ride="carousel">
+	<div id="carouselSliding" class="carouselSliding carousel slide" data-interval="3000" data-ride="carousel">
 		<div class="carousel-inner" role="listbox">
 		{% for speaker in site.data.fellowship_speakers %}
 			<div class="{% if speaker.active %}active{% endif %} carousel-item text-center">
 				<div class="col-12 col-md-4">
 					<div class="card border-white text-center">
-						<img alt="{{ speaker.name }}" class="img-circle" src="/assets/images/speakers/{{ speaker.image_url }}">
+						<img alt="{{ speaker.name }}" class="img-circle" src="/assets/images/speakers/{{ speaker.image }}">
 						<div class="card-body ">
 							<p class="mt-3">
 								<b>{{ speaker.name }}</b>
@@ -159,7 +159,7 @@ permalink: /fellowship
 			<div class="col-12 col-md-4 mt-4 mt-md-0">
 				<h2>Build</h2>
 				<p class="lead">
-						During the two weeks, fellows work together in teams to create tech-driven social ventures that address the UN Sustainable Development Goals. The fellowship culminates in a pitch night with a panel of mentors and investors who can help the projects grow and thrive.
+					During the two weeks, fellows work together in teams to create tech-driven social ventures that address the UN Sustainable Development Goals. The fellowship culminates in a pitch night with a panel of mentors and investors who can help the projects grow and thrive.
 				</p>
 			</div>
 			<div class="col-0 col-md-4"></div>

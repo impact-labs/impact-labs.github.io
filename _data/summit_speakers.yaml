@@ -1,18 +1,53 @@
-# image_url is located at `/assets/images/speakers`
+# image is located at `/assets/images/speakers`
 # note: the first speaker must have active: true
-
-- name: Kathy Pham
-  title: Cofounder
-  org: Mozilla’s Fix The Internet Incubator
-  image_url: Kathy_Pham.jpg
-  active: true
-
-- name: Peter Singer
-  title: Ethicist and Activist
-  org: Princeton University
-  image_url: Peter_Singer.jpg
 
 - name: Afua Bruce
   title: Director of Engineering
   org: New America
-  image_url: Afua_Bruce.jpg
+  image: Afua_Bruce.jpg
+  active: true
+
+- name: Tim Salau
+  title: Mr. Future of Work
+  org: 
+  image: Tim_Salau.jpg
+
+- name: David Auerbach
+  title: Founder
+  org: Sanergy
+  image: David_Auerbach.jpg
+
+- name: Deborah Quazzo
+  title: Managing Director
+  org: GSV Ventures
+  image: Deborah_Quazzo.jpg
+
+- name: Joe Toscano
+  title: Founder
+  org: BEACON Trust Network
+  image: Joe_Toscano.jpg
+
+- name: Maren Bauer
+  title: Founder & Managing Partner
+  org: Fynd Ocean Ventures
+  image: Maren_Bauer.jpg
+
+- name: Bonnie Lei
+  title: Head of Partnerships
+  org: AI for Earth @Microsoft
+  image: Bonnie_Lei.jpg
+
+- name: Clementine Jacoby
+  title: Founder and Executive Director
+  org: Recidiviz.org
+  image: Clementine_Jacoby.jpg
+
+- name: Marina Nitze
+  title: Former CTO
+  org: US Dept. of Veteran Affairs
+  image: Marina_Nitze.jpg
+
+- name: Jenny Kleeman
+  title: Author
+  org: "Sex Robots and Vegan Meat"
+  image: Jenny_Kleeman.jpg

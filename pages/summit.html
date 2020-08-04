@@ -1,5 +1,5 @@
 ---
-title: Summit
+title: Impact Labs - Summit
 permalink: /summit
 ---
 
@@ -84,14 +84,13 @@ permalink: /summit
 			</div>
 			<div class="col-0 col-md-5"></div>
 		</div>
-	<div id="carouselSliding" class="container-fluid carouselSliding carousel slide" data-ride="carousel">
+	<div id="carouselSliding" class="container-fluid carouselSliding carousel slide" data-interval="3000" data-ride="carousel">
 		<div class="carousel-inner" role="listbox">
-			
 			{% for speaker in site.data.summit_speakers %}
 				<div class="{% if speaker.active %}active{% endif %} carousel-item text-center">
 					<div class="col-12 col-md-4">
 						<div class="card border-white text-center">
-							<img alt="{{ speaker.name }}" class="img-circle" src="/assets/images/speakers/{{ speaker.image_url }}">
+							<img alt="{{ speaker.name }}" class="img-circle" src="/assets/images/speakers/{{ speaker.image }}">
 							<div class="card-body ">
 								<p class="mt-3">
 									<b>{{ speaker.name }}</b>
@@ -105,165 +104,6 @@ permalink: /summit
 					</div>
 				</div>
 			{% endfor %}
-
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="Afua Bruce" class="img-circle" src="/assets/images/speakers/afua-bruce.jpg">
-						<div class="card-body ">
-							<p class="mt-3">
-								<b>Afua Bruce</b>
-								<br />
-								Director of Engineering
-								<br />
-								New America
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white">
-						<img alt="Tim Salau" class="img-circle" src="/assets/images/speakers/tim-salau.jpg">
-						<div class="card-body">
-							<p class="mt-3">
-								<b>Tim Salau</b>
-								<br />
-								Mr. Future of Work
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="David Auerbach" class="img-circle" src="/assets/images/speakers/david-auerbach.jpg">
-						<div class="card-body">
-							<p class="mt-3">
-								<b>David Auerbach</b>
-								<br />
-								Founder
-								<br />
-								Sanergy
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="Deborah Quazzo" class="img-circle" src="/assets/images/speakers/deborah-quazzo.jpg">
-						<div class="card-body ">
-							<p class="mt-3">
-								<b>Deborah Quazzo</b>
-								<br />
-								Managing Director
-								<br />
-								GSV Ventures
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="Joe Toscano" class="img-circle" src="/assets/images/speakers/joe-toscano.jpg">
-						<div class="card-body">
-							<p class="mt-3">
-								<b>Joe Toscano</b>
-								<br />
-								Founder
-								<br />
-								BEACON Trust Network
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="Maren Bauer" class="img-circle" src="/assets/images/speakers/maren-bauer.jpg">
-						<div class="card-body">
-							<p class="mt-3">
-								<b>Maren Bauer</b>
-								<br />
-								Founder & Managing Partner 
-								<br />
-								Fynd Ocean Ventures
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="Bonnie Lei" class="img-circle" src="/assets/images/speakers/bonnie-lei.jpg">
-						<div class="card-body">
-							<p class="mt-3">
-								<b>Bonnie Lei</b>
-								<br />
-								Head of Partnerships
-								<br />
-								AI for Earth @Microsoft
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="Clementine Jacoby" class="img-circle" src="/assets/images/speakers/clementine-jacoby.jpg">
-						<div class="card-body">
-							<p class="mt-3">
-								<b>Clementine Jacoby</b>
-								<br />
-								Founder and Executive Director
-								<br />
-								Recidiviz.org
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="Marina Nitze" class="img-circle" src="/assets/images/speakers/marina-nitze.jpg">
-						<div class="card-body">
-							<p class="mt-3">
-								<b>Marina Nitze</b>
-								<br />
-								Former CTO
-								<br />
-								US Dept. of Veteran Affairs
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item text-center">
-				<div class="col-12 col-md-4">
-					<div class="card border-white text-center">
-						<img alt="Jenny Kleeman" class="img-circle" src="/assets/images/speakers/jenny-kleeman.jpg">
-						<div class="card-body">
-							<p class="mt-3">
-								<b>Jenny Kleeman</b>
-								<br />
-								Author
-								<br />
-								"Sex Robots and Vegan Meat"
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselSliding" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon">

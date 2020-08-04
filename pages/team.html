@@ -1,5 +1,5 @@
 ---
-title: Team
+title: Impact Labs - Team
 permalink: /team
 ---
 
@@ -43,9 +43,12 @@ permalink: /team
 			</div>
 			<div class="row pb-5" id="team-members">
 				{% for member in site.data.members %}
-					<div>
-						<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup"></a>
-					</div>
+					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
+						<div>
+							<img src="/assets/images/teamphotos/{{member.image}}" alt="{{member.name}}" />
+							<h3 class="text-dark mt-3">{{member.name}}</h3>
+						</div>
+					</a>
 				{% endfor %}
 			</div>
 			<h2 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h2><br/>
@@ -85,114 +88,3 @@ permalink: /team
 		</div>
 	</div>
 </div>
-
-<script>
-	var data = [
-		{
-			"name": "Adi Melamed",
-			"body": "For about as long as I can remember (jk, just for the past few years) I've spent my time trying to figure out how to lead a meaningful life and create a more meaningful world. That has got me interested in Earl Grey tea, the Hitchhiker's Guide to the Galaxy, and building communities that inspire and empower others to lead more intentional and impactful lives. I am ALWAYS down to meet new people and talk about political institutions, college career decisions, and the interesting, beautiful quirks that make up the human condition. I'm always thinking about the future of human society."
-		},
-		{
-			"name": "Aaron Mayer",
-			"body": "There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!"
-		},
-		{
-			"name": "Ellie Czepiel",
-			"body": "I believe that every person reading this bio has the power to affect positive change in the world, and I want to help them figure out how! I first got involved with Impact Labs as a 2018 Fellow, and loved the people so much that I just had to stick around! When I’m not working on Impact, I’m usually striking up conversations with new people, scheming about new social impact side projects, going on runs, and trying to convince my friends to play obscure board games (Hanabi, anyone?)."
-		},
-		{
-			"name": "Nikhil Gupta",
-			"body": "The only thing I love more than tech are humans - we are a fascinating bunch, aren't we? Let's chat about intersections of philosophy, psychology, computer science, physics, and math!"
-		},
-		{
-			"name": "Derrek Chow",
-			"body": "I became interested in CS by making websites as a kid. I’ve dived deeper into tech since then but still find myself returning to what first inspired my passion and pursuing that opportunity here at Impact Labs. Beyond CS, I have a fascination with people and their perspectives. I like talking to people about their unique take on life and their interpretations of happiness and success. For work, I crave collaboration and creativity which is why I love working with the talented and inspiring individuals at Impact Labs. I also enjoy talking about where and what to eat, design, random music knowledge, and the beautiful city of Toronto."
-		},
-		{
-			"name": "Chelsea Dixon",
-			"body": "I’ve always been interested in computer science and technology but somewhere along the line I became interested in improving the world! I believe that everyone has the power to make positive change and make the systems and institutions that we think fall short in our society better. I am particularly focused on using technology to help address access to education and educational resources in developing countries such as my home country, Jamaica. You can probably find me having various existential crises, contemplating social and political institutions or napping!"
-		},
-		{
-			"name": "Ivanna Pena",
-			"body": "When I tell people I’m majoring in Computer Science and Social & Cultural Analysis, their reaction is usually “how do those fit together?” or “how did you come up with that?”. I think people have grown so accustomed to tech being attached to something negative, that they’ve overshadowed its ability to facilitate social change and propagate social good.I joined Impact Labs because of the enthusiasm everyone exhibits to using tech for good, along with their dedication to helping others do the same. Aside from Impact Labs, I love learning obscure parts of songs on the piano, solving my miniature Rubiks Cube, and roaming through the stacks at The Strand."
-		},
-		{
-			"name": "Zhixing Che",
-			"body": "Inspired by E. B. White’s famed quote, I think of my life as two complementary parts: a desire to improve (or save) the world, and a desire to enjoy (or savor) the world. I enjoy reading about networks, behavioral econ, and using technology to aid nonprofits on issues such as water access. Concurrently, I’m constantly enamored by the beauties of the world, and I devote time to painting, solo traveling, and reading. I’m excited by Impact Labs and its vision to bridge disparate disciplines and issues. I thrive in these intersections of nonprofit, tech, and art because they help me find ways to both save and savor."
-		},
-		{
-			"name": "James Wang",
-			"body": "For a long time, my biggest fear was losing my motivation and my passion. For some people, it's the love of a job that keeps them going or the curiosity towards a subject that drives them further. Though some people never find their thing, Impact Labs helped me find mine. Now, I want to spread this opportunity with everyone possible. PLEASE bother me if you have any questions! On the flip side, I love photography, saying I'm learning guitar, and trying to convince myself to eat healthier and exercise more. HMU if you want to get on a workout schedule or something together. Lord knows I need the help."
-		},
-		{
-			"name": "Christina Barta",
-			"body": "Technology is powerful stuff - it shapes the world as we know it and the direction of humanity's future. I am determined to figure out how it can be used to build a world that is more creative, responsible, and just. We have so many challenges to figure out along the way - legal, ethical, scientific, and structural - and I'm proud to be working on them with the curious minds at Impact Labs! Outside of Impact, you can find me sharing meals with friends (hopefully meals that require chopsticks), showing people around art museums, losing track of time in thoughtful debate, visiting cities, or reading about tech policy, moral philosophy, feminism, the latest in machine learning, and the future of our world!"
-		},
-		{
-			"name": "Alexa Batino",
-			"body": "As an aspiring Software Engineer, I’m passionate about working on mission-driven technology within the social impact space. From the first day of the 2018 Impact Summit, I knew I wanted to join Impact Labs because I wanted to work alongside like-minded individuals determined to use their skills to leave a positive impact on society. When I’m not at school or working on Impact, I love thrifting, hiking, curating Spotify playlists, and bothering friends to watch sunsets or stargaze with me!"
-		},
-		{
-			"name": "Clear Shen",
-			"body": "I’m always curious and passionate to learn about various things. Currently studying UI/UX, digital fabrication, and processing, I’m excited to explore potential ways to push the boundaries of design with technology. I hope that with the power of technology, design can be an immersive experience that motivates emotional connections. I consider myself a quirky person because of my weird ideas. My friends Grace and Minji introduced me to Impact Labs as there are numerous talented people with crazy, smart ideas. I hope to learn from people as well as contribute my abilities to benefit others."
-		},
-		{
-			"name": "Raquel Dunoff",
-			"body": "Everyday, I am discovering more things about people and the world around me. I love engineering education reform, social justice, and finding public resources. Through Impact Labs, I hope to amplify under-heard voices working in technology for social good."
-		},
-		{
-			"name": "Elvin Galarza",
-			"body": "&quot;Always do the right thing.&quot; - Spike Lee. This quote/movie is what led me to Summit '19, and, subsequently, the team. After studying Electrical and Computer Engineering at The University of Texas at Austin, I joined IBM in New York City. When I'm not working, I'm poring over mid-century movies, marketing ads, tech, and music. When my crooner music isn't in the air, I'm making lofi beats. When I'm not tapping MPC pads, I'm attempting to tap into my brain and flex my pen like Rod Serling (catch me at the Nuyorican Poets Cafe!). I also tend to use &quot;Socratic seminar&quot; as a verb. And if you're curious like me, down the rabbit hole we go - minus the trouble (hopefully)."
-		},
-		{
-			"name": "Krrish Dholakia",
-			"body": "I’m a 3rd year CS undergrad @ Georgia Tech. I’m constantly burning through songs, so if you have any recommendations, feel free to hmu! A question that’s often bothered me is if technology a force for good? Or are we headed down a path to our own manufactured irrelevance? I think the answer is probably a lot more grey than any of us might care to admit. But the quixotic idea, that we might inspire a few crazy, passionate people and equip them with the tools to chase their dreams with technology and make that grey a little more balanced towards the good side, is incredibly appealing to me!"
-		},
-		{
-			"name": "Saumya Gupta",
-			"body": "It's kind of paradoxical, but problems that are really hard to solve get me super motivated. I enjoy programming, the logic that comes with it and building for the long term. Other things that hype me up are: badminton, trying new sports, good books (if it makes me cry, it's good), chocolate desserts, funky music, mind-fucking ideas (+ movies) and well-chosen emojis."
-		},
-		{
-			"name": "Ben Holmes",
-			"body": "How to describe myself? Well, I like to write, like to teach, like to design, like to make / break code... and I love finding weird intersections of all these things at once. I guess I would call myself a &quot;web designer who blogs sometimes and also knows lower-level programming&quot;. Not the most hirable tagline for my LinkedIn profile, but I'll happily embrace the madness if I always get to be passionate about what I'm doing. I've also been involved in the social good sphere building powerful web applications for less-than-tech savvy nonprofits, putting my breadth-over-depth background to good use no matter the challenge. I'll be graduating from Georgia Tech soon, and I'm excited / curious to see where my ambitions take me!"
-		},
-		{
-			"name": "Ali Mohamad",
-			"body": "I watched HBO's Silicon Valley then read the Autobiography of Malcolm X and pretty much immediately after I started asking myself if tech was a force for good in the world and haven't really stopped asking. Really into empowering tech communities with Major League Hacking Impact Labs, and the Rutgers University Undergraduate Student Alliance of Computer Scientists, really into Web Development and DevOps when I'm not empowering communities. I miss PBS Idea Channel a lot."
-		}
-	];
-
-	$('#team-members').append($.map(data, function(person) {
-		var link = $('<a>', {
-			class: '',
-			'data-toggle': 'modal',
-			'data-target': '#modal-popup',
-			body: person.body,
-			name: person.name
-		});
-		var innerContainer = $('<div>');
-		var image = $('<img>', {
-			alt: person.name,
-			src: '/assets/images/teamphotos/' + person.name.replace(' ', '_') + '.jpg'
-		});
-		var header = $('<h3>', { class: 'text-dark mt-3' })
-			.text(person.name);
-
-		link.append(innerContainer);
-		innerContainer.append(image, header);
-		return link;
-	}));
-
-	function getAttr(event, attr) {
-		return $(event.currentTarget).attr(attr);
-	}
-
-	$('.team-modal').click(function(event) {
-		var name = getAttr(event, 'name');
-		$($('#modal-popup .modal-body p')[0]).html(getAttr(event, 'role'));
-		$($('#modal-popup .modal-body p')[1]).html(getAttr(event, 'body'));
-		$('#modal-popup .modal-body .bio-name').html(name);
-		var src = '/assets/images/teamphotos/' + name.split(" ")[0] + '_' + name.split(" ")[1] + '.jpg'
-		$('#modal-popup .modal-body .bio-img').attr('src', src);
-	})
-</script>

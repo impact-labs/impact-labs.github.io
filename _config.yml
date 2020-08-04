@@ -1,7 +1,6 @@
 url: "https://www.impactlabs.io/"
 
 plugins:
-  - jekyll-compress-images
   - jekyll-sitemap
   - jekyll-seo-tag
 
@@ -10,22 +9,7 @@ defaults:
       path: ""
     values:
       layout: "main"
-  
-  - scope:
-      path: "assets/images"
-    values:
-      image: true
 
 sass:
   style: compressed
   sass_dir: _sass
-
-collections_dir: _data
-collections:
-  - summit
-  
-
-compress_images:
-  images_path: "/assets/images/**/*.{gif,png,jpg,jpeg}"
-  imageoptim:
-    svgo: false
