@@ -338,6 +338,148 @@ footer {
 	}
 }
 
+/* THIS CSS IS TEMPORARY. TO BE REMOVED FOLLOWING VIRTUAL SUMMIT 2020 */
+.virtual-summit {
+	background: #F1F3FF;
+	border: 5px solid $blue;
+	border-radius: 20px;
+	padding: 0;
+	max-width: 1200px;
+
+	$mobile-breakpoint: 580px;
+
+	hgroup {
+		margin: -2px;
+		width: calc(100% + 4px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px;
+		background: $blue;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+
+		@media(max-width: $mobile-breakpoint) {
+			padding: 20px;
+			h2 {
+				font-size: 24px;
+			}
+		}
+
+		h2, h3 {
+			color: white;
+			margin: 0;
+		}
+		.live-icon {
+			@media(max-width: $mobile-breakpoint) {
+				display: none;
+			}
+			background: $yellow;
+			display: flex;
+			align-items: baseline;
+			padding: 15px 20px;
+			border-radius: 10px;
+			margin-left: 30px;
+			&:after {
+				content: '';
+				margin-left: 25px;
+				width: 25px;
+				height: 25px;
+				border-radius: 100%;
+				background: white;
+			}
+		}
+	}
+
+	article {
+		display: flex;
+		flex-direction: column;
+		color: $black;
+		padding: 30px;
+		font-size: 20px;
+
+		@media(min-width: $mobile-breakpoint) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.video-container {
+			margin-bottom: 40px;
+			@media(min-width: $mobile-breakpoint) {
+				margin-right: 60px;
+				margin-bottom: 0;
+			}
+			flex: 1;
+			iframe {
+				max-width: 100%;
+			}
+			.video-subtext {
+				display: flex;
+				img {
+					width: 120px;
+					height: 120px;
+					margin-right: 40px;
+					transform: rotate(-41deg);
+					margin-top: -30px;
+				}
+				p {
+					color: $blue;
+					font-weight: bold;
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.text-container {
+			flex: 1;
+			h3 {
+				color: $black;
+			}
+		}
+	}
+
+	.career-expo {
+		margin-top: 60px;
+		padding: 0 20px;
+
+		h3 {
+			color: $black;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.company-card-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+	
+			.company-card {
+				flex-direction: column;
+				padding: 20px;
+				padding-bottom: 0;
+				margin: 30px;
+				background: white;
+				border-radius: 10px;
+	
+				img {
+					width: 170px;
+					height: 170px;
+					object-fit: contain;
+					border-radius: 5px;
+				}
+	
+				a {
+					display: block;
+					padding: 15px;
+					font-size: 20px !important;
+					color: $yellow;
+					font-weight: bold;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
 @include media-breakpoint-up(md) {
 	.carouselSliding {
 		padding: 0 50px;
