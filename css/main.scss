@@ -340,17 +340,15 @@ footer {
 
 /* THIS CSS IS TEMPORARY. TO BE REMOVED FOLLOWING VIRTUAL SUMMIT 2020 */
 .virtual-summit {
-	background: #F1F3FF;
-	border: 5px solid $blue;
+	background: linear-gradient(180deg, #D2D7F7 0%, rgba(241, 243, 255, 0.48) 100%);;
 	border-radius: 20px;
 	padding: 0;
 	max-width: 1200px;
 
-	$mobile-breakpoint: 580px;
+	$mobile-breakpoint: 750px;
 
 	hgroup {
-		margin: -2px;
-		width: calc(100% + 4px);
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -380,9 +378,11 @@ footer {
 			padding: 15px 20px;
 			border-radius: 10px;
 			margin-left: 30px;
+			letter-spacing: 5px;
+			font-size: 30px;
 			&:after {
 				content: '';
-				margin-left: 25px;
+				margin-left: 15px;
 				width: 25px;
 				height: 25px;
 				border-radius: 100%;
@@ -416,6 +416,7 @@ footer {
 			}
 			.video-subtext {
 				display: flex;
+				pointer-events: none;
 				img {
 					width: 120px;
 					height: 120px;
