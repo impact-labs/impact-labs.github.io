@@ -416,8 +416,8 @@ footer {
 			}
 			.video-subtext {
 				display: flex;
-				pointer-events: none;
 				img {
+					pointer-events: none;
 					width: 120px;
 					height: 120px;
 					margin-right: 40px;
@@ -428,6 +428,10 @@ footer {
 					color: $blue;
 					font-weight: bold;
 					margin-top: 20px;
+
+					a {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
