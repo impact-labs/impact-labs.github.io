@@ -9,7 +9,7 @@
 
 - name: Tim Salau
   title: Mr. Future of Work
-  org: 
+  org:
   image: Tim_Salau.jpg
 
 - name: David Auerbach
@@ -37,11 +37,6 @@
   org: AI for Earth @Microsoft
   image: Bonnie_Lei.jpg
 
-- name: Clementine Jacoby
-  title: Founder and Executive Director
-  org: Recidiviz.org
-  image: Clementine_Jacoby.jpg
-
 - name: Marina Nitze
   title: Former CTO
   org: US Dept. of Veteran Affairs
@@ -49,5 +44,5 @@
 
 - name: Jenny Kleeman
   title: Author
-  org: "Sex Robots and Vegan Meat"
+  org: Sex Robots and Vegan Meat
   image: Jenny_Kleeman.jpg
