@@ -12,10 +12,7 @@ $(document).ready(function() {
 	});
 })
 
-function getAttr(event, attr) {
-  console.log(event)
-  return $(event.currentTarget).attr(attr);
-}
+function getAttr(event, attr) { return $(event.currentTarget).attr(attr); }
 
 $('.team-modal').click(function(event) {
   var name = getAttr(event, 'name');
