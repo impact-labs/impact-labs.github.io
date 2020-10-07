@@ -1,14 +1,15 @@
-url: "https://www.impactlabs.io/"
+url: 'https://www.impactlabs.io/'
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 defaults:
   - scope:
-      path: ""
+      path: ''
     values:
-      layout: "main"
+      layout: 'main'
 
 sass:
   style: compressed
