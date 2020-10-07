@@ -64,6 +64,7 @@ $navbar-dark-color: white;
 #scroll {
 	-webkit-animation: action 0.5s infinite alternate;
 	animation: action 0.5s infinite alternate;
+	transition: opacity 0.2s;
 }
 @-webkit-keyframes action {
 	0% { transform: translateY(0); }
@@ -76,6 +77,7 @@ $navbar-dark-color: white;
 
 #scroll:hover {
 	cursor: pointer;
+	opacity: 0.5;
 }
 
 html, body {
