@@ -19,6 +19,8 @@
 └── pages -> Body of each page, to be inserted in /layouts/main.html
 ```
 
+For more info, refer to: https://github.com/impact-labs/impact-labs.github.io/pull/60
+
 ## Acknowledgements
 
 0.  [Blackrock Digital LLC Template](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/gh-pages/LICENSE)
