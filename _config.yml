@@ -15,7 +15,6 @@ sass:
 
 # SITE CONFIGURATION
 title: Impact Labs
-author: Impact Labs
 tagline: Inspiring and empowering young engineers to build a better world.
 description: >
   Inspiring and empowering young engineers to build a better world. We host a summit, coalition, fellowship program, and much more!
@@ -23,4 +22,5 @@ baseurl: '/'
 url: 'https://impactlabs.io/'
 twitter:
   username: impactlabs_io
-  card: summary
+
+logo: 'https://impactlabs.io/assets/images/social_media_banner.jpg'
