@@ -2,8 +2,8 @@
 # note: the first speaker must have active: true
 
 - name: Afua Bruce
-  title: Director of Engineering
-  org: New America
+  title: Chief Program Officer
+  org: DataKind
   image: Afua_Bruce.jpg
   active: true
 
