@@ -20,7 +20,9 @@ image: /assets/images/seo/team.jpg
 				{% for member in site.data.members %}
 					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
 						<div>
-							<img src="/assets/images/teamphotos/{{member.image}}" alt="{{member.name}}" />
+							<div class="team-image-filter">
+								<img src="/assets/images/teamphotos/{{member.image}}" alt="{{member.name}}" />
+							</div>
 							<h3 class="text-dark mt-3">{{member.name}}</h3>
 						</div>
 					</a>
@@ -48,7 +50,9 @@ image: /assets/images/seo/team.jpg
 						<div class="modal-body">
 							<div class="row bio-row">
 								<div class="col-12 col-md-4 text-center">
-									<img alt="Team Member Photo" class="bio-img mb-5" />
+									<div class="team-image-filter mb-5">
+										<img alt="Team Member Photo" class="bio-img" />
+									</div>
 								</div>
 								<div class="col-12 col-md-8 pl-md-5 pb-5">
 									<h3 class="bio-name"></h3>
