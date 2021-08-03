@@ -25,6 +25,29 @@ image: /assets/images/seo/summit.jpg
 	</div>
 </header>
 
+<section class="mt-0 pt-md-5" style="position: relative">
+	<div class="container">
+		<div class="mb-5 row">
+			<div class="col-12 lead">
+				<h2>Schedule</h2>
+				<p>Things change! You can find the most up-to-date information right here.</p>
+				{% for day in site.data.summit_2021_sessions %}
+					<h3>{{ day.dateline }}</h3>
+					{% for session in day.sessions %}
+						<div style="display: flex;">
+							<b style="flex-basis: 350px;">{{ session.time }}</b>
+							<div class="col">
+								<h4>{{ session.title }}</h4>
+								<p>{{ session.description }}</p>
+							</div>
+						</div>
+					{% endfor %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
 <section>
 	<img alt="Plus" class="accent d-none d-md-inline" style="width: 150px; position:relative; float: right; right: 100px; top: -200px" src="/assets/images/accents/plus.svg" />
 	<div class="container">
@@ -64,57 +87,6 @@ image: /assets/images/seo/summit.jpg
 				<img alt="FAQ" style="max-width:350px" src="/assets/images/illustrations/faq.svg" />
 			</div>
 		</div>
-	</div>
-</section>
-
-<section class="mt-0 pt-md-5" style="position: relative">
-	<div class="container">
-		<img alt="" class="blob d-none d-md-inline" style="position:absolute; width:120%; left:20px; top: -300px; z-index: -1" src="/assets/images/accents/blob-dotted.svg" />
-		<div class="mb-5 row">
-			<div class="col-12 col-md-7 lead">
-				<h2>Speakers and Workshop Leaders</h2>
-				<p>Featured speakers from The Impact Summit 2020.</p>
-			</div>
-			<div class="col-0 col-md-5"></div>
-		</div>
-	<div id="carouselSliding" class="container-fluid carouselSliding carousel slide" data-interval="3000" data-ride="carousel">
-		<div class="carousel-inner" role="listbox">
-			{% for speaker in site.data.summit_speakers %}
-				<div class="{% if speaker.active %}active{% endif %} carousel-item text-center">
-					<div class="col-12 col-md-4">
-						<div class="card border-white text-center">
-							<img alt="{{ speaker.name }}" class="img-circle" src="/assets/images/speakers/{{ speaker.image }}">
-							<div class="card-body ">
-								<p class="mt-3">
-									<b>{{ speaker.name }}</b>
-									<br />
-									{{ speaker.title }}
-									<br />
-									{{ speaker.org }}
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			{% endfor %}
-		</div>
-		<a class="carousel-control-prev" href="#carouselSliding" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon">
-				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M1.74846e-06 20L40 40L40 0L1.74846e-06 20Z" fill="#FFC700"/>
-				</svg>
-			</span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselSliding" role="button" data-slide="next">
-			<!-- <span class="" aria-hidden="true"></span> -->
-			<span class="carousel-control-next-icon">
-				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M40 20L0 0V40L40 20Z" fill="#FFC700"/>
-				</svg>
-			</span>
-			<span class="sr-only">Next</span>
-		</a>
 	</div>
 </section>
 

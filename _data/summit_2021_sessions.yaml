@@ -1,0 +1,38 @@
+- dateline: Thursday, August 12
+  sessions:
+    - time: 10am PDT / 1pm EDT
+      title: Web Accessibility Workshop with Zillow Engineer Michael Porter
+      description: We’ll cover why accessibility is important and how to build modern web experiences that everyone can use. Get hands-on experience fixing common accessibility bugs and learn about tools to measure and improve accessibility!
+    - time: Time TBD
+      title: <i>Data Feminism</i> Book Talk with Professors Lauren F. Klein and Catherine D'Ignazio
+      description:
+    - time: 3pm PDT / 6pm EDT
+      title: Q & A with Professor Meredith Whittaker, Co-founder and Faculty Director of the AI Now Institute
+      description:
+    - time: 4pm PDT / 7pm EDT
+      title: Breaking into Civic Tech with Utah CDO Rachel Stone
+      description:
+
+- dateline: Friday, August 13
+  sessions:
+    - time: 9am PDT / 12pm EDT
+      title: Q & A with Jessica Alter, Co-founder of Tech for Campaigns
+      description:
+    - time: 10:30am PDT / 1:30pm EDT
+      title: Interdisciplinary Impact in Tech Policy with Professor Ryan Calo
+      description:
+    - time: 11:30am PDT / 2:30pm EDT
+      title: Current Issues in Tech Policy Panel with Betsy Cooper, Chris Riley, Mallory Knodel, and Nabiha Syed
+      description:
+    - time: Time TBD
+      title: Dealing with Bias and Fairness in Data Science Workshop with Professor Rayid Ghani
+      description:
+
+- dateline: Saturday, August 14
+  sessions:
+    - time: Morning
+      title: Participant-led “TED Talks”
+      description:
+    - time: Afternoon
+      title: IRL Meetups
+      description: We'll be meeting up (vaxxed and outdoors) in NYC, Boston, Toronto, Seattle, and SF. Come say hi!
