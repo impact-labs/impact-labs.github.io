@@ -8,7 +8,7 @@
       description: <a href="http://english.emory.edu/home/people/bios/klein-lauren.html">Lauren F. Klein</a> is an associate professor of English and Quantitative Theory and Methods at Emory University. Professor Klein will join us to talk about the book she co-wrote with Professor <a href="https://dusp.mit.edu/faculty/catherine-dignazio">Catherine D’Ignazio</a>, <i>Data Feminism</i>, which explores data science and data ethics through an intersectional feminist lens. <i>Data Feminism</i> is now <a href="https://mitpress.mit.edu/books/data-feminism">open access thanks to MIT Libraries</a>, so read up and come with your questions!
     - time: 3pm PDT / 6pm EDT
       title: Q & A with Professor Meredith Whittaker, Co-founder and Faculty Director of the AI Now Institute
-      description:
+      description: <a href="https://ainowinstitute.org/people/meredith-whittaker.html">Meredith Whittaker</a> is the Minderoo Research Professor at New York University, the founder of Google’s Open Research group, and co-founder and Faculty Director of the AI Now Institute. Professor Whittaker joins us to discuss her experience leading labor organizing in big tech and her research on the social implications of artificial intelligence.
     - time: 4pm PDT / 7pm EDT
       title: Breaking into Civic Tech with Utah CDO Rachel Stone
       description: Rachel Stone is the state of Utah’s first-ever Chief Data Officer. We’ll talk about her journey from political science student to state government official and how to get started in the world of civic technology.
@@ -25,7 +25,7 @@
       title: Panel on Current Issues in Tech Policy with Betsy Cooper, Chris Riley, Mallory Knodel, and Nabiha Syed
       description: We’ll hear from <a href="https://www.aspeninstitute.org/our-people/betsy-cooper/">Betsy Cooper</a>, founding Director of the <a href="https://www.aspentechpolicyhub.org/">Aspen Tech Policy Hub</a>; <a href="https://www.rstreet.org/team/chris-riley/">Chris Riley</a>, senior fellow of Internet Governance at the <a href="https://www.rstreet.org/">R Street Institute</a>; <a href="https://cdt.org/staff/mallory-knodel/">Mallory Knodel</a>, Chief Technology Officer at the <a href="https://cdt.org/">Center for Democracy and Technology</a>; and <a href="https://themarkup.org/people/nabiha-syed">Nabiha Syed</a>, President of <a href="https://themarkup.org/">The Markup</a> on topics like cybersecurity, defense of democratic systems, combatting mis- and disinformation online, data privacy, and ethical development and use of AI/ML and automation.
     - time: Time TBD
-      title: Dealing with Bias and Fairness in Data Science/AI/ML Workshop with Professor Rayid Ghani
+      title: Workshop on Dealing with Bias and Fairness in Data Science/AI/ML with Professor Rayid Ghani
       description: <a href="https://www.heinz.cmu.edu/faculty-research/profiles/ghani-rayid">Rayid Ghani</a> is a Distinguished Career Professor in the Machine Learning Department and the Heinz College of Information Systems and Public Policy at Carnegie Mellon University. Professor Ghani’s hands-on tutorial will bridge the gap between theoretical understanding of fairness issues in ML/AI systems that has emerged from recent research, and the practical challenges of dealing with these problems. You’ll get the most out of this workshop if you have some previous knowledge of Python.
 
 - dateline: Saturday, August 14
