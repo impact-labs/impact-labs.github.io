@@ -402,6 +402,10 @@ footer {
 			margin-left: 100px;
 		}
 	}
+
+	.summit-session-block {
+		display: flex;
+	}
 }
 
 @include media-breakpoint-up(xl) {
