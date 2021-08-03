@@ -32,10 +32,11 @@ image: /assets/images/seo/summit.jpg
 				<h2>Schedule</h2>
 				<p>Things change! You can find the most up-to-date information right here.</p>
 				{% for day in site.data.summit_2021_sessions %}
+					<br/>
 					<h3>{{ day.dateline }}</h3>
 					{% for session in day.sessions %}
 						<div style="display: flex;">
-							<b style="flex-basis: 350px;">{{ session.time }}</b>
+							<b style="flex-basis: 350px; font-weight: 600;">{{ session.time }}</b>
 							<div class="col">
 								<h4>{{ session.title }}</h4>
 								<p>{{ session.description }}</p>
