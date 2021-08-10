@@ -15,25 +15,31 @@
     - time: 4pm PDT / 7pm EDT
       title: Breaking into Civic Tech with Utah CDO Rachel Stone
       description: Rachel Stone is the state of Utah’s first-ever Chief Data Officer. We’ll hear about her journey from political science student to state government official and how to get started in the world of civic technology.
+    - time: 5pm PDT / 8pm EDT
+      title: Civic Tech Opportunities Panel
+      description: Join us for a panel and breakout sessions with representatives from civic tech programs Coding it Forward, Bluebonnet Data, and the Day One Project. If you’re interested in working in civic tech, this session is a great way to learn about these programs’ past projects, insights from working in civic tech, and opportunities to get involved in the field!
 
 - dateline: Friday, August 13
   sessions:
     - time: 9am PDT / 12pm EDT
       title: Q & A with Jessica Alter, Co-founder of Tech for Campaigns
       description: Jessica Alter, now VP of Business Development at Figma, founded <a href="https://www.techforcampaigns.org/">Tech for Campaigns</a> in the wake of the 2016 presidential election as a way for people with digital skills to channel anger and sadness into a type of action that was and is uniquely needed. TFC connects volunteer designers, frontend engineers, and data scientists with progressive and centrist campaigns for state office and Democratic state parties. We’ll talk with Alter about her experience starting and leading TFC, learnings from 2020, and how to get involved!
+    - time: 9:45am PDT / 12:45pm EDT
+      title: Auditing Algorithms in the Public Interest with Leon Yin
+      description: <a href="https://themarkup.org/people/leon-yin">Leon Yin</a> is an investigative data journalist at <a href="https://themarkup.org/">The Markup</a>, a non-profit newsroom focused on tech accountability. He builds datasets, runs experiments, and audits algorithms. His original reporting on Google has been featured in a NOVA documentary, cited in petitions by civil rights groups, and frequently used as evidence by legislators seeking answers by tech giants. Before joining The Markup, Leon was a research scientist working alongside political scientists at NYU, a research affiliate at Data & Society, and a software engineer at NASA. We’ll hear from Yin about foundational audits and learn about the general tools and principles that practitioners use through several original case studies.
     - time: 10:30am PDT / 1:30pm EDT
       title: Interdisciplinary Impact in Tech Policy with Professor Ryan Calo
       description: <a href="https://www.law.uw.edu/directory/faculty/calo-ryan">Ryan Calo</a> is a professor at the University of Washington School of Law and an adjunct professor at the Information School and Allen School of Computer Science and Engineering. Professor Calo will discuss the formation and work of the <a href="https://techpolicylab.uw.edu/">Tech Policy Lab</a>, an interdisciplinary research organization that has been emulated across the country.
     - time: 11:30am PDT / 2:30pm EDT
       title: Panel on Current Issues in Tech Policy with Betsy Cooper, Chris Riley, Mallory Knodel, and Nabiha Syed
       description: We’ll hear from <a href="https://www.aspeninstitute.org/our-people/betsy-cooper/">Betsy Cooper</a>, founding Director of the <a href="https://www.aspentechpolicyhub.org/">Aspen Tech Policy Hub</a>; <a href="https://www.rstreet.org/team/chris-riley/">Chris Riley</a>, senior fellow of Internet Governance at the <a href="https://www.rstreet.org/">R Street Institute</a>; <a href="https://cdt.org/staff/mallory-knodel/">Mallory Knodel</a>, Chief Technology Officer at the <a href="https://cdt.org/">Center for Democracy and Technology</a>; and <a href="https://themarkup.org/people/nabiha-syed">Nabiha Syed</a>, President of <a href="https://themarkup.org/">The Markup</a> on topics like cybersecurity, defense of democratic systems, combatting mis- and disinformation online, data privacy, and ethical development and use of AI/ML and automation.
-    - time: Time TBD
-      title: Workshop on Dealing with Bias and Fairness in Data Science/AI/ML with Professor Rayid Ghani
-      description: <a href="https://www.heinz.cmu.edu/faculty-research/profiles/ghani-rayid">Rayid Ghani</a> is a Distinguished Career Professor in the Machine Learning Department and the Heinz College of Information Systems and Public Policy at Carnegie Mellon University. Professor Ghani’s hands-on tutorial will bridge the gap between theoretical understanding of fairness issues in ML/AI systems that has emerged from recent research, and the practical challenges of dealing with these problems. You’ll get the most out of this workshop if you have some previous knowledge of Python.
+    - time: 12:30pm PDT / 3:30pm EDT
+      title: Workshop on Dealing with Bias and Fairness in Data Science/AI/ML
+      description: Tackling issues of bias and fairness when building and deploying machine learning and data science systems has received increased attention from the research community in recent years, yet most of the research has focused on theoretical aspects with a very limited set of application areas and data sets. This tutorial will focus on practical training materials and methodologies to follow when building ML/data science systems that are fair and equitable for people that are affected by them. This tutorial was developed by Professor <a href="https://www.heinz.cmu.edu/faculty-research/profiles/ghani-rayid">Rayid Ghani</a>, Pedro Saleiro, and <a href="https://www.cs.cmu.edu/directory/krodolfa">Kit T. Rodolfa</a>.
 
 - dateline: Saturday, August 14
   sessions:
-    - time: Morning
+    - time: 11am PDT / 2pm EDT
       title: Participant-led “TED Talks”
       description: Some of our amazing summit participants will share their expertise on various topics, from their academic research, to independent passion projects, to just-for-fun hobbies!
     - time: Afternoon
