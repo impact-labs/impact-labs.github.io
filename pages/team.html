@@ -12,12 +12,32 @@ image: /assets/images/seo/team.jpg
 			<div class="row mb-5">
 				<div class="col-0 col-sm-4"></div>
 				<div class="col-12 col-sm-8">
-					<p class="lead">Impact Labs is a student-led organization. We're a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
+					<p class="lead">Impact Labs is led by a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
 					</p>
 				</div>
 			</div>
 			<div class="row pb-5" id="team-members">
-				{% for member in site.data.members %}
+				{% for member in site.data.team_members %}
+					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
+						<div>
+							<div class="team-image-filter">
+								<img src="/assets/images/teamphotos/{{member.image}}" alt="{{member.name}}" />
+							</div>
+							<h3 class="text-dark mt-3">{{member.name}}</h3>
+						</div>
+					</a>
+				{% endfor %}
+			</div>
+			<h2 style="max-width:80%">Past Volunteers</h2>
+			<div class="row mb-5">
+				<div class="col-0 col-sm-4"></div>
+				<div class="col-12 col-sm-8">
+					<p class="lead">Volunteers at Impact Labs help with everything from program design to speaker outreach to web development -- we couldn't have gotten to where we are without these folks! 
+					</p>
+				</div>
+			</div>
+			<div class="row pb-5" id="past-members">
+				{% for member in site.data.past_members %}
 					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
 						<div>
 							<div class="team-image-filter">

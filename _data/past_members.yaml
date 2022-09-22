@@ -1,18 +1,6 @@
 # image is located at `/assets/images/teamphotos`
 # note wrap the value of `body` in quotations
 
-- name: Adi Melamed
-  body: "For about as long as I can remember (jk, just for the past few years) I've spent my time trying to figure out how to lead a meaningful life and create a more meaningful world. That has got me interested in Earl Grey tea, the Hitchhiker's Guide to the Galaxy, and building communities that inspire and empower others to lead more intentional and impactful lives. I am ALWAYS down to meet new people and talk about political institutions, college career decisions, and the interesting, beautiful quirks that make up the human condition. I'm always thinking about the future of human society."
-  image: Adi_Melamed.jpg
-
-- name: Aaron Mayer
-  body: "There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!"
-  image: Aaron_Mayer.jpg
-
-- name: Ellie Czepiel
-  body: "I believe that every person reading this bio has the power to affect positive change in the world, and I want to help them figure out how! I first got involved with Impact Labs as a 2018 Fellow, and loved the people so much that I just had to stick around! When I’m not working on Impact, I’m usually striking up conversations with new people, scheming about new social impact side projects, going on runs, and trying to convince my friends to play obscure board games (Hanabi, anyone?)."
-  image: Ellie_Czepiel.jpg
-
 - name: Ajaita Saini
   body: 'I''m obsessed with using systems thinking frameworks and equity-centered community design (coined by Creative Reaction Lab go check them out) to detangle complex social issues. And I''ve learned that the system of tech isn''t broken, it was built intentionally for the success of some communities and the continued marginalization of others. I love the work we do at Impact because we challenge oppressive tech on a foundational level, and are aware that the only way we''re going to fix tech is to rebuild it entirely. Along with Impact, currently growing the "design as a process" community through Design for America at UIUC and leading art initiatives with Operation Period on menstrual justice and freedom. Other things I care about: visual mapping, slow fashion, my skincare routine, and bread week on the Great British Bake Off.'
   image: Ajaita_Saini.jpg
@@ -24,10 +12,6 @@
 - name: Sam Lee
   body: "It used to discourage me to think about the issues in the world which were out of my control. But while I can’t single handedly dismantle systems of oppression, reverse climate change, or give justice to those who have been wronged, there is always something to be done – I seek to find those somethings. Along with ethical tech, I care lots about minority representation and K-12 outreach (Girls Who Code, anyone?), and my ultimate goal in life is to attend graduate school and conduct human-centered research with a net positive impact."
   image: Sam_Lee.jpg
-
-- name: Tina Wong
-  body: "I'm on a mission to live a life filled with meaning, learning, and compassion, and along the way I discovered that technology allows me to do all of the above! What I love about technology is that I can combine it with my interests in philosophy and politics to do my part in tackling the world’s most pressing issues. After attending the 2020 Impact Summit, I was amazed to be part of a community that was passionate about doing the same, and was inspired to get more involved! Outside of Impact, I can be found volunteering at an animal shelter, learning new languages, and timing how quickly I can finish the daily New York Times crossword."
-  image: Tina_Wong.jpg
 
 - name: Paige Biggs
   body: "I watched Mr. Robot as a pre-med and switched my degree to CS because I thought I could start hacking. I have (sadly) not yet figured out how to hack, but I have gained a deeper understanding of the power of technology and have since become very passionate about using it ethically."
@@ -64,10 +48,6 @@
 - name: Ivanna Pena
   body": "When I tell people I’m majoring in Computer Science and Social & Cultural Analysis, their reaction is usually “how do those fit together?” or “how did you come up with that?”. I think people have grown so accustomed to tech being attached to something negative, that they’ve overshadowed its ability to facilitate social change and propagate social good.I joined Impact Labs because of the enthusiasm everyone exhibits to using tech for good, along with their dedication to helping others do the same. Aside from Impact Labs, I love learning obscure parts of songs on the piano, solving my miniature Rubiks Cube, and roaming through the stacks at The Strand."
   image: Ivanna_Pena.jpg
-
-- name: Zore Che
-  body: "Inspired by E. B. White’s famed quote, I think of my life as two complementary parts: a desire to improve (or save) the world, and a desire to enjoy (or savor) the world. I enjoy reading about networks, behavioral econ, and using technology to aid nonprofits on issues such as water access. Concurrently, I’m constantly enamored by the beauties of the world, and I devote time to painting, solo traveling, and reading. I’m excited by Impact Labs and its vision to bridge disparate disciplines and issues. I thrive in these intersections of nonprofit, tech, and art because they help me find ways to both save and savor."
-  image: Zora_Che.jpg
 
 - name: James Wang
   body: For a long time, my biggest fear was losing my motivation and my passion. For some people, it's the love of a job that keeps them going or the curiosity towards a subject that drives them further. Though some people never find their thing, Impact Labs helped me find mine. Now, I want to spread this opportunity with everyone possible. PLEASE bother me if you have any questions! On the flip side, I love photography, saying I'm learning guitar, and trying to convince myself to eat healthier and exercise more. HMU if you want to get on a workout schedule or something together. Lord knows I need the help."
