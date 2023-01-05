@@ -10,12 +10,8 @@
 - title: Coalition
   url: /coalition
 
-- title: Jobs
-  url: https://impactlabs.notion.site/Current-Openings-at-Impact-Labs-3c6a003cb601470298ab9454949bea75
-  target: true
-
-- title: Team
-  url: /team
+- title: About Us
+  url: /about
 
 - title: Blog
   url: https://medium.com/impact-labs
