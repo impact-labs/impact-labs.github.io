@@ -1,13 +1,13 @@
 # image is located at `/assets/images/funders`
 
-- name: Schmidt Futures
-  image: Ajaita_Saini.jpg
-
 - name: Lyft
   image: lyft-logo.png
 
-- name: IBM
-  image: ibm-logo.png
+- name: Schmidt Futures
+  image: schmidt-logo.png
 
 - name: Two Sigma
-  image: twosigma-logo.jpg
+  image: twosigma-logo.png
+
+- name: IBM
+  image: ibm-logo.png

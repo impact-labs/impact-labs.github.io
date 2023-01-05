@@ -9,7 +9,7 @@ image: /assets/images/seo/team.jpg
 		<div class="col-0 col-md-2"></div>
 		<div class="col-12 col-md-8">
 			<h1>Meet the Team!</h1>
-			<div class="row mb-5">
+			<div class="row mb-2">
 				<div class="col-0 col-sm-4"></div>
 				<div class="col-12 col-sm-8">
 					<p class="lead">Impact Labs is led by a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
@@ -29,7 +29,7 @@ image: /assets/images/seo/team.jpg
 					</a>
 				{% endfor %}
 			</div>
-			<h2 style="max-width:80%">Past Volunteers</h2>
+			<h2 style="max-width:80%">Thanks to Our Volunteers!</h2>
 			<div class="row mb-5">
 				<div class="col-0 col-sm-4"></div>
 				<div class="col-12 col-sm-8">
@@ -46,7 +46,7 @@ image: /assets/images/seo/team.jpg
 					</a>
 				{% endfor %}
 			</div>
-			<h2 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h2><br/>
+			<h3 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h3><br/>
 			<a class="btn btn-secondary" role="button" aria-pressed="true" target="_blank" href="https://airtable.com/shrkcs1sY3lP30ZvD ">Tell us about yourself</a>
 		</div>
 		<div class="col-0 col-md-2"></div>
@@ -86,8 +86,12 @@ image: /assets/images/seo/team.jpg
 	</div>
 </div>
 
-<section data-aos="fade-up" class="pb-0 mt-md-3 mt-0">
-	<div class="container-fluid row mx-0">
+<section data-aos="fade-up" class="pb-0 mt-0" style="position:relative">
+
+	<img alt="Bolt" class="accent d-none d-md-inline" style="width:100px; position:absolute; right: 340px; top: 0px;" src="/assets/images/accents/bolt.svg" />
+	<img alt="Plus" class="accent d-none d-md-inline" style="width:130px; position:absolute; bottom: 180px; left: 0px;" src="/assets/images/accents/plus.svg" />
+	
+	<div class="container-fluid row mx-0 my-0">
 		<div class="col-0 col-md-2"></div>
 		<div class="col-12 col-md-8">
 			<h1>Our Funders</h1>
@@ -100,10 +104,10 @@ image: /assets/images/seo/team.jpg
 			</div>
 			<div class="row pb-5" id="team-members">
 				{% for funder in site.data.funders %}
-					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
+					<a class="team-modal col-12 col-sm-6 col-md-4 text-center justify-content-center px-4 mb-5">
 						<div>
 							<div>
-								<img src="/assets/images/sponsors/{{funder.image}}" alt="{{funder.name}}" />
+								<img src="assets/images/sponsors/{{funder.image}}" alt="{{funder.name}}" />
 							</div>
 						</div>
 					</a>
