@@ -1,22 +1,22 @@
 # image is located at `/assets/images/teamphotos`
 # note wrap the value of `body` in quotations
 
-- name: Adi Melamed
-  body: "For about as long as I can remember (jk, just for the past few years) I've spent my time trying to figure out how to lead a meaningful life and create a more meaningful world. That has got me interested in Earl Grey tea, the Hitchhiker's Guide to the Galaxy, and building communities that inspire and empower others to lead more intentional and impactful lives. I am ALWAYS down to meet new people and talk about political institutions, college career decisions, and the interesting, beautiful quirks that make up the human condition. I'm always thinking about the future of human society."
-  image: Adi_Melamed.jpg
-
-- name: Aaron Mayer
-  body: "There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!"
-  image: Aaron_Mayer.jpg
-
 - name: Ellie Czepiel
   body: "I believe that every person reading this bio has the power to affect positive change in the world, and I want to help them figure out how! I first got involved with Impact Labs as a 2018 Fellow, and loved the people so much that I just had to stick around! When I’m not working on Impact, I’m usually striking up conversations with new people, scheming about new social impact side projects, going on runs, and trying to convince my friends to play obscure board games (Hanabi, anyone?)."
   image: Ellie_Czepiel.jpg
-
-- name: Tina Wong
-  body: "I'm on a mission to live a life filled with meaning, learning, and compassion, and along the way I discovered that technology allows me to do all of the above! What I love about technology is that I can combine it with my interests in philosophy and politics to do my part in tackling the world’s most pressing issues. After attending the 2020 Impact Summit, I was amazed to be part of a community that was passionate about doing the same, and was inspired to get more involved! Outside of Impact, I can be found volunteering at an animal shelter, learning new languages, and timing how quickly I can finish the daily New York Times crossword."
-  image: Tina_Wong.jpg
+  title: "Executive Director"
 
 - name: Zora Che
   body: "Inspired by E. B. White’s famed quote, I think of my life as two complementary parts: a desire to improve (or save) the world, and a desire to enjoy (or savor) the world. I enjoy reading about networks, behavioral econ, and using technology to aid nonprofits on issues such as water access. Concurrently, I’m constantly enamored by the beauties of the world, and I devote time to painting, solo traveling, and reading. I’m excited by Impact Labs and its vision to bridge disparate disciplines and issues. I thrive in these intersections of nonprofit, tech, and art because they help me find ways to both save and savor."
   image: Zora_Che.jpg
+  title: "Coalition Partnerships Manager"
+
+- name: Adi Melamed
+  body: "For about as long as I can remember (jk, just for the past few years) I've spent my time trying to figure out how to lead a meaningful life and create a more meaningful world. That has got me interested in Earl Grey tea, the Hitchhiker's Guide to the Galaxy, and building communities that inspire and empower others to lead more intentional and impactful lives. I am ALWAYS down to meet new people and talk about political institutions, college career decisions, and the interesting, beautiful quirks that make up the human condition. I'm always thinking about the future of human society."
+  image: Adi_Melamed.jpg
+  title: "Co-Founder & Advisor"
+
+- name: Aaron Mayer
+  body: "There are three things I love in this world: technology, normative ethics, and working with my amazing Impact teammates! Talk to me about philosophy, swing dancing, the best ice cream places in NYC, effective altruism, blockchain, Super Smash Bros (Melee), educational YouTube creators, odd music preferences, or tea parties! I started Impact Labs with Adi so that we could build a world together in which we all use our talents for the good of humanity!"
+  image: Aaron_Mayer.jpg
+  title: "Co-Founder & Advisor"

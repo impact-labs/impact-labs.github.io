@@ -1,0 +1,105 @@
+---
+title: Impact Labs - About Us
+permalink: /about
+image: /assets/images/seo/team.jpg
+---
+
+<section data-aos="fade-up" class="pb-0 mt-md-5 mt-0">
+	<div class="container-fluid row mx-0">
+		<div class="col-0 col-md-2"></div>
+		<div class="col-12 col-md-8">
+
+			<h1 class="text-primary">Meet the Team!</h1>
+			<p>Impact Labs is led by a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
+			</p>
+			<div class="row pb-5" id="team-members">
+				{% for member in site.data.team_members %}
+					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
+						<div>
+							<div class="team-image-filter">
+								<img src="/assets/images/teamphotos/{{member.image}}" alt="{{member.name}}" />
+							</div>
+							<h3 class="text-dark mt-3">{{member.name}}</h3>
+							<h4 class="text-dark mt-2">{{member.title}}</h4>
+						</div>
+					</a>
+				{% endfor %}
+			</div>
+			<h2 style="max-width:80%">Thanks to Our Volunteers!</h2>
+			<p>Volunteers at Impact Labs help with everything from program design to speaker outreach to web development -- we couldn't have gotten to where we are without these folks! 
+			</p>
+			<div class="row pb-5" id="past-members">
+				{% for member in site.data.past_members %}
+					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-2 mb-3" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
+						<div>
+							<h3 class="text-dark mt-1">{{member.name}}</h3>
+						</div>
+					</a>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="col-0 col-md-2"></div>
+	</div>
+</section>
+
+<div class="p-5">
+	<!-- Modal Content -->
+	<div class="modal fade" id="modal-popup" role="dialog" aria-hidden="true">
+		<div class="modal-dialog full-modal">
+			<div class="vertical-alignment-helper">
+				<div class="modal-dialog vertical-align-center">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a class="close" data-dismiss="modal" aria-hidden="true">
+								<span aria-hidden="true">&times;</span>
+							</a>
+						</div>
+						<div class="modal-body">
+							<div class="row bio-row">
+								<div class="col-12 col-md-4 text-center">
+									<div class="team-image-filter mb-5">
+										<img alt="Team Member Photo" class="bio-img" />
+									</div>
+								</div>
+								<div class="col-12 col-md-8 pl-md-5 pb-5">
+									<h3 class="bio-name"></h3>
+									<p class="font-italic"></p>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section data-aos="fade-up" class="pb-0 mt-0" style="position:relative">
+
+	<img alt="Bolt" class="accent d-none d-md-inline" style="width:100px; position:absolute; right: 340px; top: 0px;" src="/assets/images/accents/bolt.svg" />
+	<img alt="Plus" class="accent d-none d-md-inline" style="width:130px; position:absolute; bottom: 180px; left: 0px;" src="/assets/images/accents/plus.svg" />	
+	<div class="container-fluid row mx-0 my-0">
+		<div class="col-0 col-md-2"></div>
+		<div class="col-12 col-md-8">
+			<h1>Our Funders</h1>
+			<p class="pb-3">Impact Labs is supported by a mix of unrestricted funding grants and project-specific funding through contracts and grants, as well as revenue from our programming. We are grateful to all of our donors, funders, and partners -- we couldn't do our work without them!
+			</p>
+			<div class="row pb-5" id="team-members">
+				{% for funder in site.data.funders %}
+					<a class="team-modal col-12 col-sm-6 col-md-4 text-center justify-content-center px-4 mb-5">
+						<div>
+							<div>
+								<img src="assets/images/sponsors/{{funder.image}}" alt="{{funder.name}}" />
+							</div>
+						</div>
+					</a>
+				{% endfor %}
+			</div>
+			<div class="mb-5 pb-5">
+				<h2 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h2><br/>
+				<a class="btn btn-secondary" role="button" aria-pressed="true" target="_blank" href="https://airtable.com/shrkcs1sY3lP30ZvD ">Tell us about yourself</a>
+			</div>
+		</div>
+	</div>
+</section>
