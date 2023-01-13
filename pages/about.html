@@ -8,14 +8,10 @@ image: /assets/images/seo/team.jpg
 	<div class="container-fluid row mx-0">
 		<div class="col-0 col-md-2"></div>
 		<div class="col-12 col-md-8">
-			<h1>Meet the Team!</h1>
-			<div class="row mb-2">
-				<div class="col-0 col-sm-4"></div>
-				<div class="col-12 col-sm-8">
-					<p class="lead">Impact Labs is led by a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
-					</p>
-				</div>
-			</div>
+
+			<h1 class="text-primary">Meet the Team!</h1>
+			<p>Impact Labs is led by a team of quirky engineers, humble idealists, passionate designers and bright-eyed philosophers!
+			</p>
 			<div class="row pb-5" id="team-members">
 				{% for member in site.data.team_members %}
 					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-4 mb-5" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
@@ -30,13 +26,8 @@ image: /assets/images/seo/team.jpg
 				{% endfor %}
 			</div>
 			<h2 style="max-width:80%">Thanks to Our Volunteers!</h2>
-			<div class="row mb-5">
-				<div class="col-0 col-sm-4"></div>
-				<div class="col-12 col-sm-8">
-					<p class="lead">Volunteers at Impact Labs help with everything from program design to speaker outreach to web development -- we couldn't have gotten to where we are without these folks! 
-					</p>
-				</div>
-			</div>
+			<p>Volunteers at Impact Labs help with everything from program design to speaker outreach to web development -- we couldn't have gotten to where we are without these folks! 
+			</p>
 			<div class="row pb-5" id="past-members">
 				{% for member in site.data.past_members %}
 					<a class="team-modal col-12 col-sm-6 col-md-4 text-center px-2 mb-3" data-toggle="modal" data-target="#modal-popup" name="{{member.name}}" body="{{member.body}}" image="/assets/images/teamphotos/{{member.image}}" >
@@ -46,8 +37,6 @@ image: /assets/images/seo/team.jpg
 					</a>
 				{% endfor %}
 			</div>
-			<h3 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h3><br/>
-			<a class="btn btn-secondary" role="button" aria-pressed="true" target="_blank" href="https://airtable.com/shrkcs1sY3lP30ZvD ">Tell us about yourself</a>
 		</div>
 		<div class="col-0 col-md-2"></div>
 	</div>
@@ -89,19 +78,14 @@ image: /assets/images/seo/team.jpg
 <section data-aos="fade-up" class="pb-0 mt-0" style="position:relative">
 
 	<img alt="Bolt" class="accent d-none d-md-inline" style="width:100px; position:absolute; right: 340px; top: 0px;" src="/assets/images/accents/bolt.svg" />
-	<img alt="Plus" class="accent d-none d-md-inline" style="width:130px; position:absolute; bottom: 180px; left: 0px;" src="/assets/images/accents/plus.svg" />
+	<img alt="Plus" class="accent d-none d-md-inline" style="height: 130px; width: 130px; position:relative; float:right; bottom:100px; right: 100px;" src="/assets/images/accents/plus.svg" />
 	
 	<div class="container-fluid row mx-0 my-0">
 		<div class="col-0 col-md-2"></div>
 		<div class="col-12 col-md-8">
 			<h1>Our Funders</h1>
-			<div class="row mb-5">
-				<div class="col-0 col-sm-4"></div>
-				<div class="col-12 col-sm-8">
-					<p class="lead">Impact Labs is supported by a mix of unrestricted funding grants and project-specific funding through contracts and grants, as well as revenue from our programming. We are grateful to all of our donors, funders, and partners -- we couldn't do our work without them!
-					</p>
-				</div>
-			</div>
+			<p class="pb-3">Impact Labs is supported by a mix of unrestricted funding grants and project-specific funding through contracts and grants, as well as revenue from our programming. We are grateful to all of our donors, funders, and partners -- we couldn't do our work without them!
+			</p>
 			<div class="row pb-5" id="team-members">
 				{% for funder in site.data.funders %}
 					<a class="team-modal col-12 col-sm-6 col-md-4 text-center justify-content-center px-4 mb-5">
@@ -112,6 +96,10 @@ image: /assets/images/seo/team.jpg
 						</div>
 					</a>
 				{% endfor %}
+			</div>
+			<div class="mb-5 pb-5">
+				<h2 style="max-width:80%">Interested in joining the Impact Labs team? We want to hear from you!</h2><br/>
+				<a class="btn btn-secondary" role="button" aria-pressed="true" target="_blank" href="https://airtable.com/shrkcs1sY3lP30ZvD ">Tell us about yourself</a>
 			</div>
 		</div>
 	</div>
