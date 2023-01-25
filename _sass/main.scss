@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass:500,900');
 
-$blue:		#5772FF; 
+$blue:		#5772FF;
 $purple:	#B385FF;
 $teal:		#0FF8A8;
 $yellow:	#FFC700;
@@ -85,7 +85,7 @@ html, body {
     overflow-x: hidden;
 }
 
-html { 
+html {
 	zoom: 90%;
 	zoom: 0.9;
 } // this is terrible
@@ -144,6 +144,8 @@ h3 {
 
 p, .lead {
 	font-size: 20px;
+} .mission-statement {
+  font-size: 25px;
 }
 
 @include media-breakpoint-down(lg) {
@@ -190,7 +192,7 @@ nav {
 			color: white !important;
 		}
 	}
-	
+
 	.navbar-brand img {
 		height: 50px;
 		padding:0;
@@ -352,7 +354,7 @@ footer {
 			max-width: 620px;
 			padding: $spacer;
 			margin-right: -210px;
-			height: $spacer*2;	
+			height: $spacer*2;
 			border-style: solid;
 			border-color: $primary;
 		}
@@ -389,11 +391,11 @@ footer {
 					p b {
 						font-size: 28px;
 					}
-					
+
 				}
 			}
 		}
-		
+
 		.carousel-control-prev-icon {
 			margin-right: 100px;
 		}
@@ -428,7 +430,7 @@ footer {
 	overflow: hidden;
 	position: relative;
 	background: linear-gradient(30deg, #a8b8e9, #b1e6da);
-	
+
 	img {
 		filter: brightness(120%) grayscale(90%);
 		mix-blend-mode: multiply;
