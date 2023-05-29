@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
          <ul class="navbar-nav ml-auto">
             {% for item in site.data.nav %}
-               <li class="nav-item {% if item.url == page.url %}active{% endif %}">
+               <li class="nav-item {% if item.url == page.url %}active{% endif %} mt-1 ml-1">
                   <a class="nav-link" href="{{ item.url }}"
                      {% if item.target %} target="_blank" {% endif %}
                   >
@@ -17,6 +17,9 @@
                   </a>
                </li>
             {% endfor %}
+            <li class="nav-item">
+               <a class="btn btn-warning" role="button" aria-pressed="true" zeffy-form-link="https://www.zeffy.com/en-US/embed/donation-form/228a7f22-7ff6-42b1-9a2a-4e96f5b29ae6?modal=true">Donate</a>
+            </li>
          </ul>
       </div>
    </div>
