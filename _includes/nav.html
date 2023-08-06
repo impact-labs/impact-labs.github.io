@@ -15,19 +15,6 @@
                   >
                      {{ item.title }}
                   </a>
-                  {% if item.subpages %}
-                  <ul style="display: none">
-                  {% for subpage in item.subpages %}
-                  <li class="nav-item subpage mt-1 ml-1">
-                        <a class="nav-link" href="{{ subpage.url }}"
-                           {% if item.target %} target="_blank" {% endif %}
-                        >
-                        {{ subpage.title }}
-                        </a>
-                  </li>
-                  {% endfor %}
-                  </ul>
-                  {% endif %}
                </li>
             {% endfor %}
             <li class="nav-item">

@@ -36,7 +36,6 @@
 
   .nav-item {
     margin-bottom: -$nav-tabs-border-width;
-    background-color: green;
   }
 
   .nav-link {
@@ -66,17 +65,6 @@
     margin-top: -$nav-tabs-border-width;
     // Remove the top rounded corners here since there is a hard edge above the menu
     @include border-top-radius(0);
-  }
-
-  
-  ul {
-    background-color: red;
-    // display: none !important;
-    display: block;
-  }
-
-  .nav-link:hover > ul {
-    display: block !important;
   }
 
 }
