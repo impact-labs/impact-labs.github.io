@@ -6,3 +6,4 @@ gem "github-pages", "~> 208", group: :jekyll_plugins
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-redirect-from"
+gem "webrick", "~> 1.8"

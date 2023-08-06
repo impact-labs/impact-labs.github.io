@@ -1,20 +1,38 @@
 - title: Home
   url: /
 
-- title: Fellowship
-  url: /fellowship
+- title: Programs
+  url: #
+  type: heading
+  subpages:
+    - title: Fellowship
+      url: /fellowship
+      type: subpage
 
-- title: Summit
-  url: /summit
+    - title: Summit
+      url: /summit
+      type: subpage
 
-- title: Coalition
-  url: /coalition
+    - title: Coalition
+      url: /coalition
+      type: subpage
 
-- title: Opportunity Board
-  url: /opportunities
+
+- title: Resources
+  url: #
+  type: heading
+  subpages:
+  - title: Social Impact Tech Guide
+    url: https://impactlabs.notion.site/Social-Impact-Tech-Guide-2c1bf28a2eb04c0d92c2fee7f510f95b?pvs=4
+    type: subpage
+  - title: Opportunity Board
+    url: /opportunities
+    type: subpage
 
 - title: About Us
   url: /about
+  type: top_level
 
 - title: Blog
   url: https://impactlabs.substack.com/
+  type: top_level
