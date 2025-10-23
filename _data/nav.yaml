@@ -9,9 +9,9 @@
   url: /summit
   type: subpage
 
-- title: Coalition
-  url: /coalition
-  type: subpage
+#- title: Coalition
+#  url: /coalition
+#  type: subpage
 
 - title: Social Impact Tech Guide
   url: https://impactlabs.notion.site/Social-Impact-Tech-Guide-2c1bf28a2eb04c0d92c2fee7f510f95b?pvs=4
